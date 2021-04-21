@@ -67,8 +67,11 @@ indices = pd.Series(data.index, index=data['title']).drop_duplicates()
 # 영화 추천 시스템
 def get_recommended(title):
     idx = indices[title]    # 해당 영화의 인덱스 가져옴
-    sim_scores = list(enumerate(cosine_sim[idx]))   # 해당 영화와 다른 모든 영화와의 코사인 유사도 가져옴
 
+    # 해당 영화와 다른 모든 영화와의 코사인 유사도 가져옴
+    # (영화의 idx, 코사인 유사도) 의 형태로 담겨있음
+    sim_scores = list(enumerate(cosine_sim[idx]))  
+    
     # 유사도에 따라 영화 정렬
     sim_scores = sorted(sim_scores, key=lambda x:x[1], reverse=True)
 

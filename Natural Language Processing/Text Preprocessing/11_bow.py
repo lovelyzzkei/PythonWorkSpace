@@ -33,12 +33,9 @@ print(bow)
 # 사이킷런으로 BoW 만들기
 from sklearn.feature_extraction.text import CountVectorizer
 
-corpus = ['you know I want your love. because I love you.']
-vector = CountVectorizer()      # 기본적인 정제작업도 수행. 짧은 단어, 불용어 삭제
+corpus = ["You know I love you."]
+vector = CountVectorizer()
 
-# fit_transfrom(corpus): 코퍼스로부터 각 단어의 빈도수를 기록
+# fit_transform(): 주어진 코퍼스 데이터를 단어 토큰화
 print(vector.fit_transform(corpus).toarray())
 print(vector.vocabulary_)
-
-# [[1 1 2 1 2 1]]
-# {'you': 4, 'know': 1, 'want': 3, 'your': 5, 'love': 2, 'because': 0}

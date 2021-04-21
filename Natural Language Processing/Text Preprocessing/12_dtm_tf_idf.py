@@ -24,3 +24,15 @@ idf(d, t): df(t)에 반비례하는 수 log(n/(1+df(t))) (inverse document frequ
            log함수를 취하는 이유: 가중치가 기하급수적으로 증가하는 것을 막기 위하여
 tf-idf = tf(d, t) * idf(d, t)
 '''
+
+from sklearn.feature_extraction.text import TfidfVectorizer
+
+corpus = [
+    'you know I want your love',
+    'I like you',
+    'what should I do ',    
+]
+
+tfidfv = TfidfVectorizer().fit(corpus)          # 데이터 학습
+print(tfidfv.fit_transform(corpus).toarray())   # 가중치를 부여하며 인코딩 및 DTM 생성
+print(tfidfv.vocabulary_)
