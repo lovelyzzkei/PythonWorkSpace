@@ -4,6 +4,8 @@ LDA 실습
 
 import re
 import gensim
+import pyLDAvis
+import pyLDAvis.gensim_models
 import pandas as pd 
 from nltk.corpus import stopwords
 from sklearn.datasets import fetch_20newsgroups
@@ -31,7 +33,7 @@ stop_words = stopwords.words('english')     # 불용어들이 리스트 안에 �
 
 tokenized_doc = news_df['clean_doc'].apply(lambda x: x.split()) # 토큰화 후
 tokenized_doc = tokenized_doc.apply(lambda x: [w for w in x if w not in stop_words])    # 불용어 제거
-
+print(tokenized_doc[1])
 
 # LSA에서와 동일한 데이터 사용
 # 정수 인코딩과 단어의 빈도수 기록을 동시에 진행
@@ -46,3 +48,16 @@ ldamodel = gensim.models.ldamodel.LdaModel(corpus, num_topics=NUM_TOPICS, id2wor
 topics = ldamodel.print_topics(num_words=4)
 for topic in topics:
     print(topic)
+
+
+# LDA 시각화. 각 토픽들의 단어들의 분포 확인
+vis = pyLDAvis.gensim_models.prepare(ldamodel, corpus, dictionary)
+pyLDAvis.enable_notebook()
+pyLDAvis.display(vis)
+
+# 문서별 토픽 문포 확인
+# ldamodel에 전체 데이터가 정수 인코딩 된 결과를 넣으면 확인 가능
+for i, topic_list in enumerate(ldamodel[corpus]):
+    if i == 5:
+        break
+    print(i, "번째 문서의 topic 비율은", topic_list)
