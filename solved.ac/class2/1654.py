@@ -26,10 +26,6 @@ while True:
         end = longest
 
         # 두 구간 사이에서 랜선의 개수가 최대가 될 수 있는 길이 탐색
-        if start == 0:
-            print(1)
-            exit(0)
-
         while start + 1 < end:
             mid = (start + end) // 2
             if cnt_wire(mid) < n:
@@ -37,6 +33,12 @@ while True:
             else:
                 start = mid
 
-        print(start)
+        # 이 부분 실수
+        # 탐색이 완료된 두 길이 중 조건에 부합하는 더 긴 길이를 선택
+        if cnt_wire(start) >= n and cnt_wire(end) < n:
+            print(start)
+        elif cnt_wire(start) >= n and cnt_wire(end) >= n:
+            print(end)
         exit(0)
+
     longest //= 2
