@@ -17,29 +17,44 @@ ans = []
 ans.append(abs(N-100))
 
 # 근접한 채널(동일한 채널)로 이동하여 +,-를 누르는 경우
-cnt = 0
-channel = ''
-N = str(N)
-for i in range(len(N)):
-    findNum = int(N[i])
-    if N[i] in REMOTE:
-        channel.join(str(findNum))
-    else:
 
-        # 리모컨 버튼 중에서 현재 자리수와 가장 가까운 수 선택
-        # 근접한 수가 
-        diff = 9999999
-        x = 0
-        for j in REMOTE:
-            if findNum < j:
-                findNum += 10
-            if abs(findNum - j) < diff:
-                diff = abs(findNum - j)
-                x = j
+# 수 생성 함수
+nums = []
+num = 0
+def create_num(length):
+    global num
+    if length == 0:
+        nums.append(num)
+        return
 
-        channel += str(x)
+    for a1 in REMOTE:
+        num += a1 * pow(10, length - 1)
+        create_num(length - 1)
+        num -= a1 * pow(10, length - 1)
 
-print(channel, N)
+# 순차 탐색 함수
+def search():
+    diff = 9999999999
+    for num in nums:
+        if abs(num - N) < diff:
+            diff = abs(num - N)
+            ans = num
+    return ans
 
-ans.append(len(channel) + abs(int(channel) - int(N)))
+
+# 리모컨에서 사용할 수 있는 숫자들로 1~6자리의 숫자를 만든 뒤
+# 그 숫자들에서 찾으려고 하는 숫자와 가장 가까운 숫자를 찾는다
+# 이때 찾을 때는 수가 많지 않으므로 순차탐색 사용
+
+
+if _ == 0:
+    ans.append(len(str(N)))
+elif _ != 10:
+    # 리모컨에서 사용할 수 있는 숫자들로 만든 수들
+    for i in range(1, 7):
+        create_num(i)
+
+    nearest_num = search()
+    ans.append(len(str(nearest_num)) + abs(nearest_num - N))
+
 print(min(ans))
