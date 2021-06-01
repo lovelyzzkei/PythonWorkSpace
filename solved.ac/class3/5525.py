@@ -12,36 +12,47 @@ for i in range(1, 2*(N+1)):
     else:
         Pn += 'O'
 
-cnt = 0
+pi = [0 for i in range(len(Pn))]
+ret = []
 
-# 라빈-카프 알고리즘 사용
-def findString(parent, pattern):
-    global cnt
+# KMP 알고리즘 사용
+def getPartialMatch(pattern):
+    m = len(pattern)
 
-    parentSize = len(parent)
-    patternSize = len(pattern)
-    parentHash = 0; patternHash = 0; power = 1
+    # KMP로 자기 자신 찾기
+    # begin=0이면 자기 자신을 찾는 것이니까 패스
+    begin = 1; matched = 0
 
-    for i in range(parentSize - patternSize + 1):
-        if i == 0:
-            for j in range(patternSize):
-                parentHash += ord(parent[patternSize - 1-  j]) * power
-                patternHash += ord(pattern[patternSize - 1 - j]) * power
-                if (j < patternSize - 1):
-                    power *= 2
+    # 비교할 문자가 pattern의 끝에 도달할 때까지 찾으면서 부분 일치를 모두 기록
+    while begin + matched < m:
+        if pattern[begin + matched] == pattern[matched]:
+            matched += 1
+            pi[begin + matched - 1] = matched
+        else:
+            if matched == 0:
+                begin += 1
+            else:
+                begin += matched - pi[matched - 1]
+                matched = pi[matched - 1]
+
+def KMP(parent, pattern):
+    n = len(parent)
+    m = len(pattern)
+    getPartialMatch(pattern)
+
+    begin = 0; matched = 0
+
+    while begin <= n - m:
+        if matched < m and parent[begin+matched] == pattern[matched]:
+            matched += 1
+            if matched == m:    ret.append(begin)
         
         else:
-            parentHash = 2 * (parentHash - ord(parent[i-1]) * power) + ord(parent[patternSize - 1 + i])
-
-        if parentHash == patternHash:
-            finded = True
-            for j in range(patternSize):
-                if parent[i+j] != pattern[j]:
-                    finded = False
-                    break
-
-            if finded:
-                cnt += 1
-
-findString(S, Pn)
-print(cnt)
+            if matched == 0:
+                begin += 1
+            else:
+                begin += matched - pi[matched - 1]
+                matched = pi[matched - 1]
+    
+KMP(S, Pn)
+print(len(ret))
