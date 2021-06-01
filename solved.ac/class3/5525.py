@@ -1,10 +1,20 @@
-import re
-import hashlib
+import sys
 
-Pn = 'IOI'
-s = 'OOIOIOIOIIOII'
+N = int(sys.stdin.readline())
+M = int(sys.stdin.readline())
+S = sys.stdin.readline().strip()
+
+# Pn 생성
+Pn = ''
+for i in range(1, 2*(N+1)):
+    if i % 2 == 1:
+        Pn += 'I'
+    else:
+        Pn += 'O'
+
 cnt = 0
 
+# 라빈-카프 알고리즘 사용
 def findString(parent, pattern):
     global cnt
 
@@ -33,5 +43,5 @@ def findString(parent, pattern):
             if finded:
                 cnt += 1
 
-findString(s, Pn)
+findString(S, Pn)
 print(cnt)
