@@ -1,37 +1,5 @@
-import re
-import hashlib
-
-Pn = 'IOI'
-s = 'OOIOIOIOIIOII'
-cnt = 0
-
-def findString(parent, pattern):
-    global cnt
-
-    parentSize = len(parent)
-    patternSize = len(pattern)
-    parentHash = 0; patternHash = 0; power = 1
-
-    for i in range(parentSize - patternSize + 1):
-        if i == 0:
-            for j in range(patternSize):
-                parentHash += ord(parent[patternSize - 1-  j]) * power
-                patternHash += ord(pattern[patternSize - 1 - j]) * power
-                if (j < patternSize - 1):
-                    power *= 2
-        
-        else:
-            parentHash = 2 * (parentHash - ord(parent[i-1]) * power) + ord(parent[patternSize - 1 + i])
-
-        if parentHash == patternHash:
-            finded = True
-            for j in range(patternSize):
-                if parent[i+j] != pattern[j]:
-                    finded = False
-                    break
-
-            if finded:
-                cnt += 1
-
-findString(s, Pn)
-print(cnt)
+S = bin(pow(2, 20)  - 1)
+print(S)
+S = 0
+S = int(bin(S | (1 << 2)), 2)
+print(S)
