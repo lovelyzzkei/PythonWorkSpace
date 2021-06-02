@@ -7,7 +7,7 @@ paper_white = 0
 
 # 색종이 배열 생성
 for i in range(N):
-    colorPaper.append(list(map(bool, map(int, sys.stdin.readline().strip().split()))))
+    colorPaper.append(list(map(int, sys.stdin.readline().strip().split())))
 
 
 # 분할 정복으로 해결

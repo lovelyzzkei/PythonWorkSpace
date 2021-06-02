@@ -1,5 +1,9 @@
-S = bin(pow(2, 20)  - 1)
-print(S)
-S = 0
-S = int(bin(S | (1 << 2)), 2)
-print(S)
+import collections
+import sys; read=sys.stdin.readline
+
+colorPaper = []     # 색종이를 저장할 배열
+
+N = int(read())
+for i in range(N):
+    colorPaper.append(list(map(int, read().split())))
+print(colorPaper)
