@@ -1,5 +1,5 @@
 import sys; read = sys.stdin.readline
-from collections import deque
+from queue import Queue
 
 def D(node):
     return [(node[0]*2)%10000, node[1]+'D']
@@ -10,45 +10,42 @@ def S(node):
     return [node[0]-1, node[1]+'S']
 
 def L(node):
-    # 한자리인 경우
-    if node[0] % 10 == node[0]:
-        return [node[0] * 10, node[1]+'L']
-    first = node[0] // pow(10, len(str(node[0]))-1)
-    last = node[0] % pow(10, len(str(node[0]))-1)
+    first = node[0] // 1000
+    last = node[0] % 1000
     new = last * 10 + first
     return [new, node[1]+'L']
 
 def R(node):
-    # 한자리인 경우
-    if node[0] % 10 == node[0]:
-        return [node[0]*1000, node[1]+'R']
     first = node[0] // 10
     last = node[0] % 10
-    new = last * pow(10, len(str(node[0]))-1) + first
+    new = last * 1000 + first
     return [new, node[1]+'R']
 
 
+
+
 def bfs(a, b, ans):
-    dq = deque([[a, ans]])
+    dq = Queue()
+    dq.put([a, ans])
 
     while dq:
-        node = dq.popleft()
-        print(node)
+        node = dq.get()
         if node[0] == b:
             ret.append(node[1])
             return
-        if node[0] not in visited:
+        if not visited[node[0]]:
             visited[node[0]] = True
             nextNode = [D(node), S(node), L(node), R(node)]
             for item in nextNode:
-                if item[0] not in visited:
-                    dq.append(item)
+                if not visited[item[0]]:
+                    dq.put(item)
     
 
 ret = []
+
 for t in range(int(read())):
-    visited = {}
     ans = ''
+    visited = {i:False for i in range(0, 10000)}
     a, b = map(int, read().split())
     bfs(a, b, ans)
 
