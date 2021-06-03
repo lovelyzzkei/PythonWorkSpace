@@ -1,14 +1,12 @@
 import sys; read = sys.stdin.readline
 
-dp = [1] * 2_147_483_647 
-
-def multiply(a, b, c):
+def mul(a, b, c):
     if b == 1:
-        dp[b] = a % c
-    if dp[b] == 1:
-        dp[b] = (multiply(a, b//2, c) % c) * (multiply(a, b-b//2, c) % c)
-    return dp[b]
-
+        return a % c
+    if b % 2 == 0:  # b가 짝수일 경우
+        return (mul(a, b//2, c) ** 2) % c
+    if b % 2 == 1:
+        return (mul(a, b-1, c) * (a%c)) % c
 
 a, b, c = map(int, read().split())
-print(multiply(a, b, c))
+print(mul(a, b, c))

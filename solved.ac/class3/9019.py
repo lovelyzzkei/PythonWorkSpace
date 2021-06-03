@@ -1,52 +1,47 @@
 import sys; read = sys.stdin.readline
-from queue import Queue
+from collections import deque
 
-def D(node):
-    return [(node[0]*2)%10000, node[1]+'D']
+def DSLR(node):
+    d1 = node // 1000
+    d2 = node // 100 - d1 * 10
+    d3 = node // 10 - d1 * 100 - d2 * 10
+    d4 = node % 10
 
-def S(node):
-    if node[0] == 0:
-        return [9999, node[1]+'S']
-    return [node[0]-1, node[1]+'S']
+    d = (node*2)%10000
+    s = (node-1 if node != 0 else 9999)
+    l = ((d2 * 10 + d3) * 10 + d4) * 10 + d1
+    r = ((d4 * 10 + d1) * 10 + d2) * 10 + d3
 
-def L(node):
-    first = node[0] // 1000
-    last = node[0] % 1000
-    new = last * 10 + first
-    return [new, node[1]+'L']
-
-def R(node):
-    first = node[0] // 10
-    last = node[0] % 10
-    new = last * 1000 + first
-    return [new, node[1]+'R']
+    return [d, s, l, r]
 
 
-
-
-def bfs(a, b, ans):
-    dq = Queue()
-    dq.put([a, ans])
-
+def bfs(a, b):
+    dq = deque([[DSLR(a), '']])
     while dq:
-        node = dq.get()
-        if node[0] == b:
-            ret.append(node[1])
-            return
-        if not visited[node[0]]:
-            visited[node[0]] = True
-            nextNode = [D(node), S(node), L(node), R(node)]
-            for item in nextNode:
-                if not visited[item[0]]:
-                    dq.put(item)
+        nextNode = dq.popleft()
+        for idx, way in enumerate(nextNode[0]):
+            if idx == 0:
+                last = 'D'
+            if idx == 1:
+                last = 'S'
+            if idx == 2:
+                last = 'L'
+            if idx == 3:
+                last = 'R'
+
+            if way == b:
+                ret.append(nextNode[1] + last)
+                return
+            elif not visited[way]:
+                visited[way] = True
+                dq.append([DSLR(way), nextNode[1] + last])
     
 
 ret = []
 
 for t in range(int(read())):
-    ans = ''
     visited = {i:False for i in range(0, 10000)}
     a, b = map(int, read().split())
-    bfs(a, b, ans)
+    bfs(a, b)
 
 print('\n'.join(ret))
