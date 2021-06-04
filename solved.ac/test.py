@@ -1,3 +1,4 @@
-from collections import deque
+import math
 
-print(len(deque([])))
+print(math.sqrt(25))
+print(25 // math.sqrt(25))

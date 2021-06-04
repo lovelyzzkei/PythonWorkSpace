@@ -1,55 +1,58 @@
 import sys; read = sys.stdin.readline
 from collections import deque
 
+def can_eat(y, x, shark_size):
+    return (0 < map_[y][x] < shark_size)
+
 # 시간 줄이기
-def bfs(y, x, shark_size, eat):
-    dq = deque([[y, x, 0]])    # BFS를 돌리기 위한 덱
-    fishes = deque([])     # 먹을 수 있는 물고기들을 저장하기 위한 덱
-    visited = [[False for j in range(N)] for i in range(N)]
-    isSearched = False      # 가장 가까운 물고기가 발견되었는지를 확인하기 위한 플래그
-    min_time = 9999         # 가장 가까운 물고기까지의 거리도 저장
-
+def bfs(y, x, time, shark_size, eat):
+    dq = deque([[y, x]])    # BFS를 돌리기 위한 덱
+    fishes = []
+    visited = [[0 for j in range(N)] for i in range(N)]    # 시간도 같이 저장
+    visited[y][x] = time    # 이전 단계까지의 시간 불러오기
+    
     while dq:
-        cur = dq.popleft()  
-        cury = cur[0]; curx = cur[1]; cur_time = cur[2]    # 현재 상어의 위치
-        visited[cury][curx] = True  
+        # 지금 덱에 거리가 가장 가까운 물고기가 있다고 하더라도
+        # 그런 물고기가 더 있을 수 있으므로 해당 덱까지는 다 돌려봐야한다.
+        qlen = len(dq)
+        while qlen:
+            cur = dq.popleft()  
+            cury = cur[0]; curx = cur[1]   # 현재 상어의 위치 
 
-        # 가장 가까운 물고기가 발견되면 그 시점부터 큐에 있는 다른 원소들 제거
-        if map_[cury][curx] > 0 and map_[cury][curx] < shark_size:
-            fishes.append(cur)
-            isSearched = True; min_time = min(min_time, cur_time)
+            # 다음 좌표를 넣을 때 필요한 좌표만 넣기
+            for i in range(4):
+                ny = cury + dy[i]; nx = curx + dx[i]
+                # 다음 이동할 좌표가 맵 내에 존재하고, 방문하지 않았을 경우
+                if 0<=ny<N and 0<=nx<N and visited[ny][nx] == 0:
+                    visited[ny][nx] = visited[cury][curx] + 1
+                    # 만약 다음 좌표가 이동이 가능한 좌표이면 이동
+                    if map_[ny][nx] == 0 or map_[ny][nx] == shark_size:
+                        dq.append([ny, nx])
 
-        if isSearched:  # 가장 가까운 물고기가 발견되었다면 다른 공간 탐색할 필요가 없음
-            continue
+                    # 만약 다음 좌표에 먹을 수 있는 물고기가 있다면 물고기 리스트에 삽입
+                    elif 0< map_[ny][nx] < shark_size:
+                        fishes.append([ny, nx])
 
-        dy = [-1, 0, 1, 0]
-        dx = [0, 1, 0, -1]
+            qlen -= 1
 
-        for i in range(4):
-            ny = cury + dy[i]; nx = curx + dx[i]
-            # 다음 이동할 좌표가 맵 내에 존재하고, 방문하지 않았으며, 현재 상어의 크기보다 작거나 같은 물고기가 존재하는 경우
-            if 0<=ny<N and 0<=nx<N and not visited[ny][nx] and map_[ny][nx] <= shark_size:
-                dq.append([ny, nx, cur_time+1])
-        
-    # while문이 끝났다는 것은 fish에 고기가 존재하거나 아예 없거나
-    if len(fishes) == 0: return 0   # 고기가 아예 없는 경우
+        # 덱의 크기만큼 돌리고 나서 리스트에 물고기가 있다는 것은 먹을 수 있는 물고기가 있다는 것
+        # 그 중에서 가장 왼쪽 위의 물고기를 찾자.
+        if fishes:
+            ny, nx = min(fishes)
+            map_[ny][nx] = 0
+            min_time = visited[ny][nx]
+            eat += 1
+            if shark_size == eat:
+                shark_size += 1; eat = 0
+            return ny, nx, min_time, shark_size, eat
 
-    # 고기가 있는 경우 가장 위에서 왼쪽의 고기를 찾아야 한다.
-    minY = N; minX = N
-    while fishes:
-        fish = fishes.popleft()
-        if fish[2] == min_time and fish[0] <= minY and fish[1] <= minX:
-                minY = fish[0]; minX = fish[1]
-#    print(f'({y}, {x}) -> ({minY}. {minX}), time: {min_time}')
-    # 찾은 고기 먹고 다음 단계 진행
-    map_[minY][minX] = 0
-    eat += 1
-    if shark_size == eat:   # 자기 자신의 크기만큼 먹었다면 크기 1 증가
-        shark_size += 1; eat = 0
-    return min_time + bfs(minY, minX, shark_size, eat)  # 고기를 먹은 위치부터 다시 진행
-
+    # 고기가 아예 없는 경우
+    print(time)
+    exit(0)
 
 N = int(read())
+dy = [-1, 0, 1, 0]
+dx = [0, 1, 0, -1]
 
 map_ = []
 visited = [[False for j in range(N)] for i in range(N)]
@@ -62,5 +65,11 @@ for i in range(N):
 for i in range(N):
     for j in range(N):
         if map_[i][j] == 9:
+            y, x = i, j
             map_[i][j] = 0
-            print(bfs(i, j, 2, 0))
+
+# 고기를 다 먹을 때까지 반복
+time, shark_size, eat = 0, 2, 0
+while True:
+    y, x, time, shark_size, eat = bfs(y, x, time, shark_size, eat)
+
