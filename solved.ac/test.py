@@ -1,1 +1,2 @@
-print(0 == False)
+print(6/ 2)
+print(3.0 == 3)
