@@ -1,2 +1,3 @@
-a = [1, 3, 2,-1]
-print(a[:-1])
+a = [['a', 'b', 'c'], ['a', 'a', 'a']]
+print(" ".join(x for x in a[1]))
+print("\n".join([" ".join(a[i]) for i in range(len(a))]))
