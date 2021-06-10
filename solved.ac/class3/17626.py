@@ -1,18 +1,15 @@
 import sys; read = sys.stdin.readline
-import math
-
-def four_squares(n):
-    if math.sqrt(n) == n // math.sqrt(n):
-        dp[n] = 1
-    else:
-        for i in range(1, n):
-            dp[n] = min(dp[n], dp[i] + dp[n-i])
-
-
+from math import sqrt
 
 dp = [5] * 50001
-dp[1] = 1; dp[2] = 2; dp[3] = 3
 n = int(read())
-for i in range(4, n+1):
-    four_squares(i)
+
+dp[0] = 0; dp[1] = 1
+root = int(sqrt(n))
+
+for i in range(n + 1):
+    for j in range(1, root+1):
+        if i + pow(j, 2) <= n:
+            dp[i + pow(j, 2)] = min(dp[i + pow(j, 2)], dp[i] + 1)
+
 print(dp[n])
