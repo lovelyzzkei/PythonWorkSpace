@@ -1,35 +1,44 @@
 import sys; read = sys.stdin.readline
-from collections import deque
 
-# BFS 풀이 -> 메모리 초과
-# def bfs(x, y):
-#     dq = deque([[x, INF]])
-#     ans = 0
+def find(x):
+    if parent[x] == x:
+        return x
+    parent[x] = find(parent[x])
+    return parent[x]
 
-#     while dq:
-#         cur, cur_weight = dq.popleft()
-#         if cur == y:
-#             ans = max(ans, cur_weight)
-#             continue
-        
-#         for next in island[x]:
-#             if not visited[cur][next[0]]:
-#                 visited[cur][next[0]] = True; visited[next[0]][cur] = True
-#                 dq.append([next[0], min(cur_weight, next[1])])
+def union(x, y, cost):
+    px = find(x); py = find(y)
 
-#     print(ans)
-#     return
+    # 다리가 양방향이므로 x에서 y로 가는 길에는 두 가지 방법이 존재한다
+    # 1. x에서 자신의 부모를 거쳐 y로 가는 길
+    # 2. y에서 자신의 부모를 거쳐 x로 가는 길
+    x_y = min(weight[x][px], weight[px][y])     
+    y_x = min(weight[y][py], weight[py][x])
+    weight[x][y] = max(x_y, y_x, cost)
+    weight[y][x] = weight[x][y]
 
-INF = 1_000_000_001
+    # 경로 압축을 위한 union-by-rank
+    if rank[x] < rank[y]:
+        parent[x] = y
+    else:
+        parent[y] = x
+        if rank[x] == rank[y]:
+            rank[x] += 1
+
 n, m = map(int, read().split())
-island = {i:[] for i in range(1, n+1)}
-visited = [[False for i in range(n+1)] for j in range(n+1)]
 
-for _ in range(m):
+parent = {i:i for i in range(1, n+1)}
+rank = {i:0 for i in range(1, n+1)}
+weight = [[0] * (n+1) for i in range(n+1)]
+
+for t in range(m):
     x, y, cost = map(int, read().split())
-    island[x].append([y, cost])
-    island[y].append([x, cost])
-
+    union(x, y, cost)
 
 x, y = map(int, read().split())
-bfs(x, y)
+for i in range(1, n+1):
+    for j in range(1, n+1):
+        print(weight[i][j], end=" ")
+    print()
+
+print(weight[x][y])
