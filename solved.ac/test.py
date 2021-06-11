@@ -1,1 +1,2 @@
-print(list(3))
+a = []
+print(a.extend(0))

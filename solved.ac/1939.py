@@ -1,44 +1,54 @@
 import sys; read = sys.stdin.readline
+from collections import deque
 
-def find(x):
-    if parent[x] == x:
-        return x
-    parent[x] = find(parent[x])
-    return parent[x]
+def binary_search():
+    global max_weight
+    res = 1
+    min = 1
+    while min <= max_weight:
+        print(max_weight)
+        mid = (min + max_weight) // 2
+        # 만약에 현재 섬에서 최소 중량 제한과 최대 중량 제한 사이의 중량 제한을 가진 다리를 건널 수 있다면
+        # 두 섬 사이를 이동할 수 있는 중량의 최대는 최소한 중간값보다 크거나 같게 된다.
+        # 따라서 현재 섬에서 탐색을 하여 만약에 이동이 가능하면 중간값을 최솟값으로 잡고 다시 탐색을 시작하고
+        # 그렇지 않다면 중간값을 최댓값으로 잡고 다시 탐색을 시작하여
+        # 최종적으로 두 섬을 이동할 수 있는 중량의 최댓값을 구하게 된다.
+        if bfs(s, e, mid):
+            res = max(res, mid)
+            min = mid + 1
+        else:
+            max_weight = mid - 1
 
-def union(x, y, cost):
-    px = find(x); py = find(y)
+    return res
 
-    # 다리가 양방향이므로 x에서 y로 가는 길에는 두 가지 방법이 존재한다
-    # 1. x에서 자신의 부모를 거쳐 y로 가는 길
-    # 2. y에서 자신의 부모를 거쳐 x로 가는 길
-    x_y = min(weight[x][px], weight[px][y])     
-    y_x = min(weight[y][py], weight[py][x])
-    weight[x][y] = max(x_y, y_x, cost)
-    weight[y][x] = weight[x][y]
+def bfs(x, y, c):
+    dq = deque([x])
+    visited = {i: False for i in range(1, n+1)}
+    visited[x] = True
+    
+    while dq:
+        cur = dq.popleft()
 
-    # 경로 압축을 위한 union-by-rank
-    if rank[x] < rank[y]:
-        parent[x] = y
-    else:
-        parent[y] = x
-        if rank[x] == rank[y]:
-            rank[x] += 1
+        if cur == y:
+            return True
+        for next, w in _map[cur]:
+            if not visited[next] and w >= c:
+                visited[next] = True
+                dq.append(next)
+
+    return False
 
 n, m = map(int, read().split())
 
-parent = {i:i for i in range(1, n+1)}
-rank = {i:0 for i in range(1, n+1)}
-weight = [[0] * (n+1) for i in range(n+1)]
+max_weight = 0
+_map = {i:[] for i in range(1, n+1)}
 
+# 1~다리의 최대 중량에서 섬 사이에 이동할 수 있는 최대 중량을 이분 탐색으로 찾음
 for t in range(m):
-    x, y, cost = map(int, read().split())
-    union(x, y, cost)
+    x, y, c = map(int, read().split())
+    max_weight = max(max_weight, c)
+    _map[x].append([y, c])
+    _map[y].append([x, c])
 
-x, y = map(int, read().split())
-for i in range(1, n+1):
-    for j in range(1, n+1):
-        print(weight[i][j], end=" ")
-    print()
-
-print(weight[x][y])
+s, e = map(int, read().split())
+print(binary_search())
