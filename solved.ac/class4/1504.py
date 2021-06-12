@@ -12,19 +12,18 @@ def dijkstra(start, end):
 
     q = []
     d = [INF] * (n+1)   # 최단 경로 저장
-    heapq.heappush(q, (start, 0))
+    d[start] = 0
+    heapq.heappush(q, (0, start))
 
     while q:
-        now, dist = heapq.heappop(q)
+        dist, now = heapq.heappop(q)
         if d[now] < dist:   # 이미 경로가 해당 노드를 거쳐가는 것보다 짧다면 패스
             continue
         for next in graph[now]:      
-            if end != n and next[0] == n:   # 아직 특정 정점을 거치지도 않았는데 최종 도착지에 가면 안됨
-                continue
             cost = dist + next[1]
             if cost < d[next[0]]:
                 d[next[0]] = cost
-                heapq.heappush(q, (next[0], cost))
+                heapq.heappush(q, (cost, next[0]))
     
     return d[end]
     
