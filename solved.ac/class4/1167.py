@@ -2,50 +2,61 @@ import sys; read = sys.stdin.readline
 from collections import deque
 
 def find(x):
-    if parent[x] == x:
+    if parent[x][0] == x:
         return x
-    parent[x] = find(parent[x])
-    return parent[x]
+    parent[x][0] = find(parent[x][0])
+    return parent[x][0]
 
 def union(x, y):
     x = find(x); y = find(y)
 
-    if x!= y: parent[y] = x
+    if x == y: return
+    if parent[x][1] < parent[y][1]:
+        parent[x][0] = y
+    else:
+        parent[y][0] = x
+        if parent[x][1] == parent[y][1]:
+            parent[x][1] += 1
 
+def dfs(root, child, height):
+    dq = deque([[child, height]])
+    visited = {i:0 for i in range(1, v+1)}
+    visited[root] = 1; visited[child] = 1
+    max_height = 0
 
-def dfs(n):
-    dq = deque([[n, 0]])
-    
     while dq:
-        cur, cur_h = dq.popleft()
-        for next in tree[cur]:
-            print(cur, next)
-            if not visited[next[0]]:
-                visited[next[0]] = True
-                height.append(cur_h + next[1])
-                dq.append([next[0], cur_h + next[1]])
+        hasChild = False
+        cur, cur_h = dq.pop()
 
-    print(height)
+        for child in tree[cur]:
+            if not visited[child[0]]:
+                visited[child[0]] = 1
+                dq.append([child[0], cur_h + child[1]])
+                hasChild = True
+        if not hasChild:
+            max_height = max(max_height, cur_h)  # 현재 가지에서 가장 긴 길이
+
+    return max_height       
 
 
 v = int(read())
-tree = {i:[] for i in range(1, v+1)}   # 트리를 저장할 딕셔너리
-parent = {i:i for i in range(1, v+1)}   # 트리의 루트 노드를 찾기 위한 딕셔너리
-visited = [False] * (v+1)
-height = []     # 각 노드까지의 거리를 저장할 리스트
 
-# 트리에 간선 정보 저장
-for i in range(1, v+1):
-    edge_info = list(map(int, read().split()))[1:-1]
-    length = len(edge_info); idx = 0
-    while length:      # 딕셔너리에 간선 정보 저장 [연결 노드, 거리]
-        union(v, edge_info[idx])
-        tree[i].append(edge_info[idx: idx+2])
-        idx += 2; length -= 2
+tree = {i:[] for i in range(1, v+1)}
+parent = {i:[i, 0] for i in range(1, v+1)}
 
-# 해당 트리의 루트 노드를 구하여 최대 길이 구함 -> but 루트 노드를 포함하지 않더라도 최대 길이가 나올 수 있음
-# 백트래킹?
-visited[parent[1]] = True
-dfs(parent[1])
+for _ in range(v):
+    edge = list(map(int, read().split()))[:-1]
+    node = edge[0]
+    for i in range(len(edge) // 2):
+        union(node, edge[i*2+1])        # 루트 노드를 찾기 위한 union-find
+        tree[node].append(edge[i*2+1:(i+1)*2+1])
 
-print(max(height))
+root = parent[1][0]
+
+ret = []
+for child in tree[root]:
+    ret.append(dfs(root, child[0], child[1]))
+
+ret.sort(reverse=True)
+if len(ret) == 1:   print(ret[0])
+else:   print(ret[0] + ret[1])

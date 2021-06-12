@@ -18,7 +18,7 @@ def dijkstra(start, end):
         now, dist = heapq.heappop(q)
         if d[now] < dist:   # 이미 경로가 해당 노드를 거쳐가는 것보다 짧다면 패스
             continue
-        for next in graph[now]:
+        for next in graph[now]:      
             if end != n and next[0] == n:   # 아직 특정 정점을 거치지도 않았는데 최종 도착지에 가면 안됨
                 continue
             cost = dist + next[1]
@@ -36,11 +36,18 @@ for _ in range(e):
     graph[b].append([a, c])
 
 v1, v2 = map(int, input().split())
-route1 = dijkstra(1, v1) + dijkstra(v1, v2) + dijkstra(v2, n)
-route2 = dijkstra(1, v2) + dijkstra(v2, v1) + dijkstra(v1, n)
+if v1 == 1 and v2 == n:
+    route = dijkstra(1, n)
+elif v1 == 1:
+    route = dijkstra(1, v2) + dijkstra(v2, n)
+elif v2 == n:
+    route = dijkstra(1, v1) + dijkstra(v1, n)
+else:
+    route = min(dijkstra(1, v1) + dijkstra(v1, v2) + dijkstra(v2, n), \
+        dijkstra(1, v2) + dijkstra(v2, v1) + dijkstra(v1, n))
 
 # 갈 수 없는 경우 -1 출력
-if min(route1, route2) >= INF:
+if route >= INF:
     print(-1)
 else:
-    print(min(route1, route2))
+    print(route)
