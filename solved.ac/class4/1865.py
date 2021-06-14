@@ -1,41 +1,35 @@
 import sys; read = sys.stdin.readline
 from collections import deque
 
-def bf(start):
+def spfa(start):
     d = [INF] * (n+1)
     d[start] = 0
-    inqueue = [False] * (n+1)
+    cycle = [0] * (n+1)
 
     dq = deque([start])
-    inqueue[start] = True
+
+    inQueue = [False] * (n+1)
+    inQueue[start] = True
 
     while dq:
-        u = dq.popleft()
-        inqueue[u] = False
+        now = dq.popleft()
+        inQueue[now] = False
 
-        for i in range(len(_map[u])):
-            v, w = _map[u][i]
+        if now == start and d[now] < 0:
+            return True
 
-            if d[u] + w < d[v]:
-                d[v] = d[u] + w
+        for nextNode in _map[now]:
+            v, w = nextNode
+            if d[now] + w < d[v]:
+                d[v] = d[now] + w
 
-                if inqueue[v] == False:
+                if not inQueue[v]:
+                    cycle[v] += 1
+                    if cycle[v] >= n:   # 음수 사이클이 존재하는 경우
+                        return False
                     dq.append(v)
-                    inqueue[v] = True
+                    inQueue[v] == True
 
-    return True if d[start] < 0 else False
-    # for _ in range(n-1):
-    #     for node in _map:
-    #         for neighbor in _map[node]:
-    #             v, w = neighbor
-    #             if d[node] != INF and d[node] + w < d[v]:
-    #                 d[v] = d[node] + w
-
-    # 음수 사이클 확인 
-    # for node in _map:
-    #     for neighbor in _map[node]:
-    #         v, w = neighbor
-    #         if d[node] != INF and d[node] + w < d[v]:
 
 
 tc = int(read())
@@ -57,7 +51,7 @@ for t in range(tc):
         _map[s].append([e, -t])
 
     for i in range(1, n+1):
-        if bf(i):
+        if spfa(i):
             isBack = True
             break
 
