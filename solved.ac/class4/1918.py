@@ -14,6 +14,7 @@ def postfix(exp):
             while s and s[-1] != '(':
                 ret += s.pop()
             s.append(exp[i])
+            
         elif exp[i] == '*' or exp[i] == '/':
             while s and s[-1] != '(':
                 if s[-1] == '+' or s[-1] == '-':
@@ -24,8 +25,8 @@ def postfix(exp):
         else:
             s.append(exp[i])
     
-    for c in s:
-        ret += c
+    while s:
+        ret += s.pop()
     
     return ret
 
