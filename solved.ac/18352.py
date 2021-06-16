@@ -28,8 +28,6 @@ def dijkstra(start, k):
         print(-1)
 
 
-
-
 n, m, k, x = map(int, read().split())
 graph = {i:[] for i in range(1, n+1)}; INF = int(1e8)
 for _ in range(m):
