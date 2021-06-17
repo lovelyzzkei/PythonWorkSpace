@@ -2,7 +2,7 @@ import sys; read = sys.stdin.readline
 from collections import deque
 
 def bfs(y1, x1, y2, x2):
-    visited = [[False] * n for i in range(n)]
+    visited = {i:{j:False for j in range(n)} for i in range(n)}
     visited[y1][x1] = True
     q = deque([[y1+1, 0]])
     ret = graph[y1][x1]
@@ -20,7 +20,7 @@ def bfs(y1, x1, y2, x2):
     return ret
 
 n, m = map(int, read().split())
-graph = [list(map(int, read().split())) for i in range(n)]
+graph = {i:{idx:value for idx, value in enumerate(map(int, read().split()))} for i in range(n)}
 dy = [-1, 0, 1, 0]
 dx = [0, 1, 0, -1]
 
