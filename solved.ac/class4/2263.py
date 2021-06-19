@@ -5,31 +5,23 @@ n = int(read())
 inOrder = list(map(int, read().split()))
 postOrder = list(map(int, read().split()))
 
+# 루트 노드 이전의 노드의 개수를 미리 저장하여 재귀 함수 내에서 사용!
+pos = [0] * (n+1)
+for i in range(n):
+    pos[inOrder[i]] = i
+
 ret = []
 
-def divideLeftRight(i_s, i_e, p_s, p_e):
-    global ret
-
-    if i_e-i_s == 0:    # 한쪽 가지가 비어있는 경우
-        return
-
-    if i_e-i_s == 1:
-        ret.append(inOrder[i_s])
+def preOrder(i_s, ie, ps, pe):
+    if i_s == ie:
         return
     
-    root = postOrder[p_e]
-    idx = i_s
-    while True:     # 양쪽에서 탐색을 하며 시간 반으로 줄임
-        if inOrder[idx] == root:
-            break
-        elif inOrder[i_e-idx-1] == root:
-            idx = i_e-idx-1
-            break
-        idx += 1
-
+    root = postOrder[pe-1]
     ret.append(root)
-    divideLeftRight(i_s, idx, p_s, p_s+(idx-i_s)-1)
-    divideLeftRight(idx+1, i_e, p_s+(idx-i_s), p_e-1)
+    idx = pos[root] - i_s
 
-divideLeftRight(0, len(inOrder), 0, len(inOrder)-1)
+    preOrder(i_s, i_s+idx, ps, ps+idx)
+    preOrder(i_s+idx+1, ie, ps+idx, pe-1)
+
+preOrder(0, len(inOrder), 0, len(inOrder))
 print(' '.join(str(x) for x in ret))    
