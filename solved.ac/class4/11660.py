@@ -1,32 +1,19 @@
 import sys; read = sys.stdin.readline
-from collections import deque
-
-def bfs(y1, x1, y2, x2):
-    visited = {i:{j:False for j in range(n)} for i in range(n)}
-    visited[y1][x1] = True
-    q = deque([[y1+1, 0]])
-    ret = graph[y1][x1]
-
-    while q:
-        cy, cx = q.popleft()
-
-        for i in range(4):
-            ny = cy + dy[i]; nx = cx + dx[i]
-            if y1<=ny<=y2 and x1<=nx<=x2 and not visited[ny][nx]:
-                visited[ny][nx] = True
-                ret += graph[ny][nx]
-                q.append([ny, nx])
-
-    return ret
 
 n, m = map(int, read().split())
-graph = {i:{idx:value for idx, value in enumerate(map(int, read().split()))} for i in range(n)}
-dy = [-1, 0, 1, 0]
-dx = [0, 1, 0, -1]
+t = []
+for _ in range(n):
+    t.append(list(map(int, read().split())))
+
+dp = [[0 for i in range(n+1)] for j in range(n+1)]
+for i in range(1, n+1):
+    for j in range(1, n+1):
+        dp[i][j] = dp[i][j-1] + dp[i-1][j] + t[i-1][j-1] - dp[i-1][j-1]
 
 ret = []
-for _ in range(m): 
+for _ in range(m):
     y1, x1, y2, x2 = map(int, read().split())
-    ret.append(bfs(y1-1, x1-1, y2-1, x2-1))
+    ans = dp[y2][x2] - dp[y1-1][x2] - dp[y2][x1-1] + dp[y1-1][x1-1]
+    ret.append(ans)
 
 print('\n'.join(str(x) for x in ret))
