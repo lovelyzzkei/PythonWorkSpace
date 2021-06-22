@@ -1,53 +1,74 @@
 import sys; read = sys.stdin.readline
-from math import log2
 
 def init(start, end, node):
-    if start == end:
-        tree[node][0] = t[start]
-        return tree[node][0]
-    mid = (start + end) // 2
-    tree[node][0] = init(start, mid, node*2) + init(mid+1, end, node*2+1)
-    return tree[node][0]
+    if start == end:    # 리프 노드일 경우
+        tree[node] = t[start]
+        return tree[node]
+    mid = (start+end)//2
+    # 그렇지 않을 경우 현재 노드의 합은 양쪽 자식 노드의 합과 동일
+    tree[node] = init(start, mid, node*2) + init(mid+1, end, node*2+1)
+    return tree[node]
 
-def sum(start, end, node, left, right):
-    if right < start or left > end:
-        return 0
-    if left <= start and end <= right:
-        if tree[node][1]:   # lazy 존재
-            print(tree[node])
-            tree[node][0] += (end-start+1)*tree[node][1]
-            if start != end:    # 자식 노드 존재
-                tree[node*2][1] = tree[node*2+1][1] = tree[node][1]
-            tree[node][1] = 0
+def propagate(start, end, node):
+    if lazy[node]:  # 현재 노드에 업데이트 해야 할 정보가 있다면 먼저 업데이트
+        tree[node] += (end-start+1)*lazy[node]
+        if start != end:    # 자식 노드가 존재한다면 밑으로 lazy값 전파
+            lazy[node*2] += lazy[node]
+            lazy[node*2+1] += lazy[node]
+        # 전파 이후 자기 자신의 lazy값은 0
+        lazy[node] = 0
 
-        return tree[node][0]
-    mid = (start + end) // 2
-    return sum(start, mid, node*2, left, right) + sum(mid+1, end, node*2+1, left, right)
+# 시작 idx, 끝 idx, 노드 번호, 업데이트 하는 범위, 업데이트 값
+def update(start, end, node, idx_s, idx_e, diff): 
+    # lazy 값이 존재하면 먼저 전파  
+    propagate(start, end, node)
 
-def update(start, end, node, idx_s, idx_e, diff):
+    # 현재 노드가 업데이트 하는 범위에서 벗어났다면 return
     if idx_e < start or idx_s > end:
         return
+
     if idx_s <= start and end <= idx_e:
-        tree[node][1] = diff
+        tree[node] += (end-start+1)*diff
+        if start != end:
+            lazy[node*2] += diff
+            lazy[node*2+1] += diff
         return
+
     mid = (start + end) // 2
     update(start, mid, node*2, idx_s, idx_e, diff)
     update(mid+1, end, node*2+1, idx_s, idx_e, diff)
 
+    # 양쪽 업데이트 이후에 그 정보를 조상 노드에 한번 더 업데이트 시켜줌
+    tree[node] = tree[node*2] + tree[node*2+1]
+
+
+def sum(start, end, node, left, right):
+    propagate(start, end, node)
+    if right < start or left > end:
+        return 0
+    if left <= start and end <= right:
+        return tree[node]
+    mid = (start + end) // 2
+    return sum(start, mid, node*2, left, right) + sum(mid+1, end, node*2+1, left, right)
 
 n, m, k = map(int, read().split())
-t = {i:int(read()) for i in range(1, n+1)}; t[0] = [0]
-tree = {i:[0, 0] for i in range(2**(int(log2(n))+1)+2)}
-init(1, n, 1)
+tree = [0] * (4*n)
+lazy = [0] * (4*n)
+t = []
 
+# 데이터가 존재하는 배열 받아오기
+for _ in range(n):
+    t.append(int(read()))
+
+# 세그먼트 트리 생성
+init(0, n-1, 1)
+# update 또는 sum 수행
 ret = []
 for _ in range(m+k):
-    temp = list(map(int, read().split()))
-    if temp[0] == 1:
-        b, c, d = temp[1:]
-        update(1, n, 1, b, c, d)
-        print(tree)
+    input = list(map(int, read().split()))
+    if input[0] == 1:   # 값 update
+        b, c, d = input[1:]
+        update(0, n-1, 1, b-1, c-1, d) 
     else:
-        ret.append(sum(1, n, 1, temp[1], temp[2]))
-
+        ret.append(sum(0, n-1, 1, input[1]-1, input[2]-1))
 print('\n'.join(str(x) for x in ret))
