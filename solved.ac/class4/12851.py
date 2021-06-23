@@ -1,40 +1,47 @@
 import sys; read = sys.stdin.readline
-from collections import deque
-from random import randint
+import heapq
+INF = int(1e7)
 
 n, k = map(int, read().split())
 
-def bfs(n, k):
-    visited = [False] * 100001
-    visited[n] = True
-    q = deque([n])
-    time = 0; count = 0
+def dijkstra(start, end):
+    d = [INF] * 100001
+    d[start] = 0
+    q = []
+    count = 0       # 가장 빠른 시간으로 동생을 찾는 방법의 수를 저장하는 변수
+    ans = 0        # 동생을 찾는 가장 빠른 시간을 저장하는 변수
+    isMinTime = False
+    heapq.heappush(q, (0, start)) 
 
-    if n == k:
-        return [0, 1]
+    while q:
+        dist, now = heapq.heappop(q)
+        if now == end:
+            ans = dist
+            count += 1
+            isMinTime = True
 
-    while count == 0:
-        qlen = len(q)
-        while qlen:
-            qlen -= 1
-            now = q.popleft()
-            if now-1 == k or now+1 == k or now*2 == k:
-                count += 1
-                continue
+        # 동생을 찾았을 때 우선순위 큐에 해당 시간으로 동생을 찾는 다른 방법의 수가 없으면 종료
+        if isMinTime:   
+            if dist > ans:
+                return [ans, count]
+
+        if d[now] < dist:   # 이미 해당 지점을 더 빨리 갈 수 있으면 pass
+            continue
             
-            if -1<now-1 and not visited[now-1]:
-                visited[now-1] = True
-                q.append(now-1)
-            if now+1<100001 and not visited[now+1]:
-                visited[now+1] = True
-                q.append(now+1)
-            if now*2 < 100001 and not visited[now*2]:
-                visited[now*2] = True
-                q.append(now*2)
-         
-            
-        time += 1
+        cost = dist + 1
+        if now-1 > -1 and cost <= d[now-1]:
+            d[now-1] = cost
+            heapq.heappush(q, (cost, now-1))
 
-    return [time, count]
+        if now+1 < 100001 and cost <= d[now+1]:
+            d[now+1] = cost
+            heapq.heappush(q, (cost, now+1))
+        
+        if now*2 < 100001 and cost <= d[now*2]:
+            d[now*2] = cost
+            heapq.heappush(q, (cost, now*2))
 
-print('\n'.join(str(x) for x in bfs(n, k)))
+    return [ans, count]
+
+
+print('\n'.join(str(x) for x in dijkstra(n, k)))
