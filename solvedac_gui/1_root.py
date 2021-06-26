@@ -8,7 +8,6 @@ from PyQt5 import QtCore
 from PyQt5.QtWidgets import *
 from PyQt5.QtGui import QFont, QPixmap
 
-from bs4 import BeautifulSoup
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.chrome.options import Options
@@ -31,8 +30,8 @@ class SolvedAc(QWidget):
             subprocess.Popen(r'C:\Program Files\Google\Chrome\Application\chrome.exe --remote-debugging-port=9222 --user-data-dir="C:\chrometemp1"')  # 디버거 크롬 구동
         except:
             subprocess.Popen(r'C:\Program Files (x86)\Google\Chrome\Application\chrome.exe --remote-debugging-port=9222 --user-data-dir="C:\chrometemp1"')  # 디버거 크롬 구동
-        option = webdriver.ChromeOptions()
-        option.add_argument('headless')
+        option = Options()
+        # option.add_argument(f'user-agent={userAgent}')
         option.add_experimental_option("debuggerAddress", "127.0.0.1:9222")
 
         # selenium 구동을 위한 chromedriver 설치 여부 확인. 없으면 설치
@@ -44,7 +43,7 @@ class SolvedAc(QWidget):
             driver = webdriver.Chrome(f'./{chrome_ver}/chromedriver.exe', options=option)
         driver.implicitly_wait(1)
         # 쿠키를 한번 생성해주는 것이 필요할 듯
-        driver.get("https://naver.com")
+        # driver.get("https://naver.com")
 
         # solved.ac와 연결되어 있는 로그인 사이트로 연결
         driver.get("https://www.acmicpc.net/login?next=%2Fsso%3Fsso%3Dbm9uY2U9ZWYwZTY0MTE4MWFlMDBlYTI5YzI5YmIzMjljNjExMDA%253D%26sig%3Ddf153da15f308ab03e3c71828da71b75e05537040fc62d6e7aafedfacf548435%26redirect%3Dhttps%253A%252F%252Fsolved.ac%252Fapi%252Fv3%252Fauth%252Fsso%253Fprev%253D%25252F")
