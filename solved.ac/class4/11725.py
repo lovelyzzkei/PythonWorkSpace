@@ -2,23 +2,25 @@ import sys; read = sys.stdin.readline
 from collections import deque
 
 n = int(read())
-q = deque([])
-parent = {i:i for i in range(1, n+1)}
-for _ in range(n-1):
-    a,b = map(int, read().split())
-    if a == 1 or b == 1:
-        parent[a] = 1; parent[b] = 1
-    elif parent[a] != a:    parent[b] = a
-    elif parent[b] != b:    parent[a] = b
-    else:
-        q.append([a, b])
+tree = {i:[] for i in range(1, n+1)}
+dp = [0 for _ in range(n+1)]; dp[1] = 1
 
-# bfs
-while q:
-    a, b = q.popleft()
-    if parent[a] != a:  parent[b] = a
-    elif parent[b] != b:  parent[a] = b
-    else:
-        q.append([a, b])
+for t in range(n-1):
+    u, v = map(int, read().split())
+    tree[u].append(v)
+    tree[v].append(u)
 
-print('\n'.join(str(x) for x in list(parent.values())[1:]))
+def dfs(root):
+    q = deque([root])
+    visited = {i:False for i in range(1, n+1)}
+    visited[root] = True
+    while q:
+        node = q.popleft()
+        for child in tree[node]:
+            if not visited[child]:
+                dp[child] = node
+                visited[child] = True
+                q.append(child)
+
+dfs(1)
+print('\n'.join(str(x) for x in dp[2:]))

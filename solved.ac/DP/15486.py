@@ -5,15 +5,12 @@ for i in range(n):
     t, p = map(int, read().split())
     Ti.append(t)
     Pi.append(p)
-print(Ti)
-print(Pi)
-dp = [0] * (n+1)
-for day in range(1, n+1):
-    if day + Ti[day] -1 <= n:
-        dp[day-1+Ti[day]] = max(dp[day-1+Ti[day]], dp[day-1]+Pi[day])
-        print(day, Ti[day], dp, Pi[day])
+
+dp = [0] * (n+2)
+for i in range(n, 0, -1):
+    if i+Ti[i]-1 <= n:
+        dp[i] = max(dp[i+Ti[i]]+Pi[i], dp[i+1], dp[i])
     else:
-        dp[day] = max(dp[day], dp[day-1])
-    
-print(dp)
-print(dp[n-1])
+        dp[i] = max(dp[i], dp[i+1])
+
+print(dp[1])
