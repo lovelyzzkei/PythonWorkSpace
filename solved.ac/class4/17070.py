@@ -1,32 +1,37 @@
 import sys; read = sys.stdin.readline
-from collections import deque
-
 n = int(read())
-wall = {i: {idx: v for idx, v in enumerate(list(map(int, read().split())))} for i in range(n)}
-# 가로:1, 세로:2, 대각:3 으로 설정하여 각 방향마다 [dy, dx, 다음 방향]을 저장해놓음
-mode = {1:[[0,1,1],[1,1,3]], 2:[[1,0,2],[1,1,3]], 3:[[0,1,1],[1,0,2],[1,1,3]]}  
+MAP = [list(map(int, read().split())) for _ in range(n)]
+dp = [[[-1, 0] for _ in range(n)] for __ in range(n)]
+# 가로:1, 세로:-1, 대각:0 으로 설정하여 각 방향마다 [dy, dx, 다음 방향]을 저장해놓음
+mode = {1:[[0,1,1],[1,1,0]], -1:[[1,0,-1],[1,1,0]], 0:[[0,1,1],[1,0,-1],[1,1,0]]}  
 
 # 이동하려는 좌표가 집 안에 있는지 + 벽이 있는지
 def possible(cy, cx, dy, dx):
     if cy+dy<0 or cy+dy>=n or cx+dx<0 or cx+dx>=n:
         return False
-    return not wall[cy+dy][cx] and not wall[cy][cx+dx] and not wall[cy+dy][cx+dx]
+    return not MAP[cy+dy][cx] and not MAP[cy][cx+dx] and not MAP[cy+dy][cx+dx]
 
-# BFS로 가능한 가짓수 탐색. 이때 방문처리는 x
-def bfs(y, x):
-    q = deque([[y, x, 1]])
-    ret = 0
+dp[0][1][1] = 1
+dp[n-1][n-1][0] = 1
 
-    while q:
-        cy, cx, m = q.popleft()
-        if cy == n-1 and cx == n-1:
-            ret += 1
-            continue
+def dfs(y, x, m):
+    if dp[y][x][0] == -1:
+        dp[y][x][0] = 0
         for dir in mode[m]:
             dy, dx, next_mode = dir
-            if possible(cy, cx, dy, dx):
-                ny=cy+dy; nx=cx+dx
-                q.append([ny, nx, next_mode])
+            if possible(y, x, dy, dx):
+                ny=y+dy; nx=x+dx
+                dp[y][x][1] = next_mode
+                dp[y][x][0] += dfs(ny, nx, next_mode)
+
+    for item in dp:
+        print(item)
+    print()
     
-    return ret
-print(bfs(0, 1))
+    if m != dp[y][x][1]:
+        return 0
+    else:
+        return dp[y][x][0]
+
+    
+print(dfs(0, 1, 1))
