@@ -1,43 +1,33 @@
 import sys; read = sys.stdin.readline
-from collections import deque
-
-def bfs(start, node):
-    q = deque([[start, 0]])
-    visited = [False] * (n+1)
-    visited[start] = True
-    ret = []
-
-    while q:
-        findChild = False
-        now, dist = q.popleft()
-        for next, w in graph[now]:
-            if not visited[next]:
-                visited[next] = True
-                q.append([next, dist + w])
-
-        if not findChild:
-            if node == 0:
-                ret.append(now)
-            else:
-                ret.append(dist)
-
-    return ret if node == 0 else max(ret)
-
-
+sys.setrecursionlimit(10**9)
 n = int(read())
-graph = {i:[] for i in range(1, n+1)}
-
-for _ in range(n-1):
+tree = {i:[] for i in range(1, n+1)}
+dp = [[] for _ in range(n+1)]
+for t in range(n-1):
     u, v, w = map(int, read().split())
-    graph[u].append([v, w])
-    graph[v].append([u, w])
+    tree[u].append([v, w])
 
-# 트리의 맨 끝의 노드들 찾기
-childNode = bfs(1, 0)
+# 간단하네
+def treeDiameter(root):
+    if tree[root] == []:     # 리프노드일 경우
+        return 0
+    for child, w in tree[root]:
+        dp[root].append((w + treeDiameter(child)))
+    return max(dp[root])
 
-# 맨 끝 노드들부터 다른 모든 노드들까지의 거리 측정 (중복되는 노드들은 제외)
-tree_dia = 0
-for node in childNode:
-    tree_dia = max(tree_dia, bfs(node, 1))
+def sumNode(node):
+    if len(node) == 0:
+        return 0
+    elif len(node) == 1:
+        return node[0]
+    else:
+        tmp = node[:]
+        tmp.sort()
+        return (tmp[-1]+tmp[-2])
 
-print(tree_dia)
+treeDiameter(1)
+ans = 0
+for node in dp:
+    ans = max(ans, sumNode(node))
+
+print(ans)
