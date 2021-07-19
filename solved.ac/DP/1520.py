@@ -1,4 +1,5 @@
 import sys; read = sys.stdin.readline
+
 sys.setrecursionlimit(10**9)
 m, n = map(int, read().split())
 MAP = list(list(map(int, read().split())) for i in range(m))
