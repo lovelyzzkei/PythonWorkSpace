@@ -1,1 +1,1 @@
-print(0/2)
+print(bool({1:True, 3:False}))
