@@ -1,28 +1,22 @@
 import sys; read = sys.stdin.readline
+from bisect import bisect_left
 
 n = int(read())
-a = [0] + list(map(int, read().split()))
-lis = {i:1 for i in range(1, n+1)}
-
-def binary_search(start, end, target):
-    tmp = sorted(list(set(a[start:end])))
-    left = 0; right = len(tmp)-1
-    while left <= right:
-        mid = (left + right) // 2
-        if tmp[mid] == target:
-            return mid
-        elif tmp[mid] > target:
-            right = mid - 1
-        else:
-            left = mid + 1
+a = list(map(int, read().split()))
+lis = []
+ans = 0
+for num in a:
+    if not lis:
+        lis.append(num)
+        ans += 1
+        continue
     
-    if left > right:
-        return left
+    if lis[-1] < num:
+        lis.append(num)
+        ans += 1
     else:
-        return right
+        idx = bisect_left(lis, num)
+        lis[idx] = num
+    # print(lis, num, ans)
 
-
-for i in range(2, n+1):
-    lis[i] += binary_search(1, i, a[i])
-
-print(max(lis.values()))
+print(ans)
