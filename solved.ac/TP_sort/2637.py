@@ -20,18 +20,27 @@ def tp_sort():
             q.append(i)
 
     # 각 제품이 몇 개의 기본 부품으로 구성되어 있는지 저장하는 딕셔너리
-    total = {i:{j:0 for j in q} for i in range(1, n+1)}
+    total = {i:{j:0 for j in range(1, n+1)} for i in range(1, n+1)}
+    for base in q:
+        total[base] = "BASE"
     # print(total)
 
     while q:
         base = q.popleft()
         for mid, cnt in tree[base]:
             inDegree[mid] -= 1
-            total[mid][base] += 1
+            if total[base] != "BASE":   # 현재 다루고 있는 것이 중간 부품이라면
+                for part, num in total[base].items():
+                    total[mid][part] += num * cnt
+            else:
+                total[mid][base] += cnt
             if inDegree[mid] == 0:
                 q.append(mid)
     
-    print(total)
-
-tp_sort()
+    ret = []
+    for i, v in total[n].items():
+        if total[i] == "BASE":
+            ret.append(f"{i} {v}")
+    return ret
+print('\n'.join(x for x in tp_sort()))
 
