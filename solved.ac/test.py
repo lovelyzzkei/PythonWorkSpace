@@ -1,1 +1,2 @@
-print(bool(-1))
+a = {1:0, 2:0}
+print(any(bool(x) for x in list(a.values())))
