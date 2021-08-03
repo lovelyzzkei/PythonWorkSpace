@@ -1,5 +1,5 @@
 import sys; read = sys.stdin.readline
-from itertools import combinations
+from bisect import bisect_left, bisect_right
 
 T = int(read())
 n = int(read())
@@ -8,11 +8,14 @@ pSumA = [0] * (n+1)
 for i in range(1, n+1):
     pSumA[i] = pSumA[i-1] + a[i-1]
 
-retA = []
+retA = {}
 for i in range(1, n+1):
     for j in range(i):
-        retA.append(pSumA[i] - pSumA[j])
-retA = sorted(list(set(retA)))
+        pSum = pSumA[i] - pSumA[j]
+        try:
+            retA[pSum] += 1
+        except:
+            retA[pSum] = 1
 
 m = int(read())
 b = list(map(int, read().split()))
@@ -24,26 +27,12 @@ retB = []
 for i in range(1, m+1):
     for j in range(i):
         retB.append(pSumB[i] - pSumB[j])
-retB = sorted(list(set(retB)))
-print(retA)
-print(retB)
+retB = sorted(retB)
+# print(retA)
+# print(retB)
 
-ptr1 = 0; ptr2 = 0
-ans = 0 
-while ptr1 < len(retA) and ptr2 < len(retB):
-    partial_sum = retA[ptr1] + retB[ptr2]
-    if partial_sum == T:
-        ans += 1
-        ptr2 += 1
-    elif partial_sum < T:
-        if retA[ptr1] < retB[ptr2]:
-            ptr1 += 1
-        else:
-            ptr2 += 1
-    else:
-        if retA[ptr1] < retB[ptr2]:
-            ptr2 -= 1
-        else:
-            ptr1 -= 1
+ans = 0
+for key in retA.keys():
+    ans += retA[key] * (bisect_right(retB, T-key) - bisect_left(retB, T-key))
 
 print(ans)

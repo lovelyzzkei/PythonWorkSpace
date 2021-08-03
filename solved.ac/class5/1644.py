@@ -1,5 +1,4 @@
 import sys; read = sys.stdin.readline
-import heapq
 
 n = int(read())
 
@@ -13,24 +12,20 @@ def prime_list(n):
 
     return [i for i in range(2, n) if sieve[i] == True]
 
-ret = [0] * (n+1)
-sieve = prime_list(n+1)
-for i in sieve:
-    ret[i] += 1
+prime_number = prime_list(n+1)
+plen = len(prime_number)
+pSum = [0] * (plen+1)
+for i in range(1, plen+1):
+    pSum[i] = pSum[i-1] + prime_number[i-1]
 
-heapq.heapify(sieve)
+ptr1 = 0; ptr2 = 1; ans = 0
+while ptr1 < ptr2 and ptr2 <= plen:
+    partial_sum = pSum[ptr2] - pSum[ptr1]
+    if partial_sum <= n:
+        if partial_sum == n:
+            ans += 1
+        ptr2 += 1
+    else:
+        ptr1 += 1
 
-
-while sieve:
-    ptr1 = heapq.heappop(sieve)
-    ret[ptr1] += 1
-    qlen = len(sieve)
-    for i in range(qlen):
-        ptr2 = heapq.heappop(sieve)
-        ret[ptr2] += 1
-        if ptr1 + ptr2 <= n:
-            if ret[ptr1] >= 3 and ret[ptr2] >= 3:
-                heapq.heappush(sieve, ptr1+ptr2)
-    print(ret)
-
-print(sieve)
+print(ans)

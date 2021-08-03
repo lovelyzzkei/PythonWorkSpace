@@ -1,2 +1,5 @@
-a = {1:0, 2:0}
-print(any(bool(x) for x in list(a.values())))
+import bisect
+
+a = [1, 2, 2, 3, 4]
+print(bisect.bisect_left(a, 8))
+print(bisect.bisect_right(a, 8))
