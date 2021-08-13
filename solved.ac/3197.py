@@ -1,79 +1,70 @@
 import sys; read = sys.stdin.readline
 from collections import deque
+dy = [-1, 0, 1, 0]
+dx = [0, 1, 0, -1]
+
 
 r, c = map(int, read().split())
-lake= []; start = []    # 백조의 위치 저장
+lake= []; bird = []; num_bird = 1    # 백조의 위치 저장
+q = deque([])
 for i in range(r):
     row = read().strip(); row_list = []
-    for item in row:
-        if item == ".": row_list.append(-1)
-        elif item == "X":   row_list.append(1)
+    for j in range(c):
+        item = row[j]
+        if item == ".": 
+            row_list.append(-1)
+            q.append([i, j])
+        elif item == "X":   row_list.append(0)
         else:
-            start.append([i, row.index(item)])
-            row_list.append(2)
+            bird.append([i, j, num_bird])
+            row_list.append(num_bird)
+            num_bird += 1   # 두 백조의 id를 다르게 저장
     lake.append(row_list)
 
-# for item in lake:
-#     print(item)
-
-parents = [[[j, i] for i in range(c)] for j in range(r)]
-edge = deque([])
-canGo = False
+parents = [[-1 for j in range(c)] for i in range(r)]
+visited = [[False for j in range(c)] for i in range(r)]
 
 def inMap(y, x):
     return 0<=y<r and 0<=x<c
 
-def bfs(c1, c2):
-    global canGo
-    q = deque([c1.copy()])
-    visited = [[False for i in range(c)] for j in range(r)]
-    visited[c1[0]][c1[1]] = True
-
-    while q:
-        cy, cx = q.popleft()
-        if parents[cy][cx] == c2[:]:
-            canGo = True
-            return
-        for dy, dx in (-1, 0), (0, 1), (1, 0), (0, -1):
-            ny = cy + dy; nx = cx + dx
-            isEdge = True
+def bfs():
+    dq = deque(bird.copy())
+    for y, x, num in dq:
+        visited[y][x] = True
+    
+    while dq:
+        cy, cx, c_parent = dq.popleft()
+        for i in range(4):
+            ny=cy+dy[i]; nx=cx+dx[i]
             if inMap(ny, nx) and not visited[ny][nx]:
                 if lake[ny][nx] == -1:
-                    parents[ny][nx] = c1.copy()
                     visited[ny][nx] = True
-                    isEdge = False
-                    q.append([ny, nx])
-        # 각 영역에서 가장 가장자리에 존재하는 물들을 저장해놓음
-        if isEdge:
-            edge.append([cy, cx, c1])
+                    parents[ny][nx] = c_parent
+                    dq.append([ny, nx, c_parent])
 
-date = 0
-# 각 백조와 맞닿아 있는 물을 해당 백조에게 귀속시킴
-bfs(start[0], start[1])
-bfs(start[1], start[0])
-if not canGo:
-    while True:
-        # 얼음 녹이기 -> 모든 물에 대하여 돌리는게 맞는듯...
-        qlen = len(edge)
-        for tc in range(qlen):
-            y, x, p = edge.popleft()
-            lake[y][x] = -1
-            parents[y][x] = p
-            for dy, dx in (-1, 0), (0, 1), (1, 0), (0, -1):
-                ny = y + dy; nx = x + dx
-                if inMap(ny, nx):
-                    if parents[ny][nx] != [ny, nx] and parents[ny][nx] != p: # 해당 물이 어딘가에 귀속되어있음 -> 연결되어있음
-                        canGo = True
-                        break
-                    if lake[ny][nx] == 1:
-                        edge.append([ny, nx, parents[y][x]])
-            
-            # print()
-            # for item in parents:
-            #     print(item)
-        
-        if canGo:
-            break
-        date += 1
+
+for y, x, _id in bird:
+    parents[y][x] = _id
+bfs()
+
+# for item in parents:
+#     print(item)
+
+findBird1 = False; findBird2 = False; date = 0
+while not findBird1 or not findBird2:
+    qlen = len(q)
+    for tc in range(qlen):
+        y, x = q.popleft()
+        if parents[y][x] == 1: findBird1 = True
+        if parents[y][x] == 2: findBird2 = True
+        for i in range(4):
+            ny = y + dy[i]; nx = x + dx[i]
+            if inMap(ny, nx) and lake[ny][nx] == 0:
+                lake[ny][nx] = -1
+                if parents[y][x] != -1:
+                    parents[ny][nx] = parents[y][x]
+                q.append([ny, nx])
+
+    date += 1
 
 print(date)
