@@ -14,6 +14,7 @@ from collections import deque
 r, c = map(int, read().split())
 lake = []; t = []; edge = deque([])
 melted = [[False for j in range(c)] for i in range(r)]
+parent = [i for i in range(r*c)]
 for i in range(r):
     tmp = []; input = read().strip()
     for j in range(c):
@@ -21,60 +22,77 @@ for i in range(r):
             tmp.append(1)
         else:
             tmp.append(0)
-            if input[j] == '.':
-                edge.append([i, j])
-                melted[i][j] = True
-            else:
+            melted[i][j] = True
+            edge.append([i, j])
+            if input[j] == 'L':
                 t.append([i, j])
     lake.append(tmp)
 
 # for item in lake:
 #     print(item)
 # 1. 초기 상태에서 백조가 만날 수 있는지 확인
+def find(target):
+    if target == parent[target]:
+        return target
+    parent[target] = find(parent[target])
+    return parent[target]
+
+def union(a, b):
+    a = find(a); b = find(b)
+    if a < b:
+        parent[b] = a
+    else:
+        parent[a] = b
+
 def inMap(y, x):
     return 0<=y<r and 0<=x<c
 
+
 def bfs():
-    q = deque([t[0]])
+    q = deque(t.copy())
     visited = [[False for j in range(c)] for i in range(r)]
     for y, x in q:
         visited[y][x] = True
     while q:
         cy, cx = q.popleft()
-        if [cy, cx] == t[1]:
-            return True
         for dy, dx in (-1, 0), (0, 1), (1, 0), (0, -1):
             ny=cy+dy; nx=cx+dx
             if inMap(ny, nx) and not visited[ny][nx] and lake[ny][nx] == 0:
+                parent[ny*c+nx] = parent[cy*c+cx]
                 visited[ny][nx] = True
                 q.append([ny, nx])
 
-    return False
-
 def melt():
     qlen = len(edge)
-    find1 = False; find2 = False
     for tc in range(qlen):
         cy, cx = edge.popleft()
         for dy, dx in (-1, 0), (0, 1), (1, 0), (0, -1):
             ny=cy+dy; nx=cx+dx
-            if inMap(ny, nx) and not melted[ny][nx]:
-                if [ny, nx] == t[0]:
-                    find1 = True
-                elif [ny, nx] == t[1]:
-                    find2 = True 
-                elif lake[ny][nx] == 1:
-                    lake[ny][nx] = 0
-                    melted[ny][nx] = True
-                    edge.append([ny, nx])
-        if find1 and find2:
-            return True
-    return False
+            if inMap(ny, nx) and not melted[ny][nx] and lake[ny][nx] == 1:
+                parent[ny*c+nx] = parent[cy*c+cx]
+                melted[ny][nx] = True
+                edge.append([ny, nx])
+
+def merge():
+    qlen = len(edge)
+    for tc in range(qlen):
+        cy, cx = edge[tc]
+        for dy, dx in (-1, 0), (0, 1), (1, 0), (0, -1):
+            ny=cy+dy; nx=cx+dx
+            if inMap(ny, nx) and melted[ny][nx] and parent[ny*c+nx] != parent[cy*c+cx]:
+                union(ny*c+nx, cy*c+cx)
 
 date = 0
-while True:
-    # 얼음 녹이며 만나는지 확인
-    if melt():
-        break
-    date += 1
+bfs()
+l1 = t[0][0]*c+t[0][1]
+l2 = t[1][0]*c+t[1][1]
+if find(l1) != find(l2):
+    while True:
+        # 얼음 녹이기
+        melt()
+        date += 1
+        merge()
+        if find(l1) == find(l2):
+            break
+
 print(date)
