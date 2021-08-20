@@ -13,7 +13,6 @@ from collections import deque
 
 r, c = map(int, read().split())
 lake = []; t = []; edge = deque([])
-melted = [[False for j in range(c)] for i in range(r)]
 parent = [i for i in range(r*c)]
 for i in range(r):
     tmp = []; input = read().strip()
@@ -22,7 +21,6 @@ for i in range(r):
             tmp.append(1)
         else:
             tmp.append(0)
-            melted[i][j] = True
             edge.append([i, j])
             if input[j] == 'L':
                 t.append([i, j])
@@ -68,9 +66,9 @@ def melt():
         cy, cx = edge.popleft()
         for dy, dx in (-1, 0), (0, 1), (1, 0), (0, -1):
             ny=cy+dy; nx=cx+dx
-            if inMap(ny, nx) and not melted[ny][nx] and lake[ny][nx] == 1:
+            if inMap(ny, nx) and lake[ny][nx] == 1:
                 parent[ny*c+nx] = parent[cy*c+cx]
-                melted[ny][nx] = True
+                lake[ny][nx] = 0
                 edge.append([ny, nx])
 
 def merge():
@@ -79,20 +77,20 @@ def merge():
         cy, cx = edge[tc]
         for dy, dx in (-1, 0), (0, 1), (1, 0), (0, -1):
             ny=cy+dy; nx=cx+dx
-            if inMap(ny, nx) and melted[ny][nx] and parent[ny*c+nx] != parent[cy*c+cx]:
+            if inMap(ny, nx) and lake[ny][nx] == 0 and parent[ny*c+nx] != parent[cy*c+cx]:
                 union(ny*c+nx, cy*c+cx)
 
 date = 0
 bfs()
 l1 = t[0][0]*c+t[0][1]
 l2 = t[1][0]*c+t[1][1]
-if find(l1) != find(l2):
-    while True:
-        # 얼음 녹이기
-        melt()
-        date += 1
-        merge()
-        if find(l1) == find(l2):
-            break
+
+while True:
+    # 얼음 녹이기
+    melt()
+    date += 1
+    merge()
+    if find(l1) == find(l2):
+        break
 
 print(date)
