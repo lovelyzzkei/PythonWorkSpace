@@ -20,48 +20,20 @@ for tc in range(t):
                     prisoner.append([i, j])
         prison.append(tmp)
 
+    d = [[INF for j in range(w)] for i in range(h)]
+
     def inMap(y, x):
         return 0<=y<h and 0<=x<w
 
+    # 죄수자 2명에 대해서 다익스트라 실행 -> 경로에 존재하는 문의 개수와 경로를 저장
     def dijkstra(y, x):
-        q = [[0, y, x, []]]
-        d[y][x] = 0; ans = INF
-        doorToOpen = []
+        q = [0, y, x, []]
         heapq.heapify(q)
+        d[y][x] = 0
+        ret = []
+        
         while q:
-            dist, cy, cx, doors = heapq.heappop(q)
-            if d[cy][cx] < dist:
+            num_door, cy, cx, route = heapq.heappop(q)
+            if d[cy][cx] < num_door:
                 continue
-            if cy==0 or cy==h-1 or cx==0 or cx==w-1:
-                if dist < ans:
-                    ans = dist
-                    doorToOpen = doors
-                    continue
-            for dy, dx in (-1, 0), (0, 1), (1, 0), (0, -1):
-                ny=cy+dy; nx=cx+dx
-                if inMap(ny, nx) and prison[ny][nx] != -1:
-                    cost = dist + prison[ny][nx]
-                    if cost < d[ny][nx]:
-                        d[ny][nx] = cost
-                        if prison[ny][nx] == 1:
-                            doors.append([ny, nx])
-                            print(doors)
-                            heapq.heappush(q, (cost, ny, nx, doors[:]))
-                            doors.pop()
-                        else:
-                            heapq.heappush(q, (cost, ny, nx, doors[:]))
-        print(doorToOpen)
-        for i, j in doorToOpen:
-            prison[i][j] = 0
-        for item in d:
-            print(item)
-        return ans
-
-    ans = 0
-    for y, x in prisoner:
-        d = [[INF for j in range(w)] for i in range(h)]
-        ans += dijkstra(y, x)
-
-    ret.append(ans)
-
-print('\n'.join(str(x) for x in ret))
+            if 
