@@ -11,16 +11,15 @@ def d(a, b):
     return pow(c[a][0]-c[b][0], 2) + pow(c[a][1]-c[b][1], 2)
 
 def binary_search(s, e, t):
-    if s > e:
-        return s
-    mid = (s+e)//2
-    if c[mid][0] == t:
-        return mid
-    elif c[mid][0] > t:
-        e = mid - 1
-    else:
-        s = mid + 1
-    return binary_search(s, e, t)
+    while s <= e:
+        mid = (s+e)//2
+        if c[mid][0] == t:
+            return mid
+        elif c[mid][0] > t:
+            e = mid - 1
+        else:
+            s = mid + 1
+    return s
 
 def closestPair(s, e):
     if e-s <= 2:    # 3개의 점 -> 모두 enumerate
@@ -33,7 +32,7 @@ def closestPair(s, e):
     mid = (s+e)//2; x_mid = c[mid][0]
     dl = closestPair(s, mid)
     dr = closestPair(mid+1, e)
-    
+
     delta = min(dl, dr);
     ms = binary_search(s, e, x_mid-int(sqrt(delta)))
     me = binary_search(s, e, x_mid+int(sqrt(delta)))
