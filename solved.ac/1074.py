@@ -1,23 +1,25 @@
 import sys; read = sys.stdin.readline
-MAX_WIDTH = 32768   #2**15
 
-z = [[0 for i in range(MAX_WIDTH)] for j in range(MAX_WIDTH)]
 n, r, c = map(int, read().split())
 cnt = 0
 
-def z_search(n, r, c):
+def z_search(n, r, c, rs, cs):
     global cnt
     if n == 2:
-        z[r][c] = cnt
-        z[r][c+1] = cnt + 1
-        z[r+1][c] = cnt + 2
-        z[r+1][c+1] = cnt + 3
-        cnt += 4
+        if r-rs==1: cnt += 2
+        if c-cs==1: cnt += 1
+        return cnt
+    
+    if rs<=r<rs+n//2 and cs<=c<cs+n//2: # 제 1영역
+        return z_search(n//2, r, c, rs, cs)
+    elif rs<=r<rs+n//2 and cs+n//2<=c<cs+n: # 제 2영역
+        cnt += pow(n//2, 2)
+        return z_search(n//2, r, c, rs, cs+n//2)
+    elif rs+n//2<=r<rs+n and cs<=c<cs+n//2: # 제 3영역
+        cnt += 2 * pow(n//2, 2)
+        return z_search(n//2, r, c, rs+n//2, cs)
+    else: # 제 4영역
+        cnt += 3 * pow(n//2, 2)
+        return z_search(n//2, r, c, rs+n//2, cs+n//2)
 
-    z_search(n//2, r, c)
-    z_search(n//2, r, c+n//2)
-    z_search(n//2, r+n//2, c)
-    z_search(n//2, r+n//2, c+n//2)
-
-z_search(2**n, 0, 0)
-print(z[r][c])
+print(z_search(2**n, r, c, 0, 0))
