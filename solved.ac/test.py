@@ -1,15 +1,18 @@
-def binary_search(s, e, t):
-    if s > e:
-        return s
-    mid = (s+e)//2
-    if c[mid] == t:
-        return mid
-    elif c[mid] > t:
-        e = mid - 1
-    else:
-        s = mid + 1
-    return binary_search(s, e, t)
+from math import floor
 
-c = [1, 2, 3, 4, 6, 7, 8]
-print(binary_search(0, len(c)-1, 5))
-print(c[0:8])
+def crossingpoint(s, t):
+    if s + 1 == t:
+        return s
+    mid = floor((s+t)/2)
+    # print(mid)
+    if a[mid] >= b[mid] and a[mid+1] <= b[mid+1]:
+        return mid
+    if a[mid] >= b[mid]:
+        return crossingpoint(mid, t)
+    else:
+        return crossingpoint(s, mid)
+
+a = [8, 2, 4, 1]
+b = [1, 2, 3, 8]
+
+print(crossingpoint(0, 3))
