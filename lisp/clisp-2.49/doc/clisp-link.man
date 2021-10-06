@@ -1,0 +1,115 @@
+CLISP-LINK(1)                 Platform: win32gcc                 CLISP-LINK(1)
+
+
+
+[1mNAME[0m
+       clisp-link - link a new external module to [34m[1mCLISP[0m[1m[22m[1].
+
+[1mSYNOPSIS[0m
+       [1mclisp-link [22m[[1mcreate[22m] [[4mmodule[24m] [[4mfile[24m...]
+
+       [1mclisp-link [22m[[1madd[22m] [[4msource[24m] [[4mdestination[24m] [[4mmodule[24m...]
+
+       [1mclisp-link [22m[[1mrun[22m] [[4msource[24m] [[4mmodule[24m...]
+
+[1mDESCRIPTION[0m
+       This shell script operates on [34m[1mCLISP[0m[1m[22m[1] module sets and linking sets:
+
+       +o   [1mcreate[22ms new module sets out of source files
+
+       +o   [1madd[22ms module sets to a linking set to produce a new linking set
+
+       +o   [1mrun[22ms [34m[1mCLISP[0m[1m[22m[1] with module sets added
+
+       +o   [4mOnly[24m [4min[24m [34m[1mCLISP[0m[1m[22m[1] [4mbuilt[24m [1mwithout [4m[22mconfigure[24m [4mflag[0m
+           [1m--without-dynamic-modules[4m[22m.[0m
+
+           [1minstall[22ms new module sets for general use
+
+[1mOPTIONS[0m
+       [1mcreate[0m
+           The command
+
+               $ [1mclisp-link create [4m[22mmodule[24m [4mfile[24m ...
+
+           creates a module set in [4mmodule[24m directory which refers (via symbolic
+           links) to files [4mfile[24m... The files are expected to be modules of
+           their own.
+
+       [1madd[0m
+           The command
+
+               $ [1mclisp-link add [4m[22msource[24m [4mdestination[24m [4mmodule[24m ...
+
+           combines the linking set in directory [4msource[24m and the modules in
+           directories [4mmodule[24m... to a new linking set, in the directory
+           [4mdestination[24m which is newly created.
+
+       [1mrun[0m
+           The command
+
+               $ [1mclisp-link run [4m[22msource[24m [4mmodule[24m ...
+
+           runs the linking set in directory [4msource[24m, with the modules in
+           directories [4mmodule[24m... Unless [34m[1mCLISP[0m[1m[22m[1] has been built with the
+           configuration option [1m--without-dynamic-modules[22m, the loading will be
+           performed using [1mSYS::DYNLOAD-MODULES[22m. Otherwise - this is much
+           slower - a temporary linking set will be created and deleted
+           afterwards.
+
+[1mEXAMPLES[0m
+       See Section 32.2.6, "Example".
+
+[1mFILES[0m
+       [1mclisp-link [22mneeds a "link kit" directory containing:
+
+       +o   "modules.c"
+
+       +o   "clisp.h"
+
+       [1mclisp-link [22mexpects to find these files in a subdirectory linkkit/ of
+       the installation directory (i.e., [4mCUSTOM:*LIB-DIRECTORY*[24m) which it
+       acquires by running
+
+           $ `dirname $0`/clisp [1m-b[0m
+
+       This can be overridden by the [34m[1menvironment variable[0m[1m[22m[4] [1mCLISP_LINKKIT[22m.
+
+[1mSEE ALSO[0m
+           CLISP impnotes
+           clisp(1)
+
+[1mAUTHORS[0m
+       [1mBruno Haible [22m<[34m[1mhttp://www.haible.de/bruno/[0m[1m[22m>
+           The original author and long-time maintainer.
+
+       [1mMichael Stoll [22m<[34m[1mhttp://www.faculty.iu-bremen.de/mstoll/[0m[1m[22m>
+           The original author.
+
+       [1mSam Steingold [22m<[34m[1mhttp://sds.podval.org/[0m[1m[22m>
+           Co-maintainer since 1998.
+
+       [1mOthers[0m
+           See [4mCOPYRIGHT[24m [4m(file[24m [4min[24m [4mthe[24m [4mCLISP[24m [4msources)[24m  for the list of other
+           contributors and the license.
+
+[1mCOPYRIGHT[0m
+       Copyright (C) 1992-2010 Bruno Haible
+       Copyright (C) 1998-2010 Sam Steingold
+
+[1mNOTES[0m
+        1. [1mCLISP[0m
+           http://clisp.cons.org
+
+        2. [1mMERGE-PATHNAMES[0m
+           http://www.ai.mit.edu/projects/iiip/doc/CommonLISP/HyperSpec/Body/fun_merge-pathnames.html
+
+        3. [1mUSER-HOMEDIR-PATHNAME[0m
+           http://www.ai.mit.edu/projects/iiip/doc/CommonLISP/HyperSpec/Body/fun_user-homedir-pathname.html
+
+        4. environment variable
+           [set $man.base.url.for.relative.links]/basedefs/xbd_chap08.html
+
+
+
+CLISP 2.49                 Last modified: 2010-07-07             CLISP-LINK(1)

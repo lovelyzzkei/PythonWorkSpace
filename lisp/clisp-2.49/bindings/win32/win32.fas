@@ -1,0 +1,3172 @@
+(|SYSTEM|::|VERSION| '(20080430.))
+#0Y_ #0Y |CHARSET|::|UTF-8|
+#Y(#:|1 10 (DEFPACKAGE "WIN32" (:NICKNAMES "WOE32" "W32") ...)-1-1|
+   #20Y(00 00 00 00 00 00 00 00 20 01 DA DB 63 64 64 31 F0 3E 19 01)
+   ("WIN32" ("WOE32" "W32"))
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|1 10 (DEFPACKAGE "WIN32" (:NICKNAMES "WOE32" "W32") ...)-1-2|
+   #34Y(00 00 00 00 00 00 00 00 20 01 DA DB 71 DD 38 06 C7 F9 C8 FA 8F 77 08 DE
+        DB 31 ED DF DB 31 EC 3E 19 01)
+   ("COMMON-LISP" "WIN32" #.#'|COMMON-LISP|::|STRING=|
+    #.#'|COMMON-LISP|::|PACKAGE-NAME| "COMMON-LISP" "CS-COMMON-LISP")
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|1 10 (DEFPACKAGE "WIN32" (:NICKNAMES "WOE32" "W32") ...)-1-3|
+   #20Y(00 00 00 00 00 00 00 00 20 01 DA DB 64 DC 2D 04 03 3E 19 01)
+   ("defconstant" "EXPORTING" "WIN32" |SYSTEM|::|SHADOWING-IMPORT-CERROR|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|1 10 (DEFPACKAGE "WIN32" (:NICKNAMES "WOE32" "W32") ...)-1-4|
+   #20Y(00 00 00 00 00 00 00 00 20 01 DA DB 64 DC 2D 04 03 3E 19 01)
+   ("defun" "EXPORTING" "WIN32" |SYSTEM|::|SHADOWING-IMPORT-CERROR|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|1 10 (DEFPACKAGE "WIN32" (:NICKNAMES "WOE32" "W32") ...)-1-5|
+   #20Y(00 00 00 00 00 00 00 00 20 01 DA DB 64 DC 2D 04 03 3E 19 01)
+   ("defmacro" "EXPORTING" "WIN32" |SYSTEM|::|SHADOWING-IMPORT-CERROR|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|1 10 (DEFPACKAGE "WIN32" (:NICKNAMES "WOE32" "W32") ...)-1-6|
+   #20Y(00 00 00 00 00 00 00 00 20 01 DA DB 64 DC 2D 04 03 3E 19 01)
+   ("def-c-type" "EXPORTING" "WIN32" |SYSTEM|::|SHADOWING-IMPORT-CERROR|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|1 10 (DEFPACKAGE "WIN32" (:NICKNAMES "WOE32" "W32") ...)-1-7|
+   #20Y(00 00 00 00 00 00 00 00 20 01 DA DB 64 DC 2D 04 03 3E 19 01)
+   ("def-c-enum" "EXPORTING" "WIN32" |SYSTEM|::|SHADOWING-IMPORT-CERROR|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|1 10 (DEFPACKAGE "WIN32" (:NICKNAMES "WOE32" "W32") ...)-1-8|
+   #20Y(00 00 00 00 00 00 00 00 20 01 DA DB 64 DC 2D 04 03 3E 19 01)
+   ("def-c-struct" "EXPORTING" "WIN32" |SYSTEM|::|SHADOWING-IMPORT-CERROR|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|1 10 (DEFPACKAGE "WIN32" (:NICKNAMES "WOE32" "W32") ...)-1-9|
+   #20Y(00 00 00 00 00 00 00 00 20 01 DA DB 64 DC 2D 04 03 3E 19 01)
+   ("def-c-var" "EXPORTING" "WIN32" |SYSTEM|::|SHADOWING-IMPORT-CERROR|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|1 10 (DEFPACKAGE "WIN32" (:NICKNAMES "WOE32" "W32") ...)-1-10|
+   #20Y(00 00 00 00 00 00 00 00 20 01 DA DB 64 DC 2D 04 03 3E 19 01)
+   ("def-call-out" "EXPORTING" "WIN32" |SYSTEM|::|SHADOWING-IMPORT-CERROR|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|1 10 (DEFPACKAGE "WIN32" (:NICKNAMES "WOE32" "W32") ...)-1-11|
+   #17Y(00 00 00 00 00 00 00 00 20 01 DA DB 31 EC 3E 19 01)
+   (("CS-COMMON-LISP" "FFI") "WIN32")
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|1 10 (DEFPACKAGE "WIN32" (:NICKNAMES "WOE32" "W32") ...)-1-12|
+   #15Y(00 00 00 00 00 00 00 00 20 01 DA 31 D9 19 01) ("WIN32")
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|NIL| |COMMON-LISP|::|NIL|))
+#Y(#:|12 12 (IN-PACKAGE "W32")-2|
+   #17Y(00 00 00 00 00 00 00 00 20 01 DA 31 F6 0F 01 19 01)
+   ("W32" |COMMON-LISP|::|*PACKAGE*|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|14 14 (default-foreign-language :STDC-STDCALL)-3|
+   #36Y(03 00 01 00 00 00 00 00 20 01 DA DB 38 05 72 6B 53 08 63 AF 30 02 C8 0F
+        04 54 64 67 00 00 00 30 02 55 19 02)
+   (#.#'|EXT|::|PACKAGE-LOCK| ("FFI")
+    #.(|SYSTEM|::|GET-SETF-SYMBOL| '|EXT|::|PACKAGE-LOCK|) :|STDC-STDCALL|
+    |FFI|::|*FOREIGN-LANGUAGE*|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|17 17 (def-c-type handle c-pointer)-5-1|
+   #18Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 31 E6 3E 19 01)
+   (|WIN32|::|handle|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|17 17 (def-c-type handle c-pointer)-5-2-1|
+   #17Y(00 00 00 00 00 00 00 00 20 01 DA DB 30 02 3E 19 01)
+   (|FFI|::|C-POINTER| |WIN32|::|handle| |FFI|::|PARSE-C-TYPE|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|17 17 (def-c-type handle c-pointer)-5-2-2|
+   #13Y(00 00 00 00 00 00 00 00 20 01 C5 19 01) (|WIN32|::|handle|)
+   |COMMON-LISP|::|NIL|)
+#Y(#:|18 18 (def-c-type dword uint32)-6-1|
+   #18Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 31 E6 3E 19 01)
+   (|WIN32|::|dword|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|18 18 (def-c-type dword uint32)-6-2-1|
+   #17Y(00 00 00 00 00 00 00 00 20 01 DA DB 30 02 3E 19 01)
+   (|FFI|::|UINT32| |WIN32|::|dword| |FFI|::|PARSE-C-TYPE|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|18 18 (def-c-type dword uint32)-6-2-2|
+   #13Y(00 00 00 00 00 00 00 00 20 01 C5 19 01) (|WIN32|::|dword|)
+   |COMMON-LISP|::|NIL|)
+#Y(#:|19 19 (def-c-type word uint16)-7-1|
+   #18Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 31 E6 3E 19 01)
+   (|WIN32|::|word|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|19 19 (def-c-type word uint16)-7-2-1|
+   #17Y(00 00 00 00 00 00 00 00 20 01 DA DB 30 02 3E 19 01)
+   (|FFI|::|UINT16| |WIN32|::|word| |FFI|::|PARSE-C-TYPE|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|19 19 (def-c-type word uint16)-7-2-2|
+   #13Y(00 00 00 00 00 00 00 00 20 01 C5 19 01) (|WIN32|::|word|)
+   |COMMON-LISP|::|NIL|)
+#Y(#:|21 26 (default-foreign-library "kernel32.dll")-8|
+   #36Y(03 00 01 00 00 00 00 00 20 01 DA DB 38 05 72 6B 53 08 63 AF 30 02 C8 0F
+        04 54 64 67 00 00 00 30 02 55 19 02)
+   (#.#'|EXT|::|PACKAGE-LOCK| ("FFI")
+    #.(|SYSTEM|::|GET-SETF-SYMBOL| '|EXT|::|PACKAGE-LOCK|) "kernel32.dll"
+    |FFI|::|*FOREIGN-LIBRARY*|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|28 28 (def-call-out GetCommandLineA (:RETURN-TYPE c-string) ...)-9-1|
+   #18Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 31 E6 3E 19 01)
+   (|WIN32|::|GetCommandLineA|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|28 28 (def-call-out GetCommandLineA (:RETURN-TYPE c-string) ...)-9-2|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA DB DC 70 03 63 6B 04 01 02 6E 06 05 93
+        00 07 E0 2F 07 E0 AD 32 9C CB 19 02)
+   ("GetCommandLineA" #1=((:|RETURN-TYPE| |FFI|::|C-STRING|) (:|ARGUMENTS|))
+    (|FFI|::|DEF-CALL-OUT| |WIN32|::|GetCommandLineA| . #1#)
+    |FFI|::|PARSE-C-FUNCTION| |FFI|::|*FOREIGN-LIBRARY*|
+    |FFI|::|FIND-FOREIGN-FUNCTION| |WIN32|::|GetCommandLineA|
+    |SYSTEM|::|REMOVE-OLD-DEFINITIONS|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|29 29 (def-call-out GetLastError (:RETURN-TYPE dword) ...)-10-1|
+   #18Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 31 E6 3E 19 01)
+   (|WIN32|::|GetLastError|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|29 29 (def-call-out GetLastError (:RETURN-TYPE dword) ...)-10-2|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA DB DC 70 03 63 6B 04 01 02 6E 06 05 93
+        00 07 E0 2F 07 E0 AD 32 9C CB 19 02)
+   ("GetLastError" #1=((:|RETURN-TYPE| |WIN32|::|dword|) (:|ARGUMENTS|))
+    (|FFI|::|DEF-CALL-OUT| |WIN32|::|GetLastError| . #1#)
+    |FFI|::|PARSE-C-FUNCTION| |FFI|::|*FOREIGN-LIBRARY*|
+    |FFI|::|FIND-FOREIGN-FUNCTION| |WIN32|::|GetLastError|
+    |SYSTEM|::|REMOVE-OLD-DEFINITIONS|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|30 30 (def-call-out GetCurrentProcess (:RETURN-TYPE handle) ...)-11-1|
+   #18Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 31 E6 3E 19 01)
+   (|WIN32|::|GetCurrentProcess|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|30 30 (def-call-out GetCurrentProcess (:RETURN-TYPE handle) ...)-11-2|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA DB DC 70 03 63 6B 04 01 02 6E 06 05 93
+        00 07 E0 2F 07 E0 AD 32 9C CB 19 02)
+   ("GetCurrentProcess" #1=((:|RETURN-TYPE| |WIN32|::|handle|) (:|ARGUMENTS|))
+    (|FFI|::|DEF-CALL-OUT| |WIN32|::|GetCurrentProcess| . #1#)
+    |FFI|::|PARSE-C-FUNCTION| |FFI|::|*FOREIGN-LIBRARY*|
+    |FFI|::|FIND-FOREIGN-FUNCTION| |WIN32|::|GetCurrentProcess|
+    |SYSTEM|::|REMOVE-OLD-DEFINITIONS|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|31 31 (def-call-out GetCurrentThread (:RETURN-TYPE handle) ...)-12-1|
+   #18Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 31 E6 3E 19 01)
+   (|WIN32|::|GetCurrentThread|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|31 31 (def-call-out GetCurrentThread (:RETURN-TYPE handle) ...)-12-2|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA DB DC 70 03 63 6B 04 01 02 6E 06 05 93
+        00 07 E0 2F 07 E0 AD 32 9C CB 19 02)
+   ("GetCurrentThread" #1=((:|RETURN-TYPE| |WIN32|::|handle|) (:|ARGUMENTS|))
+    (|FFI|::|DEF-CALL-OUT| |WIN32|::|GetCurrentThread| . #1#)
+    |FFI|::|PARSE-C-FUNCTION| |FFI|::|*FOREIGN-LIBRARY*|
+    |FFI|::|FIND-FOREIGN-FUNCTION| |WIN32|::|GetCurrentThread|
+    |SYSTEM|::|REMOVE-OLD-DEFINITIONS|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|32 32 (def-call-out GetCurrentProcessId (:RETURN-TYPE dword) ...)-13-1|
+   #18Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 31 E6 3E 19 01)
+   (|WIN32|::|GetCurrentProcessId|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|32 32 (def-call-out GetCurrentProcessId (:RETURN-TYPE dword) ...)-13-2|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA DB DC 70 03 63 6B 04 01 02 6E 06 05 93
+        00 07 E0 2F 07 E0 AD 32 9C CB 19 02)
+   ("GetCurrentProcessId" #1=((:|RETURN-TYPE| |WIN32|::|dword|) (:|ARGUMENTS|))
+    (|FFI|::|DEF-CALL-OUT| |WIN32|::|GetCurrentProcessId| . #1#)
+    |FFI|::|PARSE-C-FUNCTION| |FFI|::|*FOREIGN-LIBRARY*|
+    |FFI|::|FIND-FOREIGN-FUNCTION| |WIN32|::|GetCurrentProcessId|
+    |SYSTEM|::|REMOVE-OLD-DEFINITIONS|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|33 33 (def-call-out GetProcessVersion (:RETURN-TYPE dword) ...)-14-1|
+   #18Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 31 E6 3E 19 01)
+   (|WIN32|::|GetProcessVersion|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|33 33 (def-call-out GetProcessVersion (:RETURN-TYPE dword) ...)-14-2|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA DB DC 70 03 63 6B 04 01 02 6E 06 05 93
+        00 07 E0 2F 07 E0 AD 32 9C CB 19 02)
+   ("GetProcessVersion"
+    #1=((:|RETURN-TYPE| |WIN32|::|dword|)
+        (:|ARGUMENTS| (|WIN32|::|pid| |WIN32|::|dword|)))
+    (|FFI|::|DEF-CALL-OUT| |WIN32|::|GetProcessVersion| . #1#)
+    |FFI|::|PARSE-C-FUNCTION| |FFI|::|*FOREIGN-LIBRARY*|
+    |FFI|::|FIND-FOREIGN-FUNCTION| |WIN32|::|GetProcessVersion|
+    |SYSTEM|::|REMOVE-OLD-DEFINITIONS|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|34 35 (def-call-out GetProcessId (:RETURN-TYPE dword) ...)-15-1|
+   #18Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 31 E6 3E 19 01)
+   (|WIN32|::|GetProcessId|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|34 35 (def-call-out GetProcessId (:RETURN-TYPE dword) ...)-15-2|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA DB DC 70 03 63 6B 04 01 02 6E 06 05 93
+        00 07 E0 2F 07 E0 AD 32 9C CB 19 02)
+   ("GetProcessId"
+    #1=((:|RETURN-TYPE| |WIN32|::|dword|)
+        (:|ARGUMENTS| (|WIN32|::|hProcess| |WIN32|::|handle|)))
+    (|FFI|::|DEF-CALL-OUT| |WIN32|::|GetProcessId| . #1#)
+    |FFI|::|PARSE-C-FUNCTION| |FFI|::|*FOREIGN-LIBRARY*|
+    |FFI|::|FIND-FOREIGN-FUNCTION| |WIN32|::|GetProcessId|
+    |SYSTEM|::|REMOVE-OLD-DEFINITIONS|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|36 36 (def-call-out GetCurrentThreadId (:ARGUMENTS) ...)-16-1|
+   #18Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 31 E6 3E 19 01)
+   (|WIN32|::|GetCurrentThreadId|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|36 36 (def-call-out GetCurrentThreadId (:ARGUMENTS) ...)-16-2|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA DB DC 70 03 63 6B 04 01 02 6E 06 05 93
+        00 07 E0 2F 07 E0 AD 32 9C CB 19 02)
+   ("GetCurrentThreadId" #1=((:|ARGUMENTS|) (:|RETURN-TYPE| |WIN32|::|dword|))
+    (|FFI|::|DEF-CALL-OUT| |WIN32|::|GetCurrentThreadId| . #1#)
+    |FFI|::|PARSE-C-FUNCTION| |FFI|::|*FOREIGN-LIBRARY*|
+    |FFI|::|FIND-FOREIGN-FUNCTION| |WIN32|::|GetCurrentThreadId|
+    |SYSTEM|::|REMOVE-OLD-DEFINITIONS|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|37 38 (def-call-out GetProcessIdOfThread (:RETURN-TYPE dword) ...)-17-1|
+   #18Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 31 E6 3E 19 01)
+   (|WIN32|::|GetProcessIdOfThread|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|37 38 (def-call-out GetProcessIdOfThread (:RETURN-TYPE dword) ...)-17-2|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA DB DC 70 03 63 6B 04 01 02 6E 06 05 93
+        00 07 E0 2F 07 E0 AD 32 9C CB 19 02)
+   ("GetProcessIdOfThread"
+    #1=((:|RETURN-TYPE| |WIN32|::|dword|)
+        (:|ARGUMENTS| (|WIN32|::|hThread| |WIN32|::|handle|)))
+    (|FFI|::|DEF-CALL-OUT| |WIN32|::|GetProcessIdOfThread| . #1#)
+    |FFI|::|PARSE-C-FUNCTION| |FFI|::|*FOREIGN-LIBRARY*|
+    |FFI|::|FIND-FOREIGN-FUNCTION| |WIN32|::|GetProcessIdOfThread|
+    |SYSTEM|::|REMOVE-OLD-DEFINITIONS|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|39 40 (def-call-out GetThreadId (:RETURN-TYPE dword) ...)-18-1|
+   #18Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 31 E6 3E 19 01)
+   (|WIN32|::|GetThreadId|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|39 40 (def-call-out GetThreadId (:RETURN-TYPE dword) ...)-18-2|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA DB DC 70 03 63 6B 04 01 02 6E 06 05 93
+        00 07 E0 2F 07 E0 AD 32 9C CB 19 02)
+   ("GetThreadId"
+    #1=((:|RETURN-TYPE| |WIN32|::|dword|)
+        (:|ARGUMENTS| (|WIN32|::|hThread| |WIN32|::|handle|)))
+    (|FFI|::|DEF-CALL-OUT| |WIN32|::|GetThreadId| . #1#)
+    |FFI|::|PARSE-C-FUNCTION| |FFI|::|*FOREIGN-LIBRARY*|
+    |FFI|::|FIND-FOREIGN-FUNCTION| |WIN32|::|GetThreadId|
+    |SYSTEM|::|REMOVE-OLD-DEFINITIONS|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|41 42 (def-call-out GetThreadPriority (:RETURN-TYPE int) ...)-19-1|
+   #18Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 31 E6 3E 19 01)
+   (|WIN32|::|GetThreadPriority|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|41 42 (def-call-out GetThreadPriority (:RETURN-TYPE int) ...)-19-2|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA DB DC 70 03 63 6B 04 01 02 6E 06 05 93
+        00 07 E0 2F 07 E0 AD 32 9C CB 19 02)
+   ("GetThreadPriority"
+    #1=((:|RETURN-TYPE| |FFI|::|INT|)
+        (:|ARGUMENTS| (|WIN32|::|hThread| |WIN32|::|handle|)))
+    (|FFI|::|DEF-CALL-OUT| |WIN32|::|GetThreadPriority| . #1#)
+    |FFI|::|PARSE-C-FUNCTION| |FFI|::|*FOREIGN-LIBRARY*|
+    |FFI|::|FIND-FOREIGN-FUNCTION| |WIN32|::|GetThreadPriority|
+    |SYSTEM|::|REMOVE-OLD-DEFINITIONS|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|43 44 (def-call-out GetThreadPriorityBoost (:RETURN-TYPE boolean) ...)-20-1|
+   #18Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 31 E6 3E 19 01)
+   (|WIN32|::|GetThreadPriorityBoost|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|43 44 (def-call-out GetThreadPriorityBoost (:RETURN-TYPE boolean) ...)-20-2|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA DB DC 70 03 63 6B 04 01 02 6E 06 05 93
+        00 07 E0 2F 07 E0 AD 32 9C CB 19 02)
+   ("GetThreadPriorityBoost"
+    #1=((:|RETURN-TYPE| |COMMON-LISP|::|BOOLEAN|)
+        (:|ARGUMENTS| (|WIN32|::|hThread| |WIN32|::|handle|)
+         (|WIN32|::|no-boost| (|FFI|::|C-PTR| |COMMON-LISP|::|BOOLEAN|)
+          :|OUT|)))
+    (|FFI|::|DEF-CALL-OUT| |WIN32|::|GetThreadPriorityBoost| . #1#)
+    |FFI|::|PARSE-C-FUNCTION| |FFI|::|*FOREIGN-LIBRARY*|
+    |FFI|::|FIND-FOREIGN-FUNCTION| |WIN32|::|GetThreadPriorityBoost|
+    |SYSTEM|::|REMOVE-OLD-DEFINITIONS|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|45 46 (def-call-out GetProcessPriorityBoost (:RETURN-TYPE boolean) ...)-21-1|
+   #18Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 31 E6 3E 19 01)
+   (|WIN32|::|GetProcessPriorityBoost|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|45 46 (def-call-out GetProcessPriorityBoost (:RETURN-TYPE boolean) ...)-21-2|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA DB DC 70 03 63 6B 04 01 02 6E 06 05 93
+        00 07 E0 2F 07 E0 AD 32 9C CB 19 02)
+   ("GetProcessPriorityBoost"
+    #1=((:|RETURN-TYPE| |COMMON-LISP|::|BOOLEAN|)
+        (:|ARGUMENTS| (|WIN32|::|hProcess| |WIN32|::|handle|)
+         (|WIN32|::|no-boost| (|FFI|::|C-PTR| |COMMON-LISP|::|BOOLEAN|)
+          :|OUT|)))
+    (|FFI|::|DEF-CALL-OUT| |WIN32|::|GetProcessPriorityBoost| . #1#)
+    |FFI|::|PARSE-C-FUNCTION| |FFI|::|*FOREIGN-LIBRARY*|
+    |FFI|::|FIND-FOREIGN-FUNCTION| |WIN32|::|GetProcessPriorityBoost|
+    |SYSTEM|::|REMOVE-OLD-DEFINITIONS|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|47 47 (def-call-out CloseHandle (:RETURN-TYPE boolean) ...)-22-1|
+   #18Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 31 E6 3E 19 01)
+   (|WIN32|::|CloseHandle|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|47 47 (def-call-out CloseHandle (:RETURN-TYPE boolean) ...)-22-2|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA DB DC 70 03 63 6B 04 01 02 6E 06 05 93
+        00 07 E0 2F 07 E0 AD 32 9C CB 19 02)
+   ("CloseHandle"
+    #1=((:|RETURN-TYPE| |COMMON-LISP|::|BOOLEAN|)
+        (:|ARGUMENTS| (|WIN32|::|handle| |WIN32|::|handle|)))
+    (|FFI|::|DEF-CALL-OUT| |WIN32|::|CloseHandle| . #1#)
+    |FFI|::|PARSE-C-FUNCTION| |FFI|::|*FOREIGN-LIBRARY*|
+    |FFI|::|FIND-FOREIGN-FUNCTION| |WIN32|::|CloseHandle|
+    |SYSTEM|::|REMOVE-OLD-DEFINITIONS|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|49 54 (defmacro with-handle (# &body forms) ...)-23-1|
+   #18Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 31 E6 3E 19 01)
+   (|WIN32|::|with-handle|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|49 54 (defmacro with-handle (# &body forms) ...)-23-2|
+   #23Y(00 00 00 00 00 00 00 00 20 01 DA 2F 01 DA DC DD 72 4C 32 9C C5 19 01)
+   (|WIN32|::|with-handle| |SYSTEM|::|REMOVE-OLD-DEFINITIONS|
+    #Y(|WIN32|::|with-handle|
+       #99Y(00 00 00 00 02 00 00 00 26 03 AE DA DA 64 2D 04 01 1D 3D 9F 5C 78
+            AC DA DA 63 2D 04 01 1D 36 AC 94 00 9E 5C 78 A3 5C 79 AC 38 01 31
+            69 42 02 E4 B1 B1 7B 02 7B 01 E5 E6 B4 7B 02 A1 5D 7A E7 E8 A3 7A
+            E9 B6 EA B8 7B 02 7B 03 7B 03 61 04 19 0A AE 2F 02 19 03 DD DE B1
+            DF B0 E0 6F 07 E2 B3 E3 33 07 1F)
+       (2. |SYSTEM|::|LIST-LENGTH-IN-BOUNDS-P| |SYSTEM|::|MACRO-CALL-ERROR|
+        |EXT|::|SOURCE-PROGRAM-ERROR| :|FORM| :|DETAIL|
+        "~S: ~S does not match lambda list element ~:S" |SYSTEM|::|TEXT|
+        |WIN32|::|with-handle| #1=(|WIN32|::|handle| |WIN32|::|form|)
+        |COMMON-LISP|::|LET| |COMMON-LISP|::|DECLARE| |WIN32|::|read-only|
+        |COMMON-LISP|::|UNWIND-PROTECT| |COMMON-LISP|::|PROGN|
+        |COMMON-LISP|::|WHEN| |WIN32|::|CloseHandle|)
+       (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|)
+       (|SYSTEM|::|<MACRO-FORM>| |SYSTEM|::|<ENV-ARG>|) |COMMON-LISP|::|NIL| 1)
+    (#1# |COMMON-LISP|::|&BODY| |WIN32|::|forms|))
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|56 66 (eval-when (compile eval load) (def-c-enum RIGHTS # ...))-24-1|
+   #18Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 31 E6 3E 19 01)
+   ((|WIN32|::|RIGHTS| |WIN32|::|SYNCHRONIZE|
+     |WIN32|::|STANDARD_RIGHTS_REQUIRED| |WIN32|::|STANDARD_RIGHTS_READ|
+     |WIN32|::|STANDARD_RIGHTS_WRITE| |WIN32|::|STANDARD_RIGHTS_EXECUTE|
+     |WIN32|::|STANDARD_RIGHTS_ALL| |WIN32|::|SPECIFIC_RIGHTS_ALL|
+     |WIN32|::|ACCESS_SYSTEM_SECURITY|))
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|56 66 (eval-when (compile eval load) (def-c-enum RIGHTS # ...))-24-2-1|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 8D 66 0D DB DA 71 55 8E 13 06 DA
+        DC DB 2D 03 03 DA DB 32 9D 3E 19 01)
+   (|WIN32|::|SYNCHRONIZE| 1048576.
+    (|COMMON-LISP|::|DEFCONSTANT| |WIN32|::|SYNCHRONIZE| 1048576.)
+    |SYSTEM|::|CONSTANT-WARNING|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|56 66 (eval-when (compile eval load) (def-c-enum RIGHTS # ...))-24-2-2|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 8D 66 0D DB DA 71 55 8E 13 06 DA
+        DC DB 2D 03 03 DA DB 32 9D 3E 19 01)
+   (|WIN32|::|STANDARD_RIGHTS_REQUIRED| 983040.
+    (|COMMON-LISP|::|DEFCONSTANT| |WIN32|::|STANDARD_RIGHTS_REQUIRED| 983040.)
+    |SYSTEM|::|CONSTANT-WARNING|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|56 66 (eval-when (compile eval load) (def-c-enum RIGHTS # ...))-24-2-3|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 8D 66 0D DB DA 71 55 8E 13 06 DA
+        DC DB 2D 03 03 DA DB 32 9D 3E 19 01)
+   (|WIN32|::|STANDARD_RIGHTS_READ| 131072.
+    (|COMMON-LISP|::|DEFCONSTANT| |WIN32|::|STANDARD_RIGHTS_READ| 131072.)
+    |SYSTEM|::|CONSTANT-WARNING|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|56 66 (eval-when (compile eval load) (def-c-enum RIGHTS # ...))-24-2-4|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 8D 66 0D DB DA 71 55 8E 13 06 DA
+        DC DB 2D 03 03 DA DB 32 9D 3E 19 01)
+   (|WIN32|::|STANDARD_RIGHTS_WRITE| 131072.
+    (|COMMON-LISP|::|DEFCONSTANT| |WIN32|::|STANDARD_RIGHTS_WRITE| 131072.)
+    |SYSTEM|::|CONSTANT-WARNING|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|56 66 (eval-when (compile eval load) (def-c-enum RIGHTS # ...))-24-2-5|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 8D 66 0D DB DA 71 55 8E 13 06 DA
+        DC DB 2D 03 03 DA DB 32 9D 3E 19 01)
+   (|WIN32|::|STANDARD_RIGHTS_EXECUTE| 131072.
+    (|COMMON-LISP|::|DEFCONSTANT| |WIN32|::|STANDARD_RIGHTS_EXECUTE| 131072.)
+    |SYSTEM|::|CONSTANT-WARNING|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|56 66 (eval-when (compile eval load) (def-c-enum RIGHTS # ...))-24-2-6|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 8D 66 0D DB DA 71 55 8E 13 06 DA
+        DC DB 2D 03 03 DA DB 32 9D 3E 19 01)
+   (|WIN32|::|STANDARD_RIGHTS_ALL| 2031616.
+    (|COMMON-LISP|::|DEFCONSTANT| |WIN32|::|STANDARD_RIGHTS_ALL| 2031616.)
+    |SYSTEM|::|CONSTANT-WARNING|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|56 66 (eval-when (compile eval load) (def-c-enum RIGHTS # ...))-24-2-7|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 8D 66 0D DB DA 71 55 8E 13 06 DA
+        DC DB 2D 03 03 DA DB 32 9D 3E 19 01)
+   (|WIN32|::|SPECIFIC_RIGHTS_ALL| 65535.
+    (|COMMON-LISP|::|DEFCONSTANT| |WIN32|::|SPECIFIC_RIGHTS_ALL| 65535.)
+    |SYSTEM|::|CONSTANT-WARNING|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|56 66 (eval-when (compile eval load) (def-c-enum RIGHTS # ...))-24-2-8|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 8D 66 0D DB DA 71 55 8E 13 06 DA
+        DC DB 2D 03 03 DA DB 32 9D 3E 19 01)
+   (|WIN32|::|ACCESS_SYSTEM_SECURITY| #1=16777216.
+    (|COMMON-LISP|::|DEFCONSTANT| |WIN32|::|ACCESS_SYSTEM_SECURITY| #1#)
+    |SYSTEM|::|CONSTANT-WARNING|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|56 66 (eval-when (compile eval load) (def-c-enum RIGHTS # ...))-24-2-9|
+   #18Y(00 00 00 00 00 00 00 00 20 01 DA DB DC 32 A2 3E 19 01)
+   (|WIN32|::|RIGHTS| |FFI|::|DEF-C-ENUM|
+    #S(|COMMON-LISP|::|HASH-TABLE| :|TEST| |EXT|::|FASTHASH-EQUAL|
+       (16777216. . |WIN32|::|ACCESS_SYSTEM_SECURITY|)
+       (65535. . |WIN32|::|SPECIFIC_RIGHTS_ALL|)
+       (2031616. . |WIN32|::|STANDARD_RIGHTS_ALL|)
+       (131072. . |WIN32|::|STANDARD_RIGHTS_EXECUTE|)
+       (983040. . |WIN32|::|STANDARD_RIGHTS_REQUIRED|)
+       (1048576. . |WIN32|::|SYNCHRONIZE|)))
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|56 66 (eval-when (compile eval load) (def-c-enum RIGHTS # ...))-24-2-10-1|
+   #17Y(00 00 00 00 00 00 00 00 20 01 DA DB 30 02 3E 19 01)
+   (|FFI|::|INT| |WIN32|::|RIGHTS| |FFI|::|PARSE-C-TYPE|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|56 66 (eval-when (compile eval load) (def-c-enum RIGHTS # ...))-24-2-10-2|
+   #13Y(00 00 00 00 00 00 00 00 20 01 C5 19 01) (|WIN32|::|RIGHTS|)
+   |COMMON-LISP|::|NIL|)
+#Y(#:|68 81 (def-c-enum PROCESS (PROCESS_TERMINATE 1) ...)-25-1|
+   #18Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 31 E6 3E 19 01)
+   ((|WIN32|::|PROCESS| |WIN32|::|PROCESS_TERMINATE|
+     |WIN32|::|PROCESS_CREATE_THREAD| |WIN32|::|PROCESS_SET_SESSIONID|
+     |WIN32|::|PROCESS_VM_OPERATION| |WIN32|::|PROCESS_VM_READ|
+     |WIN32|::|PROCESS_VM_WRITE| |WIN32|::|PROCESS_DUP_HANDLE|
+     |WIN32|::|PROCESS_CREATE_PROCESS| |WIN32|::|PROCESS_SET_QUOTA|
+     |WIN32|::|PROCESS_SET_INFORMATION| |WIN32|::|PROCESS_QUERY_INFORMATION|
+     |WIN32|::|PROCESS_ALL_ACCESS|))
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|68 81 (def-c-enum PROCESS (PROCESS_TERMINATE 1) ...)-25-2-1|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 8D 66 0D DB DA 71 55 8E 13 06 DA
+        DC DB 2D 03 03 DA DB 32 9D 3E 19 01)
+   (|WIN32|::|PROCESS_TERMINATE| 1.
+    (|COMMON-LISP|::|DEFCONSTANT| |WIN32|::|PROCESS_TERMINATE| 1.)
+    |SYSTEM|::|CONSTANT-WARNING|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|68 81 (def-c-enum PROCESS (PROCESS_TERMINATE 1) ...)-25-2-2|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 8D 66 0D DB DA 71 55 8E 13 06 DA
+        DC DB 2D 03 03 DA DB 32 9D 3E 19 01)
+   (|WIN32|::|PROCESS_CREATE_THREAD| 2.
+    (|COMMON-LISP|::|DEFCONSTANT| |WIN32|::|PROCESS_CREATE_THREAD| 2.)
+    |SYSTEM|::|CONSTANT-WARNING|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|68 81 (def-c-enum PROCESS (PROCESS_TERMINATE 1) ...)-25-2-3|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 8D 66 0D DB DA 71 55 8E 13 06 DA
+        DC DB 2D 03 03 DA DB 32 9D 3E 19 01)
+   (|WIN32|::|PROCESS_SET_SESSIONID| 4.
+    (|COMMON-LISP|::|DEFCONSTANT| |WIN32|::|PROCESS_SET_SESSIONID| 4.)
+    |SYSTEM|::|CONSTANT-WARNING|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|68 81 (def-c-enum PROCESS (PROCESS_TERMINATE 1) ...)-25-2-4|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 8D 66 0D DB DA 71 55 8E 13 06 DA
+        DC DB 2D 03 03 DA DB 32 9D 3E 19 01)
+   (|WIN32|::|PROCESS_VM_OPERATION| 8.
+    (|COMMON-LISP|::|DEFCONSTANT| |WIN32|::|PROCESS_VM_OPERATION| 8.)
+    |SYSTEM|::|CONSTANT-WARNING|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|68 81 (def-c-enum PROCESS (PROCESS_TERMINATE 1) ...)-25-2-5|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 8D 66 0D DB DA 71 55 8E 13 06 DA
+        DC DB 2D 03 03 DA DB 32 9D 3E 19 01)
+   (|WIN32|::|PROCESS_VM_READ| 16.
+    (|COMMON-LISP|::|DEFCONSTANT| |WIN32|::|PROCESS_VM_READ| 16.)
+    |SYSTEM|::|CONSTANT-WARNING|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|68 81 (def-c-enum PROCESS (PROCESS_TERMINATE 1) ...)-25-2-6|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 8D 66 0D DB DA 71 55 8E 13 06 DA
+        DC DB 2D 03 03 DA DB 32 9D 3E 19 01)
+   (|WIN32|::|PROCESS_VM_WRITE| 32.
+    (|COMMON-LISP|::|DEFCONSTANT| |WIN32|::|PROCESS_VM_WRITE| 32.)
+    |SYSTEM|::|CONSTANT-WARNING|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|68 81 (def-c-enum PROCESS (PROCESS_TERMINATE 1) ...)-25-2-7|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 8D 66 0D DB DA 71 55 8E 13 06 DA
+        DC DB 2D 03 03 DA DB 32 9D 3E 19 01)
+   (|WIN32|::|PROCESS_DUP_HANDLE| 64.
+    (|COMMON-LISP|::|DEFCONSTANT| |WIN32|::|PROCESS_DUP_HANDLE| 64.)
+    |SYSTEM|::|CONSTANT-WARNING|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|68 81 (def-c-enum PROCESS (PROCESS_TERMINATE 1) ...)-25-2-8|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 8D 66 0D DB DA 71 55 8E 13 06 DA
+        DC DB 2D 03 03 DA DB 32 9D 3E 19 01)
+   (|WIN32|::|PROCESS_CREATE_PROCESS| 128.
+    (|COMMON-LISP|::|DEFCONSTANT| |WIN32|::|PROCESS_CREATE_PROCESS| 128.)
+    |SYSTEM|::|CONSTANT-WARNING|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|68 81 (def-c-enum PROCESS (PROCESS_TERMINATE 1) ...)-25-2-9|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 8D 66 0D DB DA 71 55 8E 13 06 DA
+        DC DB 2D 03 03 DA DB 32 9D 3E 19 01)
+   (|WIN32|::|PROCESS_SET_QUOTA| 256.
+    (|COMMON-LISP|::|DEFCONSTANT| |WIN32|::|PROCESS_SET_QUOTA| 256.)
+    |SYSTEM|::|CONSTANT-WARNING|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|68 81 (def-c-enum PROCESS (PROCESS_TERMINATE 1) ...)-25-2-10|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 8D 66 0D DB DA 71 55 8E 13 06 DA
+        DC DB 2D 03 03 DA DB 32 9D 3E 19 01)
+   (|WIN32|::|PROCESS_SET_INFORMATION| 512.
+    (|COMMON-LISP|::|DEFCONSTANT| |WIN32|::|PROCESS_SET_INFORMATION| 512.)
+    |SYSTEM|::|CONSTANT-WARNING|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|68 81 (def-c-enum PROCESS (PROCESS_TERMINATE 1) ...)-25-2-11|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 8D 66 0D DB DA 71 55 8E 13 06 DA
+        DC DB 2D 03 03 DA DB 32 9D 3E 19 01)
+   (|WIN32|::|PROCESS_QUERY_INFORMATION| 1024.
+    (|COMMON-LISP|::|DEFCONSTANT| |WIN32|::|PROCESS_QUERY_INFORMATION| 1024.)
+    |SYSTEM|::|CONSTANT-WARNING|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|68 81 (def-c-enum PROCESS (PROCESS_TERMINATE 1) ...)-25-2-12|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 8D 66 0D DB DA 71 55 8E 13 06 DA
+        DC DB 2D 03 03 DA DB 32 9D 3E 19 01)
+   (|WIN32|::|PROCESS_ALL_ACCESS| 2035711.
+    (|COMMON-LISP|::|DEFCONSTANT| |WIN32|::|PROCESS_ALL_ACCESS| 2035711.)
+    |SYSTEM|::|CONSTANT-WARNING|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|68 81 (def-c-enum PROCESS (PROCESS_TERMINATE 1) ...)-25-2-13|
+   #18Y(00 00 00 00 00 00 00 00 20 01 DA DB DC 32 A2 3E 19 01)
+   (|WIN32|::|PROCESS| |FFI|::|DEF-C-ENUM|
+    #S(|COMMON-LISP|::|HASH-TABLE| :|TEST| |EXT|::|FASTHASH-EQUAL|
+       (2035711. . |WIN32|::|PROCESS_ALL_ACCESS|)
+       (1024. . |WIN32|::|PROCESS_QUERY_INFORMATION|)
+       (512. . |WIN32|::|PROCESS_SET_INFORMATION|)
+       (256. . |WIN32|::|PROCESS_SET_QUOTA|)
+       (128. . |WIN32|::|PROCESS_CREATE_PROCESS|)
+       (64. . |WIN32|::|PROCESS_DUP_HANDLE|)
+       (32. . |WIN32|::|PROCESS_VM_WRITE|) (16. . |WIN32|::|PROCESS_VM_READ|)
+       (8. . |WIN32|::|PROCESS_VM_OPERATION|)
+       (4. . |WIN32|::|PROCESS_SET_SESSIONID|)
+       (2. . |WIN32|::|PROCESS_CREATE_THREAD|)
+       (1. . |WIN32|::|PROCESS_TERMINATE|)))
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|68 81 (def-c-enum PROCESS (PROCESS_TERMINATE 1) ...)-25-2-14-1|
+   #17Y(00 00 00 00 00 00 00 00 20 01 DA DB 30 02 3E 19 01)
+   (|FFI|::|INT| |WIN32|::|PROCESS| |FFI|::|PARSE-C-TYPE|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|68 81 (def-c-enum PROCESS (PROCESS_TERMINATE 1) ...)-25-2-14-2|
+   #13Y(00 00 00 00 00 00 00 00 20 01 C5 19 01) (|WIN32|::|PROCESS|)
+   |COMMON-LISP|::|NIL|)
+#Y(#:|83 86 (def-call-out OpenProcess (:RETURN-TYPE handle) ...)-26-1|
+   #18Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 31 E6 3E 19 01)
+   (|WIN32|::|OpenProcess|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|83 86 (def-call-out OpenProcess (:RETURN-TYPE handle) ...)-26-2|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA DB DC 70 03 63 6B 04 01 02 6E 06 05 93
+        00 07 E0 2F 07 E0 AD 32 9C CB 19 02)
+   ("OpenProcess"
+    #1=((:|RETURN-TYPE| |WIN32|::|handle|)
+        (:|ARGUMENTS| (|WIN32|::|access-flag| |WIN32|::|dword|)
+         (|WIN32|::|inherit-handle| |COMMON-LISP|::|BOOLEAN|)
+         (|WIN32|::|pid| |WIN32|::|dword|)))
+    (|FFI|::|DEF-CALL-OUT| |WIN32|::|OpenProcess| . #1#)
+    |FFI|::|PARSE-C-FUNCTION| |FFI|::|*FOREIGN-LIBRARY*|
+    |FFI|::|FIND-FOREIGN-FUNCTION| |WIN32|::|OpenProcess|
+    |SYSTEM|::|REMOVE-OLD-DEFINITIONS|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|88 90 (eval-when (compile eval load) (defconstant BUFSIZ 4096) ...)-27-1-1|
+   #18Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 31 E6 3E 19 01)
+   (|WIN32|::|BUFSIZ|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|88 90 (eval-when (compile eval load) (defconstant BUFSIZ 4096) ...)-27-1-2|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 8D 66 0D DB DA 71 55 8E 13 06 DA
+        DC DB 2D 03 03 DA DB 32 9D 3E 19 01)
+   (|WIN32|::|BUFSIZ| 4096.
+    (|COMMON-LISP|::|DEFCONSTANT| |WIN32|::|BUFSIZ| 4096.)
+    |SYSTEM|::|CONSTANT-WARNING|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|88 90 (eval-when (compile eval load) (defconstant BUFSIZ 4096) ...)-27-2-1|
+   #18Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 31 E6 3E 19 01)
+   (|WIN32|::|MAX_PATH|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|88 90 (eval-when (compile eval load) (defconstant BUFSIZ 4096) ...)-27-2-2|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 8D 66 0D DB DA 71 55 8E 13 06 DA
+        DC DB 2D 03 03 DA DB 32 9D C5 19 01)
+   (|WIN32|::|MAX_PATH| 260.
+    (|COMMON-LISP|::|DEFCONSTANT| |WIN32|::|MAX_PATH| 260.)
+    |SYSTEM|::|CONSTANT-WARNING|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|90 95 (def-call-out GetModuleFileNameA (:RETURN-TYPE dword) ...)-28-1|
+   #18Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 31 E6 3E 19 01)
+   (|WIN32|::|GetModuleFileNameA|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|90 95 (def-call-out GetModuleFileNameA (:RETURN-TYPE dword) ...)-28-2|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA DB DC 70 03 63 6B 04 01 02 6E 06 05 93
+        00 07 E0 2F 07 E0 AD 32 9C CB 19 02)
+   ("GetModuleFileNameA"
+    #1=((:|RETURN-TYPE| |WIN32|::|dword|)
+        (:|ARGUMENTS|
+         (|WIN32|::|application-instance-handle| |WIN32|::|handle|)
+         (|WIN32|::|name|
+          (|FFI|::|C-PTR|
+           (|FFI|::|C-ARRAY-MAX| |COMMON-LISP|::|CHARACTER| 260.))
+          :|OUT| :|ALLOCA|)
+         (|WIN32|::|size| |WIN32|::|dword|)))
+    (|FFI|::|DEF-CALL-OUT| |WIN32|::|GetModuleFileNameA| . #1#)
+    |FFI|::|PARSE-C-FUNCTION| |FFI|::|*FOREIGN-LIBRARY*|
+    |FFI|::|FIND-FOREIGN-FUNCTION| |WIN32|::|GetModuleFileNameA|
+    |SYSTEM|::|REMOVE-OLD-DEFINITIONS|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|95 98 (def-call-out GetModuleHandleA (:RETURN-TYPE handle) ...)-29-1|
+   #18Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 31 E6 3E 19 01)
+   (|WIN32|::|GetModuleHandleA|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|95 98 (def-call-out GetModuleHandleA (:RETURN-TYPE handle) ...)-29-2|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA DB DC 70 03 63 6B 04 01 02 6E 06 05 93
+        00 07 E0 2F 07 E0 AD 32 9C CB 19 02)
+   ("GetModuleHandleA"
+    #1=((:|RETURN-TYPE| |WIN32|::|handle|)
+        (:|ARGUMENTS| (|WIN32|::|name| |FFI|::|C-STRING|)))
+    (|FFI|::|DEF-CALL-OUT| |WIN32|::|GetModuleHandleA| . #1#)
+    |FFI|::|PARSE-C-FUNCTION| |FFI|::|*FOREIGN-LIBRARY*|
+    |FFI|::|FIND-FOREIGN-FUNCTION| |WIN32|::|GetModuleHandleA|
+    |SYSTEM|::|REMOVE-OLD-DEFINITIONS|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|100 104 (def-call-out GetConsoleTitleA (:RETURN-TYPE dword) ...)-30-1|
+   #18Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 31 E6 3E 19 01)
+   (|WIN32|::|GetConsoleTitleA|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|100 104 (def-call-out GetConsoleTitleA (:RETURN-TYPE dword) ...)-30-2|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA DB DC 70 03 63 6B 04 01 02 6E 06 05 93
+        00 07 E0 2F 07 E0 AD 32 9C CB 19 02)
+   ("GetConsoleTitleA"
+    #1=((:|RETURN-TYPE| |WIN32|::|dword|)
+        (:|ARGUMENTS|
+         (|WIN32|::|buffer|
+          (|FFI|::|C-PTR|
+           (|FFI|::|C-ARRAY-MAX| |COMMON-LISP|::|CHARACTER| 4096.))
+          :|OUT| :|ALLOCA|)
+         (|WIN32|::|size| |WIN32|::|dword|)))
+    (|FFI|::|DEF-CALL-OUT| |WIN32|::|GetConsoleTitleA| . #1#)
+    |FFI|::|PARSE-C-FUNCTION| |FFI|::|*FOREIGN-LIBRARY*|
+    |FFI|::|FIND-FOREIGN-FUNCTION| |WIN32|::|GetConsoleTitleA|
+    |SYSTEM|::|REMOVE-OLD-DEFINITIONS|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|104 107 (def-call-out SetConsoleTitleA (:RETURN-TYPE boolean) ...)-31-1|
+   #18Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 31 E6 3E 19 01)
+   (|WIN32|::|SetConsoleTitleA|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|104 107 (def-call-out SetConsoleTitleA (:RETURN-TYPE boolean) ...)-31-2|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA DB DC 70 03 63 6B 04 01 02 6E 06 05 93
+        00 07 E0 2F 07 E0 AD 32 9C CB 19 02)
+   ("SetConsoleTitleA"
+    #1=((:|RETURN-TYPE| |COMMON-LISP|::|BOOLEAN|)
+        (:|ARGUMENTS| (|WIN32|::|title| |FFI|::|C-STRING|)))
+    (|FFI|::|DEF-CALL-OUT| |WIN32|::|SetConsoleTitleA| . #1#)
+    |FFI|::|PARSE-C-FUNCTION| |FFI|::|*FOREIGN-LIBRARY*|
+    |FFI|::|FIND-FOREIGN-FUNCTION| |WIN32|::|SetConsoleTitleA|
+    |SYSTEM|::|REMOVE-OLD-DEFINITIONS|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|109 110 (def-call-out GetConsoleWindow (:RETURN-TYPE handle) ...)-32-1|
+   #18Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 31 E6 3E 19 01)
+   (|WIN32|::|GetConsoleWindow|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|109 110 (def-call-out GetConsoleWindow (:RETURN-TYPE handle) ...)-32-2|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA DB DC 70 03 DE 6B 05 01 02 6E 06 06 93
+        00 07 E1 2F 08 E1 AD 32 9C CC 19 02)
+   ("GetConsoleWindow"
+    #1=((:|RETURN-TYPE| |WIN32|::|handle|) (:|ARGUMENTS|)
+        #2=(:|DOCUMENTATION|
+            "http://msdn.microsoft.com/library/en-us/dllproc/base/getconsolescreenbufferinfo.asp"))
+    (|FFI|::|DEF-CALL-OUT| |WIN32|::|GetConsoleWindow| . #1#)
+    |FFI|::|PARSE-C-FUNCTION| #2# |FFI|::|*FOREIGN-LIBRARY*|
+    |FFI|::|FIND-FOREIGN-FUNCTION| |WIN32|::|GetConsoleWindow|
+    |SYSTEM|::|REMOVE-OLD-DEFINITIONS|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|112 112 (def-c-struct SMALL_RECT (Left short) ...)-33|
+   #624Y(00 00 00 00 00 00 00 00 20 01 00 2B 01 DA DB DC 38 01 72 9E 2F 03 5D
+         0B 00 00 DA 2F 04 DA DF 32 A3 DA 68 01 00 E0 63 E1 E2 6B 09 E4 E5 E6
+         E7 E8 64 E9 EA EB 01 02 6F 12 70 13 EE EF F0 F1 F2 63 6E 11 19 6B 09
+         E4 F4 E6 F5 E8 64 E9 EA EB 01 02 6F 12 70 13 EE F6 F0 F7 F2 63 6E 11
+         19 6B 09 E4 65 1E E6 65 1F E8 64 E9 EA EB 01 02 6F 12 70 13 EE 65 20
+         F0 65 21 F2 63 6E 11 19 6B 09 E4 65 22 E6 65 23 E8 64 E9 EA EB 01 02
+         6F 12 70 13 EE 65 24 F0 65 25 F2 63 6E 11 19 7B 04 6B 26 E4 E5 E6 E7
+         E8 64 E9 EA EB 01 02 6F 12 70 13 EE 65 27 65 28 65 29 65 2A 65 2B 6E
+         11 2C 6B 26 E4 F4 E6 F5 E8 64 E9 EA EB 01 02 6F 12 70 13 EE 65 2D 65
+         28 65 2E 65 2A 65 2F 6E 11 2C 6B 26 E4 65 1E E6 65 1F E8 64 E9 EA EB
+         01 02 6F 12 70 13 EE 65 30 65 28 65 31 65 2A 65 32 6E 11 2C 6B 26 E4
+         65 22 E6 65 23 E8 64 E9 EA EB 01 02 6F 12 70 13 EE 65 33 65 28 65 34
+         65 2A 65 35 6E 11 2C 7B 04 2D 08 36 E0 2F 37 E0 AD 6D 38 01 32 9C 16
+         01 65 39 31 62 E2 2F 37 E2 65 3A 65 3B 32 A2 E2 65 3C 32 9C 65 3D 31
+         62 E1 2F 37 E1 65 3A 65 3E 32 A2 E1 65 3F 32 9C 65 40 31 62 65 41 31
+         62 65 42 2F 37 65 42 65 3A 65 43 32 A2 65 42 65 44 32 9C 65 42 65 45
+         DA 32 A2 65 46 31 62 65 47 31 62 65 48 2F 37 65 48 65 3A 65 49 32 A2
+         65 48 65 4A 32 9C 65 48 65 45 DA 32 A2 65 4B 31 62 65 4C 31 62 65 4D
+         2F 37 65 4D 65 3A 65 4E 32 A2 65 4D 65 4F 32 9C 65 4D 65 45 DA 32 A2
+         65 50 31 62 65 51 31 62 65 52 2F 37 65 52 65 3A 65 53 32 A2 65 52 65
+         54 32 9C 65 52 65 45 DA 32 A2 65 55 31 62 65 56 31 62 65 57 2F 37 65
+         57 65 3A 65 58 32 A2 65 57 65 59 32 9C 65 42 65 5A DA 32 A2 65 5B 31
+         62 65 5C 31 62 65 5D 2F 37 65 5D 65 3A 65 5E 32 A2 65 5D 65 5F 32 9C
+         65 48 65 5A DA 32 A2 65 60 31 62 65 61 31 62 65 62 2F 37 65 62 65 3A
+         65 63 32 A2 65 62 65 64 32 9C 65 4D 65 5A DA 32 A2 65 65 31 62 65 66
+         31 62 65 67 2F 37 65 67 65 3A 65 68 32 A2 65 67 65 69 32 9C 65 52 65
+         5A DA 32 A2 DA 65 6A 63 2D 03 6B DA 2F 6C 65 6D DA 30 6E DA AC 2F 6F
+         15 19 01)
+   (|WIN32|::|SMALL_RECT| |COMMON-LISP|::|STRUCTURE-OBJECT| |CLOS|::|CLOSCLASS|
+    |CLOS|::|CLASS-NAMES| |SYSTEM|::|STRUCTURE-UNDEFINE-ACCESSORIES|
+    |SYSTEM|::|DEFSTRUCT-DESCRIPTION| |WIN32|::|make-SMALL_RECT|
+    |WIN32|::|copy-SMALL_RECT| |WIN32|::|SMALL_RECT-p|
+    |CLOS|::|<STRUCTURE-EFFECTIVE-SLOT-DEFINITION>| :|NAME| |WIN32|::|Left|
+    :|INITARGS| (:|lEFT|) :|TYPE| :|ALLOCATION| :|INSTANCE|
+    |CLOS|::|INHERITABLE-INITER| |SYSTEM|::|MAKE-CONSTANT-INITFUNCTION|
+    |CLOS|::|MAKE-INHERITABLE-SLOT-DEFINITION-INITER| |CLOS|::|INHERITABLE-DOC|
+    (|COMMON-LISP|::|NIL|) |CLOS|::|LOCATION| 1. |CLOS|::|READONLY|
+    |CLOS|::|MAKE-INSTANCE-<STRUCTURE-EFFECTIVE-SLOT-DEFINITION>|
+    |WIN32|::|Top| (:|tOP|) (|COMMON-LISP|::|NIL|) 2. |WIN32|::|Right|
+    (:|rIGHT|) (|COMMON-LISP|::|NIL|) 3. |WIN32|::|Bottom| (:|bOTTOM|)
+    (|COMMON-LISP|::|NIL|) 4. |CLOS|::|<STRUCTURE-DIRECT-SLOT-DEFINITION>|
+    (|COMMON-LISP|::|NIL|) :|READERS| (|WIN32|::|SMALL_RECT-Left|) :|WRITERS|
+    ((|COMMON-LISP|::|SETF| |WIN32|::|SMALL_RECT-Left|))
+    |CLOS|::|MAKE-INSTANCE-<STRUCTURE-DIRECT-SLOT-DEFINITION>|
+    (|COMMON-LISP|::|NIL|) (|WIN32|::|SMALL_RECT-Top|)
+    ((|COMMON-LISP|::|SETF| |WIN32|::|SMALL_RECT-Top|)) (|COMMON-LISP|::|NIL|)
+    (|WIN32|::|SMALL_RECT-Right|)
+    ((|COMMON-LISP|::|SETF| |WIN32|::|SMALL_RECT-Right|))
+    (|COMMON-LISP|::|NIL|) (|WIN32|::|SMALL_RECT-Bottom|)
+    ((|COMMON-LISP|::|SETF| |WIN32|::|SMALL_RECT-Bottom|))
+    |CLOS|::|DEFINE-STRUCTURE-CLASS| |SYSTEM|::|REMOVE-OLD-DEFINITIONS|
+    #Y(|WIN32|::|make-SMALL_RECT|
+       #55Y(00 00 00 00 00 00 00 00 A6 1B 04 00 01 00 3D 04 3D 03 3D 02 3D 01
+            69 00 01 DF 72 45 E0 AD E1 B4 32 44 E0 AD E2 B3 32 44 E0 AD E3 B2
+            32 44 E0 AD E4 B1 32 44 15 19 05)
+       (|COMMON-LISP|::|NIL| :|lEFT| :|tOP| :|rIGHT| :|bOTTOM| 5.
+        |WIN32|::|SMALL_RECT| 1. 2. 3. 4.)
+       (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|)
+       (|COMMON-LISP|::|&KEY| (#:|lEFT| |COMMON-LISP|::|NIL|)
+        (#:|tOP| |COMMON-LISP|::|NIL|) (#:|rIGHT| |COMMON-LISP|::|NIL|)
+        (#:|bOTTOM| |COMMON-LISP|::|NIL|))
+       |COMMON-LISP|::|NIL| 1)
+    (|COMMON-LISP|::|INLINE| |WIN32|::|SMALL_RECT-p|)
+    |SYSTEM|::|INLINE-EXPANSION|
+    ((|SYSTEM|::|OBJECT|)
+     (|COMMON-LISP|::|DECLARE| (|SYSTEM|::|IN-DEFUN| |WIN32|::|SMALL_RECT-p|))
+     (|COMMON-LISP|::|BLOCK| |WIN32|::|SMALL_RECT-p|
+      (|SYSTEM|::|%STRUCTURE-TYPE-P| '|WIN32|::|SMALL_RECT|
+       |SYSTEM|::|OBJECT|)))
+    #Y(|WIN32|::|SMALL_RECT-p|
+       #16Y(00 00 00 00 01 00 00 00 20 02 DA AE 32 47 19 02)
+       (|WIN32|::|SMALL_RECT|)
+       (|COMMON-LISP|::|T| |COMMON-LISP|::|NIL| |COMMON-LISP|::|NIL|))
+    (|COMMON-LISP|::|INLINE| |WIN32|::|copy-SMALL_RECT|)
+    ((|COMMON-LISP|::|STRUCTURE|)
+     (|COMMON-LISP|::|DECLARE|
+      (|SYSTEM|::|IN-DEFUN| |WIN32|::|copy-SMALL_RECT|))
+     (|COMMON-LISP|::|BLOCK| |WIN32|::|copy-SMALL_RECT|
+      (|COMMON-LISP|::|COPY-STRUCTURE| |COMMON-LISP|::|STRUCTURE|)))
+    #Y(|WIN32|::|copy-SMALL_RECT|
+       #15Y(00 00 00 00 01 00 00 00 26 02 AD 32 46 19 02) ()
+       (|COMMON-LISP|::|T| |COMMON-LISP|::|NIL| |COMMON-LISP|::|NIL|)
+       (|COMMON-LISP|::|STRUCTURE|) |COMMON-LISP|::|NIL| 1)
+    (|COMMON-LISP|::|FUNCTION| |WIN32|::|SMALL_RECT-Left|
+     (|WIN32|::|SMALL_RECT|) |COMMON-LISP|::|T|)
+    (|COMMON-LISP|::|INLINE| |WIN32|::|SMALL_RECT-Left|)
+    |WIN32|::|SMALL_RECT-Left|
+    ((|SYSTEM|::|OBJECT|)
+     (|COMMON-LISP|::|DECLARE|
+      (|SYSTEM|::|IN-DEFUN| |WIN32|::|SMALL_RECT-Left|))
+     (|COMMON-LISP|::|BLOCK| |WIN32|::|SMALL_RECT-Left|
+      (|COMMON-LISP|::|THE| |COMMON-LISP|::|T|
+       (|SYSTEM|::|%STRUCTURE-REF| '|WIN32|::|SMALL_RECT| |SYSTEM|::|OBJECT|
+        1.))))
+    #Y(|WIN32|::|SMALL_RECT-Left|
+       #17Y(00 00 00 00 01 00 00 00 20 02 DA AE DB 32 43 19 02)
+       (|WIN32|::|SMALL_RECT| 1.)
+       (|COMMON-LISP|::|T| |COMMON-LISP|::|NIL| |COMMON-LISP|::|NIL|))
+    |SYSTEM|::|DEFSTRUCT-READER|
+    (|COMMON-LISP|::|FUNCTION| |WIN32|::|SMALL_RECT-Top|
+     (|WIN32|::|SMALL_RECT|) |COMMON-LISP|::|T|)
+    (|COMMON-LISP|::|INLINE| |WIN32|::|SMALL_RECT-Top|)
+    |WIN32|::|SMALL_RECT-Top|
+    ((|SYSTEM|::|OBJECT|)
+     (|COMMON-LISP|::|DECLARE|
+      (|SYSTEM|::|IN-DEFUN| |WIN32|::|SMALL_RECT-Top|))
+     (|COMMON-LISP|::|BLOCK| |WIN32|::|SMALL_RECT-Top|
+      (|COMMON-LISP|::|THE| |COMMON-LISP|::|T|
+       (|SYSTEM|::|%STRUCTURE-REF| '|WIN32|::|SMALL_RECT| |SYSTEM|::|OBJECT|
+        2.))))
+    #Y(|WIN32|::|SMALL_RECT-Top|
+       #17Y(00 00 00 00 01 00 00 00 20 02 DA AE DB 32 43 19 02)
+       (|WIN32|::|SMALL_RECT| 2.)
+       (|COMMON-LISP|::|T| |COMMON-LISP|::|NIL| |COMMON-LISP|::|NIL|))
+    (|COMMON-LISP|::|FUNCTION| |WIN32|::|SMALL_RECT-Right|
+     (|WIN32|::|SMALL_RECT|) |COMMON-LISP|::|T|)
+    (|COMMON-LISP|::|INLINE| |WIN32|::|SMALL_RECT-Right|)
+    |WIN32|::|SMALL_RECT-Right|
+    ((|SYSTEM|::|OBJECT|)
+     (|COMMON-LISP|::|DECLARE|
+      (|SYSTEM|::|IN-DEFUN| |WIN32|::|SMALL_RECT-Right|))
+     (|COMMON-LISP|::|BLOCK| |WIN32|::|SMALL_RECT-Right|
+      (|COMMON-LISP|::|THE| |COMMON-LISP|::|T|
+       (|SYSTEM|::|%STRUCTURE-REF| '|WIN32|::|SMALL_RECT| |SYSTEM|::|OBJECT|
+        3.))))
+    #Y(|WIN32|::|SMALL_RECT-Right|
+       #17Y(00 00 00 00 01 00 00 00 20 02 DA AE DB 32 43 19 02)
+       (|WIN32|::|SMALL_RECT| 3.)
+       (|COMMON-LISP|::|T| |COMMON-LISP|::|NIL| |COMMON-LISP|::|NIL|))
+    (|COMMON-LISP|::|FUNCTION| |WIN32|::|SMALL_RECT-Bottom|
+     (|WIN32|::|SMALL_RECT|) |COMMON-LISP|::|T|)
+    (|COMMON-LISP|::|INLINE| |WIN32|::|SMALL_RECT-Bottom|)
+    |WIN32|::|SMALL_RECT-Bottom|
+    ((|SYSTEM|::|OBJECT|)
+     (|COMMON-LISP|::|DECLARE|
+      (|SYSTEM|::|IN-DEFUN| |WIN32|::|SMALL_RECT-Bottom|))
+     (|COMMON-LISP|::|BLOCK| |WIN32|::|SMALL_RECT-Bottom|
+      (|COMMON-LISP|::|THE| |COMMON-LISP|::|T|
+       (|SYSTEM|::|%STRUCTURE-REF| '|WIN32|::|SMALL_RECT| |SYSTEM|::|OBJECT|
+        4.))))
+    #Y(|WIN32|::|SMALL_RECT-Bottom|
+       #17Y(00 00 00 00 01 00 00 00 20 02 DA AE DB 32 43 19 02)
+       (|WIN32|::|SMALL_RECT| 4.)
+       (|COMMON-LISP|::|T| |COMMON-LISP|::|NIL| |COMMON-LISP|::|NIL|))
+    (|COMMON-LISP|::|FUNCTION|
+     (|COMMON-LISP|::|SETF| |WIN32|::|SMALL_RECT-Left|)
+     (|COMMON-LISP|::|T| |WIN32|::|SMALL_RECT|) |COMMON-LISP|::|T|)
+    (|COMMON-LISP|::|INLINE|
+     (|COMMON-LISP|::|SETF| |WIN32|::|SMALL_RECT-Left|))
+    #.(|SYSTEM|::|GET-SETF-SYMBOL| '|WIN32|::|SMALL_RECT-Left|)
+    ((|SYSTEM|::|VALUE| |SYSTEM|::|OBJECT|)
+     (|COMMON-LISP|::|DECLARE|
+      (|SYSTEM|::|IN-DEFUN|
+       #1=(|COMMON-LISP|::|SETF| |WIN32|::|SMALL_RECT-Left|)))
+     (|COMMON-LISP|::|BLOCK| |WIN32|::|SMALL_RECT-Left|
+      (|SYSTEM|::|%STRUCTURE-STORE| '|WIN32|::|SMALL_RECT| |SYSTEM|::|OBJECT|
+       1. |SYSTEM|::|VALUE|)))
+    #Y(#1# #18Y(00 00 00 00 02 00 00 00 20 03 DA AE DB B1 32 44 19 03)
+       (|WIN32|::|SMALL_RECT| 1.)
+       (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+    |SYSTEM|::|DEFSTRUCT-WRITER|
+    (|COMMON-LISP|::|FUNCTION|
+     (|COMMON-LISP|::|SETF| |WIN32|::|SMALL_RECT-Top|)
+     (|COMMON-LISP|::|T| |WIN32|::|SMALL_RECT|) |COMMON-LISP|::|T|)
+    (|COMMON-LISP|::|INLINE| (|COMMON-LISP|::|SETF| |WIN32|::|SMALL_RECT-Top|))
+    #.(|SYSTEM|::|GET-SETF-SYMBOL| '|WIN32|::|SMALL_RECT-Top|)
+    ((|SYSTEM|::|VALUE| |SYSTEM|::|OBJECT|)
+     (|COMMON-LISP|::|DECLARE|
+      (|SYSTEM|::|IN-DEFUN|
+       #2=(|COMMON-LISP|::|SETF| |WIN32|::|SMALL_RECT-Top|)))
+     (|COMMON-LISP|::|BLOCK| |WIN32|::|SMALL_RECT-Top|
+      (|SYSTEM|::|%STRUCTURE-STORE| '|WIN32|::|SMALL_RECT| |SYSTEM|::|OBJECT|
+       2. |SYSTEM|::|VALUE|)))
+    #Y(#2# #18Y(00 00 00 00 02 00 00 00 20 03 DA AE DB B1 32 44 19 03)
+       (|WIN32|::|SMALL_RECT| 2.)
+       (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+    (|COMMON-LISP|::|FUNCTION|
+     (|COMMON-LISP|::|SETF| |WIN32|::|SMALL_RECT-Right|)
+     (|COMMON-LISP|::|T| |WIN32|::|SMALL_RECT|) |COMMON-LISP|::|T|)
+    (|COMMON-LISP|::|INLINE|
+     (|COMMON-LISP|::|SETF| |WIN32|::|SMALL_RECT-Right|))
+    #.(|SYSTEM|::|GET-SETF-SYMBOL| '|WIN32|::|SMALL_RECT-Right|)
+    ((|SYSTEM|::|VALUE| |SYSTEM|::|OBJECT|)
+     (|COMMON-LISP|::|DECLARE|
+      (|SYSTEM|::|IN-DEFUN|
+       #3=(|COMMON-LISP|::|SETF| |WIN32|::|SMALL_RECT-Right|)))
+     (|COMMON-LISP|::|BLOCK| |WIN32|::|SMALL_RECT-Right|
+      (|SYSTEM|::|%STRUCTURE-STORE| '|WIN32|::|SMALL_RECT| |SYSTEM|::|OBJECT|
+       3. |SYSTEM|::|VALUE|)))
+    #Y(#3# #18Y(00 00 00 00 02 00 00 00 20 03 DA AE DB B1 32 44 19 03)
+       (|WIN32|::|SMALL_RECT| 3.)
+       (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+    (|COMMON-LISP|::|FUNCTION|
+     (|COMMON-LISP|::|SETF| |WIN32|::|SMALL_RECT-Bottom|)
+     (|COMMON-LISP|::|T| |WIN32|::|SMALL_RECT|) |COMMON-LISP|::|T|)
+    (|COMMON-LISP|::|INLINE|
+     (|COMMON-LISP|::|SETF| |WIN32|::|SMALL_RECT-Bottom|))
+    #.(|SYSTEM|::|GET-SETF-SYMBOL| '|WIN32|::|SMALL_RECT-Bottom|)
+    ((|SYSTEM|::|VALUE| |SYSTEM|::|OBJECT|)
+     (|COMMON-LISP|::|DECLARE|
+      (|SYSTEM|::|IN-DEFUN|
+       #4=(|COMMON-LISP|::|SETF| |WIN32|::|SMALL_RECT-Bottom|)))
+     (|COMMON-LISP|::|BLOCK| |WIN32|::|SMALL_RECT-Bottom|
+      (|SYSTEM|::|%STRUCTURE-STORE| '|WIN32|::|SMALL_RECT| |SYSTEM|::|OBJECT|
+       4. |SYSTEM|::|VALUE|)))
+    #Y(#4# #18Y(00 00 00 00 02 00 00 00 20 03 DA AE DB B1 32 44 19 03)
+       (|WIN32|::|SMALL_RECT| 4.)
+       (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+    |COMMON-LISP|::|TYPE| |SYSTEM|::|%SET-DOCUMENTATION|
+    |CLOS|::|DEFSTRUCT-REMOVE-PRINT-OBJECT-METHOD|
+    (|FFI|::|C-STRUCT| |WIN32|::|SMALL_RECT| (|WIN32|::|Left| |FFI|::|SHORT|)
+     (|WIN32|::|Top| |FFI|::|SHORT|) (|WIN32|::|Right| |FFI|::|SHORT|)
+     (|WIN32|::|Bottom| |FFI|::|SHORT|))
+    |FFI|::|PARSE-C-TYPE| |EXPORTING|::|EXPORT-STRUCTURE-ACCESSORIES|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|113 113 (def-c-struct COORD (X short) ...)-34|
+   #366Y(00 00 00 00 00 00 00 00 20 01 00 2B 01 DA DB DC 38 01 72 9E 2F 03 5D
+         0B 00 00 DA 2F 04 DA DF 32 A3 DA 68 01 00 E0 63 E1 E2 6B 09 E4 E5 E6
+         E7 E8 64 E9 EA EB 01 02 6F 12 70 13 EE EF F0 F1 F2 63 6E 11 19 6B 09
+         E4 F4 E6 F5 E8 64 E9 EA EB 01 02 6F 12 70 13 EE F6 F0 F7 F2 63 6E 11
+         19 7B 02 6B 1E E4 E5 E6 E7 E8 64 E9 EA EB 01 02 6F 12 70 13 EE 65 1F
+         65 20 65 21 65 22 65 23 6E 11 24 6B 1E E4 F4 E6 F5 E8 64 E9 EA EB 01
+         02 6F 12 70 13 EE 65 25 65 20 65 26 65 22 65 27 6E 11 24 7B 02 2D 08
+         28 E0 2F 29 E0 AD 6D 2A 01 32 9C 16 01 65 2B 31 62 E2 2F 29 E2 65 2C
+         65 2D 32 A2 E2 65 2E 32 9C 65 2F 31 62 E1 2F 29 E1 65 2C 65 30 32 A2
+         E1 65 31 32 9C 65 32 31 62 65 33 31 62 65 34 2F 29 65 34 65 2C 65 35
+         32 A2 65 34 65 36 32 9C 65 34 65 37 DA 32 A2 65 38 31 62 65 39 31 62
+         65 3A 2F 29 65 3A 65 2C 65 3B 32 A2 65 3A 65 3C 32 9C 65 3A 65 37 DA
+         32 A2 65 3D 31 62 65 3E 31 62 65 3F 2F 29 65 3F 65 2C 65 40 32 A2 65
+         3F 65 41 32 9C 65 34 65 42 DA 32 A2 65 43 31 62 65 44 31 62 65 45 2F
+         29 65 45 65 2C 65 46 32 A2 65 45 65 47 32 9C 65 3A 65 42 DA 32 A2 DA
+         65 48 63 2D 03 49 DA 2F 4A 65 4B DA 30 4C DA AC 2F 4D 15 19 01)
+   (|WIN32|::|COORD| |COMMON-LISP|::|STRUCTURE-OBJECT| |CLOS|::|CLOSCLASS|
+    |CLOS|::|CLASS-NAMES| |SYSTEM|::|STRUCTURE-UNDEFINE-ACCESSORIES|
+    |SYSTEM|::|DEFSTRUCT-DESCRIPTION| |WIN32|::|make-COORD|
+    |WIN32|::|copy-COORD| |WIN32|::|COORD-p|
+    |CLOS|::|<STRUCTURE-EFFECTIVE-SLOT-DEFINITION>| :|NAME| |WIN32|::|X|
+    :|INITARGS| (:|x|) :|TYPE| :|ALLOCATION| :|INSTANCE|
+    |CLOS|::|INHERITABLE-INITER| |SYSTEM|::|MAKE-CONSTANT-INITFUNCTION|
+    |CLOS|::|MAKE-INHERITABLE-SLOT-DEFINITION-INITER| |CLOS|::|INHERITABLE-DOC|
+    (|COMMON-LISP|::|NIL|) |CLOS|::|LOCATION| 1. |CLOS|::|READONLY|
+    |CLOS|::|MAKE-INSTANCE-<STRUCTURE-EFFECTIVE-SLOT-DEFINITION>| |WIN32|::|Y|
+    (:|y|) (|COMMON-LISP|::|NIL|) 2.
+    |CLOS|::|<STRUCTURE-DIRECT-SLOT-DEFINITION>| (|COMMON-LISP|::|NIL|)
+    :|READERS| (|WIN32|::|COORD-X|) :|WRITERS|
+    ((|COMMON-LISP|::|SETF| |WIN32|::|COORD-X|))
+    |CLOS|::|MAKE-INSTANCE-<STRUCTURE-DIRECT-SLOT-DEFINITION>|
+    (|COMMON-LISP|::|NIL|) (|WIN32|::|COORD-Y|)
+    ((|COMMON-LISP|::|SETF| |WIN32|::|COORD-Y|))
+    |CLOS|::|DEFINE-STRUCTURE-CLASS| |SYSTEM|::|REMOVE-OLD-DEFINITIONS|
+    #Y(|WIN32|::|make-COORD|
+       #39Y(00 00 00 00 00 00 00 00 A6 1B 02 00 01 00 3D 02 3D 01 69 00 01 DD
+            72 45 DE AD DF B2 32 44 DE AD E0 B1 32 44 15 19 03)
+       (|COMMON-LISP|::|NIL| :|x| :|y| 3. |WIN32|::|COORD| 1. 2.)
+       (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|)
+       (|COMMON-LISP|::|&KEY| (#:|x| |COMMON-LISP|::|NIL|)
+        (#:|y| |COMMON-LISP|::|NIL|))
+       |COMMON-LISP|::|NIL| 1)
+    (|COMMON-LISP|::|INLINE| |WIN32|::|COORD-p|) |SYSTEM|::|INLINE-EXPANSION|
+    ((|SYSTEM|::|OBJECT|)
+     (|COMMON-LISP|::|DECLARE| (|SYSTEM|::|IN-DEFUN| |WIN32|::|COORD-p|))
+     (|COMMON-LISP|::|BLOCK| |WIN32|::|COORD-p|
+      (|SYSTEM|::|%STRUCTURE-TYPE-P| '|WIN32|::|COORD| |SYSTEM|::|OBJECT|)))
+    #Y(|WIN32|::|COORD-p| #16Y(00 00 00 00 01 00 00 00 20 02 DA AE 32 47 19 02)
+       (|WIN32|::|COORD|)
+       (|COMMON-LISP|::|T| |COMMON-LISP|::|NIL| |COMMON-LISP|::|NIL|))
+    (|COMMON-LISP|::|INLINE| |WIN32|::|copy-COORD|)
+    ((|COMMON-LISP|::|STRUCTURE|)
+     (|COMMON-LISP|::|DECLARE| (|SYSTEM|::|IN-DEFUN| |WIN32|::|copy-COORD|))
+     (|COMMON-LISP|::|BLOCK| |WIN32|::|copy-COORD|
+      (|COMMON-LISP|::|COPY-STRUCTURE| |COMMON-LISP|::|STRUCTURE|)))
+    #Y(|WIN32|::|copy-COORD| #15Y(00 00 00 00 01 00 00 00 26 02 AD 32 46 19 02)
+       () (|COMMON-LISP|::|T| |COMMON-LISP|::|NIL| |COMMON-LISP|::|NIL|)
+       (|COMMON-LISP|::|STRUCTURE|) |COMMON-LISP|::|NIL| 1)
+    (|COMMON-LISP|::|FUNCTION| |WIN32|::|COORD-X| (|WIN32|::|COORD|)
+     |COMMON-LISP|::|T|)
+    (|COMMON-LISP|::|INLINE| |WIN32|::|COORD-X|) |WIN32|::|COORD-X|
+    ((|SYSTEM|::|OBJECT|)
+     (|COMMON-LISP|::|DECLARE| (|SYSTEM|::|IN-DEFUN| |WIN32|::|COORD-X|))
+     (|COMMON-LISP|::|BLOCK| |WIN32|::|COORD-X|
+      (|COMMON-LISP|::|THE| |COMMON-LISP|::|T|
+       (|SYSTEM|::|%STRUCTURE-REF| '|WIN32|::|COORD| |SYSTEM|::|OBJECT| 1.))))
+    #Y(|WIN32|::|COORD-X|
+       #17Y(00 00 00 00 01 00 00 00 20 02 DA AE DB 32 43 19 02)
+       (|WIN32|::|COORD| 1.)
+       (|COMMON-LISP|::|T| |COMMON-LISP|::|NIL| |COMMON-LISP|::|NIL|))
+    |SYSTEM|::|DEFSTRUCT-READER|
+    (|COMMON-LISP|::|FUNCTION| |WIN32|::|COORD-Y| (|WIN32|::|COORD|)
+     |COMMON-LISP|::|T|)
+    (|COMMON-LISP|::|INLINE| |WIN32|::|COORD-Y|) |WIN32|::|COORD-Y|
+    ((|SYSTEM|::|OBJECT|)
+     (|COMMON-LISP|::|DECLARE| (|SYSTEM|::|IN-DEFUN| |WIN32|::|COORD-Y|))
+     (|COMMON-LISP|::|BLOCK| |WIN32|::|COORD-Y|
+      (|COMMON-LISP|::|THE| |COMMON-LISP|::|T|
+       (|SYSTEM|::|%STRUCTURE-REF| '|WIN32|::|COORD| |SYSTEM|::|OBJECT| 2.))))
+    #Y(|WIN32|::|COORD-Y|
+       #17Y(00 00 00 00 01 00 00 00 20 02 DA AE DB 32 43 19 02)
+       (|WIN32|::|COORD| 2.)
+       (|COMMON-LISP|::|T| |COMMON-LISP|::|NIL| |COMMON-LISP|::|NIL|))
+    (|COMMON-LISP|::|FUNCTION| (|COMMON-LISP|::|SETF| |WIN32|::|COORD-X|)
+     (|COMMON-LISP|::|T| |WIN32|::|COORD|) |COMMON-LISP|::|T|)
+    (|COMMON-LISP|::|INLINE| (|COMMON-LISP|::|SETF| |WIN32|::|COORD-X|))
+    #.(|SYSTEM|::|GET-SETF-SYMBOL| '|WIN32|::|COORD-X|)
+    ((|SYSTEM|::|VALUE| |SYSTEM|::|OBJECT|)
+     (|COMMON-LISP|::|DECLARE|
+      (|SYSTEM|::|IN-DEFUN| #1=(|COMMON-LISP|::|SETF| |WIN32|::|COORD-X|)))
+     (|COMMON-LISP|::|BLOCK| |WIN32|::|COORD-X|
+      (|SYSTEM|::|%STRUCTURE-STORE| '|WIN32|::|COORD| |SYSTEM|::|OBJECT| 1.
+       |SYSTEM|::|VALUE|)))
+    #Y(#1# #18Y(00 00 00 00 02 00 00 00 20 03 DA AE DB B1 32 44 19 03)
+       (|WIN32|::|COORD| 1.)
+       (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+    |SYSTEM|::|DEFSTRUCT-WRITER|
+    (|COMMON-LISP|::|FUNCTION| (|COMMON-LISP|::|SETF| |WIN32|::|COORD-Y|)
+     (|COMMON-LISP|::|T| |WIN32|::|COORD|) |COMMON-LISP|::|T|)
+    (|COMMON-LISP|::|INLINE| (|COMMON-LISP|::|SETF| |WIN32|::|COORD-Y|))
+    #.(|SYSTEM|::|GET-SETF-SYMBOL| '|WIN32|::|COORD-Y|)
+    ((|SYSTEM|::|VALUE| |SYSTEM|::|OBJECT|)
+     (|COMMON-LISP|::|DECLARE|
+      (|SYSTEM|::|IN-DEFUN| #2=(|COMMON-LISP|::|SETF| |WIN32|::|COORD-Y|)))
+     (|COMMON-LISP|::|BLOCK| |WIN32|::|COORD-Y|
+      (|SYSTEM|::|%STRUCTURE-STORE| '|WIN32|::|COORD| |SYSTEM|::|OBJECT| 2.
+       |SYSTEM|::|VALUE|)))
+    #Y(#2# #18Y(00 00 00 00 02 00 00 00 20 03 DA AE DB B1 32 44 19 03)
+       (|WIN32|::|COORD| 2.)
+       (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+    |COMMON-LISP|::|TYPE| |SYSTEM|::|%SET-DOCUMENTATION|
+    |CLOS|::|DEFSTRUCT-REMOVE-PRINT-OBJECT-METHOD|
+    (|FFI|::|C-STRUCT| |WIN32|::|COORD| (|WIN32|::|X| |FFI|::|SHORT|)
+     (|WIN32|::|Y| |FFI|::|SHORT|))
+    |FFI|::|PARSE-C-TYPE| |EXPORTING|::|EXPORT-STRUCTURE-ACCESSORIES|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|114 116 (def-c-struct CONSOLE_SCREEN_BUFFER_INFO (dwSize COORD) ...)-35|
+   #754Y(00 00 00 00 00 00 00 00 20 01 00 2B 01 DA DB DC 38 01 72 9E 2F 03 5D
+         0B 00 00 DA 2F 04 DA DF 32 A3 DA 68 01 00 E0 63 E1 E2 6B 09 E4 E5 E6
+         E7 E8 64 E9 EA EB 01 02 6F 12 70 13 EE EF F0 F1 F2 63 6E 11 19 6B 09
+         E4 F4 E6 F5 E8 64 E9 EA EB 01 02 6F 12 70 13 EE F6 F0 F7 F2 63 6E 11
+         19 6B 09 E4 65 1E E6 65 1F E8 64 E9 EA EB 01 02 6F 12 70 13 EE 65 20
+         F0 65 21 F2 63 6E 11 19 6B 09 E4 65 22 E6 65 23 E8 64 E9 EA EB 01 02
+         6F 12 70 13 EE 65 24 F0 65 25 F2 63 6E 11 19 6B 09 E4 65 26 E6 65 27
+         E8 64 E9 EA EB 01 02 6F 12 70 13 EE 65 28 F0 65 29 F2 63 6E 11 19 7B
+         05 6B 2A E4 E5 E6 E7 E8 64 E9 EA EB 01 02 6F 12 70 13 EE 65 2B 65 2C
+         65 2D 65 2E 65 2F 6E 11 30 6B 2A E4 F4 E6 F5 E8 64 E9 EA EB 01 02 6F
+         12 70 13 EE 65 31 65 2C 65 32 65 2E 65 33 6E 11 30 6B 2A E4 65 1E E6
+         65 1F E8 64 E9 EA EB 01 02 6F 12 70 13 EE 65 34 65 2C 65 35 65 2E 65
+         36 6E 11 30 6B 2A E4 65 22 E6 65 23 E8 64 E9 EA EB 01 02 6F 12 70 13
+         EE 65 37 65 2C 65 38 65 2E 65 39 6E 11 30 6B 2A E4 65 26 E6 65 27 E8
+         64 E9 EA EB 01 02 6F 12 70 13 EE 65 3A 65 2C 65 3B 65 2E 65 3C 6E 11
+         30 7B 05 2D 08 3D E0 2F 3E E0 AD 6D 3F 01 32 9C 16 01 65 40 31 62 E2
+         2F 3E E2 65 41 65 42 32 A2 E2 65 43 32 9C 65 44 31 62 E1 2F 3E E1 65
+         41 65 45 32 A2 E1 65 46 32 9C 65 47 31 62 65 48 31 62 65 49 2F 3E 65
+         49 65 41 65 4A 32 A2 65 49 65 4B 32 9C 65 49 65 4C DA 32 A2 65 4D 31
+         62 65 4E 31 62 65 4F 2F 3E 65 4F 65 41 65 50 32 A2 65 4F 65 51 32 9C
+         65 4F 65 4C DA 32 A2 65 52 31 62 65 53 31 62 65 54 2F 3E 65 54 65 41
+         65 55 32 A2 65 54 65 56 32 9C 65 54 65 4C DA 32 A2 65 57 31 62 65 58
+         31 62 65 59 2F 3E 65 59 65 41 65 5A 32 A2 65 59 65 5B 32 9C 65 59 65
+         4C DA 32 A2 65 5C 31 62 65 5D 31 62 65 5E 2F 3E 65 5E 65 41 65 5F 32
+         A2 65 5E 65 60 32 9C 65 5E 65 4C DA 32 A2 65 61 31 62 65 62 31 62 65
+         63 2F 3E 65 63 65 41 65 64 32 A2 65 63 65 65 32 9C 65 49 65 66 DA 32
+         A2 65 67 31 62 65 68 31 62 65 69 2F 3E 65 69 65 41 65 6A 32 A2 65 69
+         65 6B 32 9C 65 4F 65 66 DA 32 A2 65 6C 31 62 65 6D 31 62 65 6E 2F 3E
+         65 6E 65 41 65 6F 32 A2 65 6E 65 70 32 9C 65 54 65 66 DA 32 A2 65 71
+         31 62 65 72 31 62 65 73 2F 3E 65 73 65 41 65 74 32 A2 65 73 65 75 32
+         9C 65 59 65 66 DA 32 A2 65 76 31 62 65 77 31 62 65 78 2F 3E 65 78 65
+         41 65 79 32 A2 65 78 65 7A 32 9C 65 5E 65 66 DA 32 A2 DA 65 7B 63 2D
+         03 7C DA 2F 7D 65 7E DA 30 7F DA AC 2F 80 80 15 19 01)
+   (|WIN32|::|CONSOLE_SCREEN_BUFFER_INFO| |COMMON-LISP|::|STRUCTURE-OBJECT|
+    |CLOS|::|CLOSCLASS| |CLOS|::|CLASS-NAMES|
+    |SYSTEM|::|STRUCTURE-UNDEFINE-ACCESSORIES|
+    |SYSTEM|::|DEFSTRUCT-DESCRIPTION|
+    |WIN32|::|make-CONSOLE_SCREEN_BUFFER_INFO|
+    |WIN32|::|copy-CONSOLE_SCREEN_BUFFER_INFO|
+    |WIN32|::|CONSOLE_SCREEN_BUFFER_INFO-p|
+    |CLOS|::|<STRUCTURE-EFFECTIVE-SLOT-DEFINITION>| :|NAME| |WIN32|::|dwSize|
+    :|INITARGS| (:|DWsIZE|) :|TYPE| :|ALLOCATION| :|INSTANCE|
+    |CLOS|::|INHERITABLE-INITER| |SYSTEM|::|MAKE-CONSTANT-INITFUNCTION|
+    |CLOS|::|MAKE-INHERITABLE-SLOT-DEFINITION-INITER| |CLOS|::|INHERITABLE-DOC|
+    (|COMMON-LISP|::|NIL|) |CLOS|::|LOCATION| 1. |CLOS|::|READONLY|
+    |CLOS|::|MAKE-INSTANCE-<STRUCTURE-EFFECTIVE-SLOT-DEFINITION>|
+    |WIN32|::|dwCursorPosition| (:|DWcURSORpOSITION|) (|COMMON-LISP|::|NIL|) 2.
+    |WIN32|::|wAttributes| (:|WaTTRIBUTES|) (|COMMON-LISP|::|NIL|) 3.
+    |WIN32|::|srWindow| (:|SRwINDOW|) (|COMMON-LISP|::|NIL|) 4.
+    |WIN32|::|dwMaximumWindowSize| (:|DWmAXIMUMwINDOWsIZE|)
+    (|COMMON-LISP|::|NIL|) 5. |CLOS|::|<STRUCTURE-DIRECT-SLOT-DEFINITION>|
+    (|COMMON-LISP|::|NIL|) :|READERS|
+    (|WIN32|::|CONSOLE_SCREEN_BUFFER_INFO-dwSize|) :|WRITERS|
+    ((|COMMON-LISP|::|SETF| |WIN32|::|CONSOLE_SCREEN_BUFFER_INFO-dwSize|))
+    |CLOS|::|MAKE-INSTANCE-<STRUCTURE-DIRECT-SLOT-DEFINITION>|
+    (|COMMON-LISP|::|NIL|)
+    (|WIN32|::|CONSOLE_SCREEN_BUFFER_INFO-dwCursorPosition|)
+    ((|COMMON-LISP|::|SETF|
+      |WIN32|::|CONSOLE_SCREEN_BUFFER_INFO-dwCursorPosition|))
+    (|COMMON-LISP|::|NIL|) (|WIN32|::|CONSOLE_SCREEN_BUFFER_INFO-wAttributes|)
+    ((|COMMON-LISP|::|SETF| |WIN32|::|CONSOLE_SCREEN_BUFFER_INFO-wAttributes|))
+    (|COMMON-LISP|::|NIL|) (|WIN32|::|CONSOLE_SCREEN_BUFFER_INFO-srWindow|)
+    ((|COMMON-LISP|::|SETF| |WIN32|::|CONSOLE_SCREEN_BUFFER_INFO-srWindow|))
+    (|COMMON-LISP|::|NIL|)
+    (|WIN32|::|CONSOLE_SCREEN_BUFFER_INFO-dwMaximumWindowSize|)
+    ((|COMMON-LISP|::|SETF|
+      |WIN32|::|CONSOLE_SCREEN_BUFFER_INFO-dwMaximumWindowSize|))
+    |CLOS|::|DEFINE-STRUCTURE-CLASS| |SYSTEM|::|REMOVE-OLD-DEFINITIONS|
+    #Y(|WIN32|::|make-CONSOLE_SCREEN_BUFFER_INFO|
+       #63Y(00 00 00 00 00 00 00 00 A6 1B 05 00 01 00 3D 05 3D 04 3D 03 3D 02
+            3D 01 69 00 01 E0 72 45 E1 AD E2 B5 32 44 E1 AD E3 B4 32 44 E1 AD
+            E4 B3 32 44 E1 AD E5 B2 32 44 E1 AD E6 B1 32 44 15 19 06)
+       (|COMMON-LISP|::|NIL| :|DWsIZE| :|DWcURSORpOSITION| :|WaTTRIBUTES|
+        :|SRwINDOW| :|DWmAXIMUMwINDOWsIZE| 6.
+        |WIN32|::|CONSOLE_SCREEN_BUFFER_INFO| 1. 2. 3. 4. 5.)
+       (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|)
+       (|COMMON-LISP|::|&KEY| (#:|DWsIZE| |COMMON-LISP|::|NIL|)
+        (#:|DWcURSORpOSITION| |COMMON-LISP|::|NIL|)
+        (#:|WaTTRIBUTES| |COMMON-LISP|::|NIL|)
+        (#:|SRwINDOW| |COMMON-LISP|::|NIL|)
+        (#:|DWmAXIMUMwINDOWsIZE| |COMMON-LISP|::|NIL|))
+       |COMMON-LISP|::|NIL| 1)
+    (|COMMON-LISP|::|INLINE| |WIN32|::|CONSOLE_SCREEN_BUFFER_INFO-p|)
+    |SYSTEM|::|INLINE-EXPANSION|
+    ((|SYSTEM|::|OBJECT|)
+     (|COMMON-LISP|::|DECLARE|
+      (|SYSTEM|::|IN-DEFUN| |WIN32|::|CONSOLE_SCREEN_BUFFER_INFO-p|))
+     (|COMMON-LISP|::|BLOCK| |WIN32|::|CONSOLE_SCREEN_BUFFER_INFO-p|
+      (|SYSTEM|::|%STRUCTURE-TYPE-P| '|WIN32|::|CONSOLE_SCREEN_BUFFER_INFO|
+       |SYSTEM|::|OBJECT|)))
+    #Y(|WIN32|::|CONSOLE_SCREEN_BUFFER_INFO-p|
+       #16Y(00 00 00 00 01 00 00 00 20 02 DA AE 32 47 19 02)
+       (|WIN32|::|CONSOLE_SCREEN_BUFFER_INFO|)
+       (|COMMON-LISP|::|T| |COMMON-LISP|::|NIL| |COMMON-LISP|::|NIL|))
+    (|COMMON-LISP|::|INLINE| |WIN32|::|copy-CONSOLE_SCREEN_BUFFER_INFO|)
+    ((|COMMON-LISP|::|STRUCTURE|)
+     (|COMMON-LISP|::|DECLARE|
+      (|SYSTEM|::|IN-DEFUN| |WIN32|::|copy-CONSOLE_SCREEN_BUFFER_INFO|))
+     (|COMMON-LISP|::|BLOCK| |WIN32|::|copy-CONSOLE_SCREEN_BUFFER_INFO|
+      (|COMMON-LISP|::|COPY-STRUCTURE| |COMMON-LISP|::|STRUCTURE|)))
+    #Y(|WIN32|::|copy-CONSOLE_SCREEN_BUFFER_INFO|
+       #15Y(00 00 00 00 01 00 00 00 26 02 AD 32 46 19 02) ()
+       (|COMMON-LISP|::|T| |COMMON-LISP|::|NIL| |COMMON-LISP|::|NIL|)
+       (|COMMON-LISP|::|STRUCTURE|) |COMMON-LISP|::|NIL| 1)
+    (|COMMON-LISP|::|FUNCTION| |WIN32|::|CONSOLE_SCREEN_BUFFER_INFO-dwSize|
+     (|WIN32|::|CONSOLE_SCREEN_BUFFER_INFO|) |COMMON-LISP|::|T|)
+    (|COMMON-LISP|::|INLINE| |WIN32|::|CONSOLE_SCREEN_BUFFER_INFO-dwSize|)
+    |WIN32|::|CONSOLE_SCREEN_BUFFER_INFO-dwSize|
+    ((|SYSTEM|::|OBJECT|)
+     (|COMMON-LISP|::|DECLARE|
+      (|SYSTEM|::|IN-DEFUN| |WIN32|::|CONSOLE_SCREEN_BUFFER_INFO-dwSize|))
+     (|COMMON-LISP|::|BLOCK| |WIN32|::|CONSOLE_SCREEN_BUFFER_INFO-dwSize|
+      (|COMMON-LISP|::|THE| |COMMON-LISP|::|T|
+       (|SYSTEM|::|%STRUCTURE-REF| '|WIN32|::|CONSOLE_SCREEN_BUFFER_INFO|
+        |SYSTEM|::|OBJECT| 1.))))
+    #Y(|WIN32|::|CONSOLE_SCREEN_BUFFER_INFO-dwSize|
+       #17Y(00 00 00 00 01 00 00 00 20 02 DA AE DB 32 43 19 02)
+       (|WIN32|::|CONSOLE_SCREEN_BUFFER_INFO| 1.)
+       (|COMMON-LISP|::|T| |COMMON-LISP|::|NIL| |COMMON-LISP|::|NIL|))
+    |SYSTEM|::|DEFSTRUCT-READER|
+    (|COMMON-LISP|::|FUNCTION|
+     |WIN32|::|CONSOLE_SCREEN_BUFFER_INFO-dwCursorPosition|
+     (|WIN32|::|CONSOLE_SCREEN_BUFFER_INFO|) |COMMON-LISP|::|T|)
+    (|COMMON-LISP|::|INLINE|
+     |WIN32|::|CONSOLE_SCREEN_BUFFER_INFO-dwCursorPosition|)
+    |WIN32|::|CONSOLE_SCREEN_BUFFER_INFO-dwCursorPosition|
+    ((|SYSTEM|::|OBJECT|)
+     (|COMMON-LISP|::|DECLARE|
+      (|SYSTEM|::|IN-DEFUN|
+       |WIN32|::|CONSOLE_SCREEN_BUFFER_INFO-dwCursorPosition|))
+     (|COMMON-LISP|::|BLOCK|
+      |WIN32|::|CONSOLE_SCREEN_BUFFER_INFO-dwCursorPosition|
+      (|COMMON-LISP|::|THE| |COMMON-LISP|::|T|
+       (|SYSTEM|::|%STRUCTURE-REF| '|WIN32|::|CONSOLE_SCREEN_BUFFER_INFO|
+        |SYSTEM|::|OBJECT| 2.))))
+    #Y(|WIN32|::|CONSOLE_SCREEN_BUFFER_INFO-dwCursorPosition|
+       #17Y(00 00 00 00 01 00 00 00 20 02 DA AE DB 32 43 19 02)
+       (|WIN32|::|CONSOLE_SCREEN_BUFFER_INFO| 2.)
+       (|COMMON-LISP|::|T| |COMMON-LISP|::|NIL| |COMMON-LISP|::|NIL|))
+    (|COMMON-LISP|::|FUNCTION|
+     |WIN32|::|CONSOLE_SCREEN_BUFFER_INFO-wAttributes|
+     (|WIN32|::|CONSOLE_SCREEN_BUFFER_INFO|) |COMMON-LISP|::|T|)
+    (|COMMON-LISP|::|INLINE| |WIN32|::|CONSOLE_SCREEN_BUFFER_INFO-wAttributes|)
+    |WIN32|::|CONSOLE_SCREEN_BUFFER_INFO-wAttributes|
+    ((|SYSTEM|::|OBJECT|)
+     (|COMMON-LISP|::|DECLARE|
+      (|SYSTEM|::|IN-DEFUN| |WIN32|::|CONSOLE_SCREEN_BUFFER_INFO-wAttributes|))
+     (|COMMON-LISP|::|BLOCK| |WIN32|::|CONSOLE_SCREEN_BUFFER_INFO-wAttributes|
+      (|COMMON-LISP|::|THE| |COMMON-LISP|::|T|
+       (|SYSTEM|::|%STRUCTURE-REF| '|WIN32|::|CONSOLE_SCREEN_BUFFER_INFO|
+        |SYSTEM|::|OBJECT| 3.))))
+    #Y(|WIN32|::|CONSOLE_SCREEN_BUFFER_INFO-wAttributes|
+       #17Y(00 00 00 00 01 00 00 00 20 02 DA AE DB 32 43 19 02)
+       (|WIN32|::|CONSOLE_SCREEN_BUFFER_INFO| 3.)
+       (|COMMON-LISP|::|T| |COMMON-LISP|::|NIL| |COMMON-LISP|::|NIL|))
+    (|COMMON-LISP|::|FUNCTION| |WIN32|::|CONSOLE_SCREEN_BUFFER_INFO-srWindow|
+     (|WIN32|::|CONSOLE_SCREEN_BUFFER_INFO|) |COMMON-LISP|::|T|)
+    (|COMMON-LISP|::|INLINE| |WIN32|::|CONSOLE_SCREEN_BUFFER_INFO-srWindow|)
+    |WIN32|::|CONSOLE_SCREEN_BUFFER_INFO-srWindow|
+    ((|SYSTEM|::|OBJECT|)
+     (|COMMON-LISP|::|DECLARE|
+      (|SYSTEM|::|IN-DEFUN| |WIN32|::|CONSOLE_SCREEN_BUFFER_INFO-srWindow|))
+     (|COMMON-LISP|::|BLOCK| |WIN32|::|CONSOLE_SCREEN_BUFFER_INFO-srWindow|
+      (|COMMON-LISP|::|THE| |COMMON-LISP|::|T|
+       (|SYSTEM|::|%STRUCTURE-REF| '|WIN32|::|CONSOLE_SCREEN_BUFFER_INFO|
+        |SYSTEM|::|OBJECT| 4.))))
+    #Y(|WIN32|::|CONSOLE_SCREEN_BUFFER_INFO-srWindow|
+       #17Y(00 00 00 00 01 00 00 00 20 02 DA AE DB 32 43 19 02)
+       (|WIN32|::|CONSOLE_SCREEN_BUFFER_INFO| 4.)
+       (|COMMON-LISP|::|T| |COMMON-LISP|::|NIL| |COMMON-LISP|::|NIL|))
+    (|COMMON-LISP|::|FUNCTION|
+     |WIN32|::|CONSOLE_SCREEN_BUFFER_INFO-dwMaximumWindowSize|
+     (|WIN32|::|CONSOLE_SCREEN_BUFFER_INFO|) |COMMON-LISP|::|T|)
+    (|COMMON-LISP|::|INLINE|
+     |WIN32|::|CONSOLE_SCREEN_BUFFER_INFO-dwMaximumWindowSize|)
+    |WIN32|::|CONSOLE_SCREEN_BUFFER_INFO-dwMaximumWindowSize|
+    ((|SYSTEM|::|OBJECT|)
+     (|COMMON-LISP|::|DECLARE|
+      (|SYSTEM|::|IN-DEFUN|
+       |WIN32|::|CONSOLE_SCREEN_BUFFER_INFO-dwMaximumWindowSize|))
+     (|COMMON-LISP|::|BLOCK|
+      |WIN32|::|CONSOLE_SCREEN_BUFFER_INFO-dwMaximumWindowSize|
+      (|COMMON-LISP|::|THE| |COMMON-LISP|::|T|
+       (|SYSTEM|::|%STRUCTURE-REF| '|WIN32|::|CONSOLE_SCREEN_BUFFER_INFO|
+        |SYSTEM|::|OBJECT| 5.))))
+    #Y(|WIN32|::|CONSOLE_SCREEN_BUFFER_INFO-dwMaximumWindowSize|
+       #17Y(00 00 00 00 01 00 00 00 20 02 DA AE DB 32 43 19 02)
+       (|WIN32|::|CONSOLE_SCREEN_BUFFER_INFO| 5.)
+       (|COMMON-LISP|::|T| |COMMON-LISP|::|NIL| |COMMON-LISP|::|NIL|))
+    (|COMMON-LISP|::|FUNCTION|
+     (|COMMON-LISP|::|SETF| |WIN32|::|CONSOLE_SCREEN_BUFFER_INFO-dwSize|)
+     (|COMMON-LISP|::|T| |WIN32|::|CONSOLE_SCREEN_BUFFER_INFO|)
+     |COMMON-LISP|::|T|)
+    (|COMMON-LISP|::|INLINE|
+     (|COMMON-LISP|::|SETF| |WIN32|::|CONSOLE_SCREEN_BUFFER_INFO-dwSize|))
+    #.(|SYSTEM|::|GET-SETF-SYMBOL|
+       '|WIN32|::|CONSOLE_SCREEN_BUFFER_INFO-dwSize|)
+    ((|SYSTEM|::|VALUE| |SYSTEM|::|OBJECT|)
+     (|COMMON-LISP|::|DECLARE|
+      (|SYSTEM|::|IN-DEFUN|
+       #1=(|COMMON-LISP|::|SETF|
+           |WIN32|::|CONSOLE_SCREEN_BUFFER_INFO-dwSize|)))
+     (|COMMON-LISP|::|BLOCK| |WIN32|::|CONSOLE_SCREEN_BUFFER_INFO-dwSize|
+      (|SYSTEM|::|%STRUCTURE-STORE| '|WIN32|::|CONSOLE_SCREEN_BUFFER_INFO|
+       |SYSTEM|::|OBJECT| 1. |SYSTEM|::|VALUE|)))
+    #Y(#1# #18Y(00 00 00 00 02 00 00 00 20 03 DA AE DB B1 32 44 19 03)
+       (|WIN32|::|CONSOLE_SCREEN_BUFFER_INFO| 1.)
+       (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+    |SYSTEM|::|DEFSTRUCT-WRITER|
+    (|COMMON-LISP|::|FUNCTION|
+     (|COMMON-LISP|::|SETF|
+      |WIN32|::|CONSOLE_SCREEN_BUFFER_INFO-dwCursorPosition|)
+     (|COMMON-LISP|::|T| |WIN32|::|CONSOLE_SCREEN_BUFFER_INFO|)
+     |COMMON-LISP|::|T|)
+    (|COMMON-LISP|::|INLINE|
+     (|COMMON-LISP|::|SETF|
+      |WIN32|::|CONSOLE_SCREEN_BUFFER_INFO-dwCursorPosition|))
+    #.(|SYSTEM|::|GET-SETF-SYMBOL|
+       '|WIN32|::|CONSOLE_SCREEN_BUFFER_INFO-dwCursorPosition|)
+    ((|SYSTEM|::|VALUE| |SYSTEM|::|OBJECT|)
+     (|COMMON-LISP|::|DECLARE|
+      (|SYSTEM|::|IN-DEFUN|
+       #2=(|COMMON-LISP|::|SETF|
+           |WIN32|::|CONSOLE_SCREEN_BUFFER_INFO-dwCursorPosition|)))
+     (|COMMON-LISP|::|BLOCK|
+      |WIN32|::|CONSOLE_SCREEN_BUFFER_INFO-dwCursorPosition|
+      (|SYSTEM|::|%STRUCTURE-STORE| '|WIN32|::|CONSOLE_SCREEN_BUFFER_INFO|
+       |SYSTEM|::|OBJECT| 2. |SYSTEM|::|VALUE|)))
+    #Y(#2# #18Y(00 00 00 00 02 00 00 00 20 03 DA AE DB B1 32 44 19 03)
+       (|WIN32|::|CONSOLE_SCREEN_BUFFER_INFO| 2.)
+       (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+    (|COMMON-LISP|::|FUNCTION|
+     (|COMMON-LISP|::|SETF| |WIN32|::|CONSOLE_SCREEN_BUFFER_INFO-wAttributes|)
+     (|COMMON-LISP|::|T| |WIN32|::|CONSOLE_SCREEN_BUFFER_INFO|)
+     |COMMON-LISP|::|T|)
+    (|COMMON-LISP|::|INLINE|
+     (|COMMON-LISP|::|SETF| |WIN32|::|CONSOLE_SCREEN_BUFFER_INFO-wAttributes|))
+    #.(|SYSTEM|::|GET-SETF-SYMBOL|
+       '|WIN32|::|CONSOLE_SCREEN_BUFFER_INFO-wAttributes|)
+    ((|SYSTEM|::|VALUE| |SYSTEM|::|OBJECT|)
+     (|COMMON-LISP|::|DECLARE|
+      (|SYSTEM|::|IN-DEFUN|
+       #3=(|COMMON-LISP|::|SETF|
+           |WIN32|::|CONSOLE_SCREEN_BUFFER_INFO-wAttributes|)))
+     (|COMMON-LISP|::|BLOCK| |WIN32|::|CONSOLE_SCREEN_BUFFER_INFO-wAttributes|
+      (|SYSTEM|::|%STRUCTURE-STORE| '|WIN32|::|CONSOLE_SCREEN_BUFFER_INFO|
+       |SYSTEM|::|OBJECT| 3. |SYSTEM|::|VALUE|)))
+    #Y(#3# #18Y(00 00 00 00 02 00 00 00 20 03 DA AE DB B1 32 44 19 03)
+       (|WIN32|::|CONSOLE_SCREEN_BUFFER_INFO| 3.)
+       (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+    (|COMMON-LISP|::|FUNCTION|
+     (|COMMON-LISP|::|SETF| |WIN32|::|CONSOLE_SCREEN_BUFFER_INFO-srWindow|)
+     (|COMMON-LISP|::|T| |WIN32|::|CONSOLE_SCREEN_BUFFER_INFO|)
+     |COMMON-LISP|::|T|)
+    (|COMMON-LISP|::|INLINE|
+     (|COMMON-LISP|::|SETF| |WIN32|::|CONSOLE_SCREEN_BUFFER_INFO-srWindow|))
+    #.(|SYSTEM|::|GET-SETF-SYMBOL|
+       '|WIN32|::|CONSOLE_SCREEN_BUFFER_INFO-srWindow|)
+    ((|SYSTEM|::|VALUE| |SYSTEM|::|OBJECT|)
+     (|COMMON-LISP|::|DECLARE|
+      (|SYSTEM|::|IN-DEFUN|
+       #4=(|COMMON-LISP|::|SETF|
+           |WIN32|::|CONSOLE_SCREEN_BUFFER_INFO-srWindow|)))
+     (|COMMON-LISP|::|BLOCK| |WIN32|::|CONSOLE_SCREEN_BUFFER_INFO-srWindow|
+      (|SYSTEM|::|%STRUCTURE-STORE| '|WIN32|::|CONSOLE_SCREEN_BUFFER_INFO|
+       |SYSTEM|::|OBJECT| 4. |SYSTEM|::|VALUE|)))
+    #Y(#4# #18Y(00 00 00 00 02 00 00 00 20 03 DA AE DB B1 32 44 19 03)
+       (|WIN32|::|CONSOLE_SCREEN_BUFFER_INFO| 4.)
+       (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+    (|COMMON-LISP|::|FUNCTION|
+     (|COMMON-LISP|::|SETF|
+      |WIN32|::|CONSOLE_SCREEN_BUFFER_INFO-dwMaximumWindowSize|)
+     (|COMMON-LISP|::|T| |WIN32|::|CONSOLE_SCREEN_BUFFER_INFO|)
+     |COMMON-LISP|::|T|)
+    (|COMMON-LISP|::|INLINE|
+     (|COMMON-LISP|::|SETF|
+      |WIN32|::|CONSOLE_SCREEN_BUFFER_INFO-dwMaximumWindowSize|))
+    #.(|SYSTEM|::|GET-SETF-SYMBOL|
+       '|WIN32|::|CONSOLE_SCREEN_BUFFER_INFO-dwMaximumWindowSize|)
+    ((|SYSTEM|::|VALUE| |SYSTEM|::|OBJECT|)
+     (|COMMON-LISP|::|DECLARE|
+      (|SYSTEM|::|IN-DEFUN|
+       #5=(|COMMON-LISP|::|SETF|
+           |WIN32|::|CONSOLE_SCREEN_BUFFER_INFO-dwMaximumWindowSize|)))
+     (|COMMON-LISP|::|BLOCK|
+      |WIN32|::|CONSOLE_SCREEN_BUFFER_INFO-dwMaximumWindowSize|
+      (|SYSTEM|::|%STRUCTURE-STORE| '|WIN32|::|CONSOLE_SCREEN_BUFFER_INFO|
+       |SYSTEM|::|OBJECT| 5. |SYSTEM|::|VALUE|)))
+    #Y(#5# #18Y(00 00 00 00 02 00 00 00 20 03 DA AE DB B1 32 44 19 03)
+       (|WIN32|::|CONSOLE_SCREEN_BUFFER_INFO| 5.)
+       (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+    |COMMON-LISP|::|TYPE| |SYSTEM|::|%SET-DOCUMENTATION|
+    |CLOS|::|DEFSTRUCT-REMOVE-PRINT-OBJECT-METHOD|
+    (|FFI|::|C-STRUCT| |WIN32|::|CONSOLE_SCREEN_BUFFER_INFO|
+     (|WIN32|::|dwSize| |WIN32|::|COORD|)
+     (|WIN32|::|dwCursorPosition| |WIN32|::|COORD|)
+     (|WIN32|::|wAttributes| |WIN32|::|word|)
+     (|WIN32|::|srWindow| |WIN32|::|SMALL_RECT|)
+     (|WIN32|::|dwMaximumWindowSize| |WIN32|::|COORD|))
+    |FFI|::|PARSE-C-TYPE| |EXPORTING|::|EXPORT-STRUCTURE-ACCESSORIES|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|118 121 (def-call-out GetConsoleScreenBufferInfo (:RETURN-TYPE boolean) ...)-36-1|
+   #18Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 31 E6 3E 19 01)
+   (|WIN32|::|GetConsoleScreenBufferInfo|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|118 121 (def-call-out GetConsoleScreenBufferInfo (:RETURN-TYPE boolean) ...)-36-2|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA DB DC 70 03 DE 6B 05 01 02 6E 06 06 93
+        00 07 E1 2F 08 E1 AD 32 9C CC 19 02)
+   ("GetConsoleScreenBufferInfo"
+    #1=((:|RETURN-TYPE| |COMMON-LISP|::|BOOLEAN|)
+        #2=(:|DOCUMENTATION|
+            "http://msdn.microsoft.com/library/en-us/dllproc/base/getconsolescreenbufferinfo.asp")
+        (:|ARGUMENTS| (|WIN32|::|StdHandle| |WIN32|::|handle|)
+         (|WIN32|::|csbiInfo|
+          (|FFI|::|C-PTR| |WIN32|::|CONSOLE_SCREEN_BUFFER_INFO|) :|OUT|
+          :|ALLOCA|)))
+    (|FFI|::|DEF-CALL-OUT| |WIN32|::|GetConsoleScreenBufferInfo| . #1#)
+    |FFI|::|PARSE-C-FUNCTION| #2# |FFI|::|*FOREIGN-LIBRARY*|
+    |FFI|::|FIND-FOREIGN-FUNCTION| |WIN32|::|GetConsoleScreenBufferInfo|
+    |SYSTEM|::|REMOVE-OLD-DEFINITIONS|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|123 126 (def-call-out GetSystemDirectoryA (:RETURN-TYPE uint) ...)-37-1|
+   #18Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 31 E6 3E 19 01)
+   (|WIN32|::|GetSystemDirectoryA|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|123 126 (def-call-out GetSystemDirectoryA (:RETURN-TYPE uint) ...)-37-2|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA DB DC 70 03 63 6B 04 01 02 6E 06 05 93
+        00 07 E0 2F 07 E0 AD 32 9C CB 19 02)
+   ("GetSystemDirectoryA"
+    #1=((:|RETURN-TYPE| |FFI|::|UINT|)
+        (:|ARGUMENTS|
+         (|WIN32|::|buffer|
+          (|FFI|::|C-PTR|
+           (|FFI|::|C-ARRAY-MAX| |COMMON-LISP|::|CHARACTER| 260.))
+          :|OUT| :|ALLOCA|)
+         (|WIN32|::|size| |FFI|::|UINT|)))
+    (|FFI|::|DEF-CALL-OUT| |WIN32|::|GetSystemDirectoryA| . #1#)
+    |FFI|::|PARSE-C-FUNCTION| |FFI|::|*FOREIGN-LIBRARY*|
+    |FFI|::|FIND-FOREIGN-FUNCTION| |WIN32|::|GetSystemDirectoryA|
+    |SYSTEM|::|REMOVE-OLD-DEFINITIONS|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|126 129 (def-call-out GetWindowsDirectoryA (:RETURN-TYPE uint) ...)-38-1|
+   #18Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 31 E6 3E 19 01)
+   (|WIN32|::|GetWindowsDirectoryA|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|126 129 (def-call-out GetWindowsDirectoryA (:RETURN-TYPE uint) ...)-38-2|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA DB DC 70 03 63 6B 04 01 02 6E 06 05 93
+        00 07 E0 2F 07 E0 AD 32 9C CB 19 02)
+   ("GetWindowsDirectoryA"
+    #1=((:|RETURN-TYPE| |FFI|::|UINT|)
+        (:|ARGUMENTS|
+         (|WIN32|::|buffer|
+          (|FFI|::|C-PTR|
+           (|FFI|::|C-ARRAY-MAX| |COMMON-LISP|::|CHARACTER| 260.))
+          :|OUT| :|ALLOCA|)
+         (|WIN32|::|size| |FFI|::|UINT|)))
+    (|FFI|::|DEF-CALL-OUT| |WIN32|::|GetWindowsDirectoryA| . #1#)
+    |FFI|::|PARSE-C-FUNCTION| |FFI|::|*FOREIGN-LIBRARY*|
+    |FFI|::|FIND-FOREIGN-FUNCTION| |WIN32|::|GetWindowsDirectoryA|
+    |SYSTEM|::|REMOVE-OLD-DEFINITIONS|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|129 133 (def-call-out GetCurrentDirectoryA (:RETURN-TYPE dword) ...)-39-1|
+   #18Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 31 E6 3E 19 01)
+   (|WIN32|::|GetCurrentDirectoryA|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|129 133 (def-call-out GetCurrentDirectoryA (:RETURN-TYPE dword) ...)-39-2|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA DB DC 70 03 63 6B 04 01 02 6E 06 05 93
+        00 07 E0 2F 07 E0 AD 32 9C CB 19 02)
+   ("GetCurrentDirectoryA"
+    #1=((:|RETURN-TYPE| |WIN32|::|dword|)
+        (:|ARGUMENTS| (|WIN32|::|size| |WIN32|::|dword|)
+         (|WIN32|::|buffer|
+          (|FFI|::|C-PTR|
+           (|FFI|::|C-ARRAY-MAX| |COMMON-LISP|::|CHARACTER| 260.))
+          :|OUT| :|ALLOCA|)))
+    (|FFI|::|DEF-CALL-OUT| |WIN32|::|GetCurrentDirectoryA| . #1#)
+    |FFI|::|PARSE-C-FUNCTION| |FFI|::|*FOREIGN-LIBRARY*|
+    |FFI|::|FIND-FOREIGN-FUNCTION| |WIN32|::|GetCurrentDirectoryA|
+    |SYSTEM|::|REMOVE-OLD-DEFINITIONS|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|134 134 (def-call-out GetVersion (:RETURN-TYPE dword) ...)-40-1|
+   #18Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 31 E6 3E 19 01)
+   (|WIN32|::|GetVersion|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|134 134 (def-call-out GetVersion (:RETURN-TYPE dword) ...)-40-2|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA DB DC 70 03 63 6B 04 01 02 6E 06 05 93
+        00 07 E0 2F 07 E0 AD 32 9C CB 19 02)
+   ("GetVersion" #1=((:|RETURN-TYPE| |WIN32|::|dword|) (:|ARGUMENTS|))
+    (|FFI|::|DEF-CALL-OUT| |WIN32|::|GetVersion| . #1#)
+    |FFI|::|PARSE-C-FUNCTION| |FFI|::|*FOREIGN-LIBRARY*|
+    |FFI|::|FIND-FOREIGN-FUNCTION| |WIN32|::|GetVersion|
+    |SYSTEM|::|REMOVE-OLD-DEFINITIONS|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|136 139 (def-call-out GetStdHandle (:RETURN-TYPE handle) ...)-41-1|
+   #18Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 31 E6 3E 19 01)
+   (|WIN32|::|GetStdHandle|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|136 139 (def-call-out GetStdHandle (:RETURN-TYPE handle) ...)-41-2|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA DB DC 70 03 DE 6B 05 01 02 6E 06 06 93
+        00 07 E1 2F 08 E1 AD 32 9C CC 19 02)
+   ("GetStdHandle"
+    #1=((:|RETURN-TYPE| |WIN32|::|handle|)
+        #2=(:|DOCUMENTATION|
+            "http://msdn.microsoft.com/library/en-us/dllproc/base/getstdhandle.asp")
+        (:|ARGUMENTS| (|WIN32|::|nStdHandle| |WIN32|::|dword|)))
+    (|FFI|::|DEF-CALL-OUT| |WIN32|::|GetStdHandle| . #1#)
+    |FFI|::|PARSE-C-FUNCTION| #2# |FFI|::|*FOREIGN-LIBRARY*|
+    |FFI|::|FIND-FOREIGN-FUNCTION| |WIN32|::|GetStdHandle|
+    |SYSTEM|::|REMOVE-OLD-DEFINITIONS|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|140 142 (def-call-out SetStdHandle (:RETURN-TYPE boolean) ...)-42-1|
+   #18Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 31 E6 3E 19 01)
+   (|WIN32|::|SetStdHandle|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|140 142 (def-call-out SetStdHandle (:RETURN-TYPE boolean) ...)-42-2|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA DB DC 70 03 DE 6B 05 01 02 6E 06 06 93
+        00 07 E1 2F 08 E1 AD 32 9C CC 19 02)
+   ("SetStdHandle"
+    #1=((:|RETURN-TYPE| |COMMON-LISP|::|BOOLEAN|)
+        #2=(:|DOCUMENTATION|
+            "http://msdn.microsoft.com/library/en-us/dllproc/base/setstdhandle.asp")
+        (:|ARGUMENTS| (|WIN32|::|nStdHandle| |WIN32|::|dword|)
+         (|WIN32|::|hHandle| |WIN32|::|handle|)))
+    (|FFI|::|DEF-CALL-OUT| |WIN32|::|SetStdHandle| . #1#)
+    |FFI|::|PARSE-C-FUNCTION| #2# |FFI|::|*FOREIGN-LIBRARY*|
+    |FFI|::|FIND-FOREIGN-FUNCTION| |WIN32|::|SetStdHandle|
+    |SYSTEM|::|REMOVE-OLD-DEFINITIONS|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|144 147 (defconstant STD_INPUT_HANDLE (- # 10) ...)-43-1|
+   #18Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 31 E6 3E 19 01)
+   (|WIN32|::|STD_INPUT_HANDLE|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|144 147 (defconstant STD_INPUT_HANDLE (- # 10) ...)-43-2|
+   #52Y(00 00 00 00 00 00 00 00 20 01 DA DB DC 6F 03 72 EC 73 02 37 DE 38 01 8D
+        66 0D AC DE 71 55 8E 13 06 DE DF AE 2D 03 06 DE AD 32 9D DE E1 E2 2D 03
+        09 C9 19 02)
+   (-10. 1. |FFI|::|UINT32| |FFI|::|%BITSIZEOF| |WIN32|::|STD_INPUT_HANDLE|
+    (|COMMON-LISP|::|DEFCONSTANT| |WIN32|::|STD_INPUT_HANDLE|
+     (|COMMON-LISP|::|-|
+      (|COMMON-LISP|::|ASH| 1. (|FFI|::|BITSIZEOF| '|WIN32|::|dword|)) 10.)
+     #1="Handle to the standard input device.\n
+Initially, this is a handle to the console input buffer, CONIN$.")
+    |SYSTEM|::|CONSTANT-WARNING| |COMMON-LISP|::|VARIABLE| #1#
+    |SYSTEM|::|%SET-DOCUMENTATION|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|148 151 (defconstant STD_OUTPUT_HANDLE (- # 11) ...)-44-1|
+   #18Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 31 E6 3E 19 01)
+   (|WIN32|::|STD_OUTPUT_HANDLE|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|148 151 (defconstant STD_OUTPUT_HANDLE (- # 11) ...)-44-2|
+   #52Y(00 00 00 00 00 00 00 00 20 01 DA DB DC 6F 03 72 EC 73 02 37 DE 38 01 8D
+        66 0D AC DE 71 55 8E 13 06 DE DF AE 2D 03 06 DE AD 32 9D DE E1 E2 2D 03
+        09 C9 19 02)
+   (-11. 1. |FFI|::|UINT32| |FFI|::|%BITSIZEOF| |WIN32|::|STD_OUTPUT_HANDLE|
+    (|COMMON-LISP|::|DEFCONSTANT| |WIN32|::|STD_OUTPUT_HANDLE|
+     (|COMMON-LISP|::|-|
+      (|COMMON-LISP|::|ASH| 1. (|FFI|::|BITSIZEOF| '|WIN32|::|dword|)) 11.)
+     #1="Handle to the standard output device.\n
+Initially, this is a handle to the active console screen buffer, CONOUT$.")
+    |SYSTEM|::|CONSTANT-WARNING| |COMMON-LISP|::|VARIABLE| #1#
+    |SYSTEM|::|%SET-DOCUMENTATION|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|152 155 (defconstant STD_ERROR_HANDLE (- # 12) ...)-45-1|
+   #18Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 31 E6 3E 19 01)
+   (|WIN32|::|STD_ERROR_HANDLE|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|152 155 (defconstant STD_ERROR_HANDLE (- # 12) ...)-45-2|
+   #52Y(00 00 00 00 00 00 00 00 20 01 DA DB DC 6F 03 72 EC 73 02 37 DE 38 01 8D
+        66 0D AC DE 71 55 8E 13 06 DE DF AE 2D 03 06 DE AD 32 9D DE E1 E2 2D 03
+        09 C9 19 02)
+   (-12. 1. |FFI|::|UINT32| |FFI|::|%BITSIZEOF| |WIN32|::|STD_ERROR_HANDLE|
+    (|COMMON-LISP|::|DEFCONSTANT| |WIN32|::|STD_ERROR_HANDLE|
+     (|COMMON-LISP|::|-|
+      (|COMMON-LISP|::|ASH| 1. (|FFI|::|BITSIZEOF| '|WIN32|::|dword|)) 12.)
+     #1="Handle to the standard error device.\n
+Initially, this is a handle to the active console screen buffer, CONOUT$.")
+    |SYSTEM|::|CONSTANT-WARNING| |COMMON-LISP|::|VARIABLE| #1#
+    |SYSTEM|::|%SET-DOCUMENTATION|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|157 163 (def-call-out ReadFile (:RETURN-TYPE boolean) ...)-46-1|
+   #18Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 31 E6 3E 19 01)
+   (|WIN32|::|ReadFile|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|157 163 (def-call-out ReadFile (:RETURN-TYPE boolean) ...)-46-2|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA DB DC 70 03 DE 6B 05 01 02 6E 06 06 93
+        00 07 E1 2F 08 E1 AD 32 9C CC 19 02)
+   ("ReadFile"
+    #1=((:|RETURN-TYPE| |COMMON-LISP|::|BOOLEAN|)
+        #2=(:|DOCUMENTATION|
+            "http://msdn.microsoft.com/library/en-us/fileio/fs/readfile.asp")
+        (:|ARGUMENTS| (|WIN32|::|hFile| |WIN32|::|handle|)
+         (|WIN32|::|lpBuffer| |FFI|::|C-POINTER|)
+         (|WIN32|::|nNumberOfBytesToRead| |WIN32|::|dword|)
+         (|WIN32|::|lpNumberOfBytesRead| (|FFI|::|C-PTR| |WIN32|::|dword|)
+          :|OUT|)
+         (|WIN32|::|lpOverlapped| |FFI|::|C-POINTER|)))
+    (|FFI|::|DEF-CALL-OUT| |WIN32|::|ReadFile| . #1#) |FFI|::|PARSE-C-FUNCTION|
+    #2# |FFI|::|*FOREIGN-LIBRARY*| |FFI|::|FIND-FOREIGN-FUNCTION|
+    |WIN32|::|ReadFile| |SYSTEM|::|REMOVE-OLD-DEFINITIONS|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|165 171 (def-call-out WriteFile (:RETURN-TYPE boolean) ...)-47-1|
+   #18Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 31 E6 3E 19 01)
+   (|WIN32|::|WriteFile|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|165 171 (def-call-out WriteFile (:RETURN-TYPE boolean) ...)-47-2|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA DB DC 70 03 DE 6B 05 01 02 6E 06 06 93
+        00 07 E1 2F 08 E1 AD 32 9C CC 19 02)
+   ("WriteFile"
+    #1=((:|RETURN-TYPE| |COMMON-LISP|::|BOOLEAN|)
+        #2=(:|DOCUMENTATION|
+            "http://msdn.microsoft.com/library/en-us/fileio/fs/writefile.asp")
+        (:|ARGUMENTS| (|WIN32|::|hFile| |WIN32|::|handle|)
+         (|WIN32|::|lpBuffer| |FFI|::|C-POINTER|)
+         (|WIN32|::|nNumberOfBytesToWrite| |WIN32|::|dword|)
+         (|WIN32|::|lpNumberOfBytesWritten| (|FFI|::|C-PTR| |WIN32|::|dword|)
+          :|OUT|)
+         (|WIN32|::|lpOverlapped| |FFI|::|C-POINTER|)))
+    (|FFI|::|DEF-CALL-OUT| |WIN32|::|WriteFile| . #1#)
+    |FFI|::|PARSE-C-FUNCTION| #2# |FFI|::|*FOREIGN-LIBRARY*|
+    |FFI|::|FIND-FOREIGN-FUNCTION| |WIN32|::|WriteFile|
+    |SYSTEM|::|REMOVE-OLD-DEFINITIONS|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|173 179 (def-call-out ReadConsoleA (:RETURN-TYPE boolean) ...)-48-1|
+   #18Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 31 E6 3E 19 01)
+   (|WIN32|::|ReadConsoleA|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|173 179 (def-call-out ReadConsoleA (:RETURN-TYPE boolean) ...)-48-2|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA DB DC 70 03 DE 6B 05 01 02 6E 06 06 93
+        00 07 E1 2F 08 E1 AD 32 9C CC 19 02)
+   ("ReadConsoleA"
+    #1=((:|RETURN-TYPE| |COMMON-LISP|::|BOOLEAN|)
+        #2=(:|DOCUMENTATION|
+            "http://msdn.microsoft.com/library/en-us/dllproc/base/readconsole.asp")
+        (:|ARGUMENTS| (|WIN32|::|hConsoleInput| |WIN32|::|handle|)
+         (|WIN32|::|lpBuffer| |FFI|::|C-POINTER|)
+         (|WIN32|::|nNumberOfCharsToRead| |WIN32|::|dword|)
+         (|WIN32|::|lpNumberOfCharsRead| (|FFI|::|C-PTR| |WIN32|::|dword|)
+          :|OUT|)
+         (|WIN32|::|lpReserved| |FFI|::|C-POINTER|)))
+    (|FFI|::|DEF-CALL-OUT| |WIN32|::|ReadConsoleA| . #1#)
+    |FFI|::|PARSE-C-FUNCTION| #2# |FFI|::|*FOREIGN-LIBRARY*|
+    |FFI|::|FIND-FOREIGN-FUNCTION| |WIN32|::|ReadConsoleA|
+    |SYSTEM|::|REMOVE-OLD-DEFINITIONS|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|181 187 (def-call-out WriteConsoleA (:RETURN-TYPE boolean) ...)-49-1|
+   #18Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 31 E6 3E 19 01)
+   (|WIN32|::|WriteConsoleA|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|181 187 (def-call-out WriteConsoleA (:RETURN-TYPE boolean) ...)-49-2|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA DB DC 70 03 DE 6B 05 01 02 6E 06 06 93
+        00 07 E1 2F 08 E1 AD 32 9C CC 19 02)
+   ("WriteConsoleA"
+    #1=((:|RETURN-TYPE| |COMMON-LISP|::|BOOLEAN|)
+        #2=(:|DOCUMENTATION|
+            "http://msdn.microsoft.com/library/en-us/dllproc/base/writeconsole.asp")
+        (:|ARGUMENTS| (|WIN32|::|hConsoleOutput| |WIN32|::|handle|)
+         (|WIN32|::|lpBuffer| |FFI|::|C-POINTER|)
+         (|WIN32|::|nNumberOfCharsToWrite| |WIN32|::|dword|)
+         (|WIN32|::|lpNumberOfCharsWritten| (|FFI|::|C-PTR| |WIN32|::|dword|)
+          :|OUT|)
+         (|WIN32|::|lpReserved| |FFI|::|C-POINTER|)))
+    (|FFI|::|DEF-CALL-OUT| |WIN32|::|WriteConsoleA| . #1#)
+    |FFI|::|PARSE-C-FUNCTION| #2# |FFI|::|*FOREIGN-LIBRARY*|
+    |FFI|::|FIND-FOREIGN-FUNCTION| |WIN32|::|WriteConsoleA|
+    |SYSTEM|::|REMOVE-OLD-DEFINITIONS|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|189 191 (eval-when (compile eval load) (defconstant MAX_COMPUTERNAME_LENGTH 16))-50-1|
+   #18Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 31 E6 3E 19 01)
+   (|WIN32|::|MAX_COMPUTERNAME_LENGTH|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|189 191 (eval-when (compile eval load) (defconstant MAX_COMPUTERNAME_LENGTH 16))-50-2|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 8D 66 0D DB DA 71 55 8E 13 06 DA
+        DC DB 2D 03 03 DA DB 32 9D C5 19 01)
+   (|WIN32|::|MAX_COMPUTERNAME_LENGTH| 16.
+    (|COMMON-LISP|::|DEFCONSTANT| |WIN32|::|MAX_COMPUTERNAME_LENGTH| 16.)
+    |SYSTEM|::|CONSTANT-WARNING|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|191 196 (def-call-out GetComputerNameA (:RETURN-TYPE boolean) ...)-51-1|
+   #18Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 31 E6 3E 19 01)
+   (|WIN32|::|GetComputerNameA|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|191 196 (def-call-out GetComputerNameA (:RETURN-TYPE boolean) ...)-51-2|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA DB DC 70 03 63 6B 04 01 02 6E 06 05 93
+        00 07 E0 2F 07 E0 AD 32 9C CB 19 02)
+   ("GetComputerNameA"
+    #1=((:|RETURN-TYPE| |COMMON-LISP|::|BOOLEAN|)
+        (:|ARGUMENTS|
+         (|WIN32|::|buffer|
+          (|FFI|::|C-PTR|
+           (|FFI|::|C-ARRAY-MAX| |COMMON-LISP|::|CHARACTER| 16.))
+          :|OUT| :|ALLOCA|)
+         (|WIN32|::|size| (|FFI|::|C-PTR| |WIN32|::|dword|) :|IN-OUT|)))
+    (|FFI|::|DEF-CALL-OUT| |WIN32|::|GetComputerNameA| . #1#)
+    |FFI|::|PARSE-C-FUNCTION| |FFI|::|*FOREIGN-LIBRARY*|
+    |FFI|::|FIND-FOREIGN-FUNCTION| |WIN32|::|GetComputerNameA|
+    |SYSTEM|::|REMOVE-OLD-DEFINITIONS|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|196 207 (def-c-enum COMPUTER_NAME_FORMAT ComputerNameNetBIOS ...)-52-1|
+   #18Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 31 E6 3E 19 01)
+   ((|WIN32|::|COMPUTER_NAME_FORMAT| |WIN32|::|ComputerNameNetBIOS|
+     |WIN32|::|ComputerNameDnsHostname| |WIN32|::|ComputerNameDnsDomain|
+     |WIN32|::|ComputerNameDnsFullyQualified|
+     |WIN32|::|ComputerNamePhysicalNetBIOS|
+     |WIN32|::|ComputerNamePhysicalDnsHostname|
+     |WIN32|::|ComputerNamePhysicalDnsDomain|
+     |WIN32|::|ComputerNamePhysicalDnsFullyQualified|
+     |WIN32|::|ComputerNameMax|))
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|196 207 (def-c-enum COMPUTER_NAME_FORMAT ComputerNameNetBIOS ...)-52-2-1|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 8D 66 0D DB DA 71 55 8E 13 06 DA
+        DC DB 2D 03 03 DA DB 32 9D 3E 19 01)
+   (|WIN32|::|ComputerNameNetBIOS| 0.
+    (|COMMON-LISP|::|DEFCONSTANT| |WIN32|::|ComputerNameNetBIOS| 0.)
+    |SYSTEM|::|CONSTANT-WARNING|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|196 207 (def-c-enum COMPUTER_NAME_FORMAT ComputerNameNetBIOS ...)-52-2-2|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 8D 66 0D DB DA 71 55 8E 13 06 DA
+        DC DB 2D 03 03 DA DB 32 9D 3E 19 01)
+   (|WIN32|::|ComputerNameDnsHostname| 1.
+    (|COMMON-LISP|::|DEFCONSTANT| |WIN32|::|ComputerNameDnsHostname|
+     (|COMMON-LISP|::|1+| |WIN32|::|ComputerNameNetBIOS|))
+    |SYSTEM|::|CONSTANT-WARNING|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|196 207 (def-c-enum COMPUTER_NAME_FORMAT ComputerNameNetBIOS ...)-52-2-3|
+   #42Y(00 00 00 00 00 00 00 00 20 01 6B 00 72 B1 DB 38 01 8D 66 0D AC DB 71 55
+        8E 13 06 DB DC AE 2D 03 03 DB AD 32 9D 16 01 3E 19 01)
+   (|WIN32|::|ComputerNameDnsHostname| |WIN32|::|ComputerNameDnsDomain|
+    (|COMMON-LISP|::|DEFCONSTANT| |WIN32|::|ComputerNameDnsDomain|
+     (|COMMON-LISP|::|1+| |WIN32|::|ComputerNameDnsHostname|))
+    |SYSTEM|::|CONSTANT-WARNING|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|196 207 (def-c-enum COMPUTER_NAME_FORMAT ComputerNameNetBIOS ...)-52-2-4|
+   #42Y(00 00 00 00 00 00 00 00 20 01 6B 00 72 B1 DB 38 01 8D 66 0D AC DB 71 55
+        8E 13 06 DB DC AE 2D 03 03 DB AD 32 9D 16 01 3E 19 01)
+   (|WIN32|::|ComputerNameDnsDomain| |WIN32|::|ComputerNameDnsFullyQualified|
+    (|COMMON-LISP|::|DEFCONSTANT| |WIN32|::|ComputerNameDnsFullyQualified|
+     (|COMMON-LISP|::|1+| |WIN32|::|ComputerNameDnsDomain|))
+    |SYSTEM|::|CONSTANT-WARNING|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|196 207 (def-c-enum COMPUTER_NAME_FORMAT ComputerNameNetBIOS ...)-52-2-5|
+   #42Y(00 00 00 00 00 00 00 00 20 01 6B 00 72 B1 DB 38 01 8D 66 0D AC DB 71 55
+        8E 13 06 DB DC AE 2D 03 03 DB AD 32 9D 16 01 3E 19 01)
+   (|WIN32|::|ComputerNameDnsFullyQualified|
+    |WIN32|::|ComputerNamePhysicalNetBIOS|
+    (|COMMON-LISP|::|DEFCONSTANT| |WIN32|::|ComputerNamePhysicalNetBIOS|
+     (|COMMON-LISP|::|1+| |WIN32|::|ComputerNameDnsFullyQualified|))
+    |SYSTEM|::|CONSTANT-WARNING|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|196 207 (def-c-enum COMPUTER_NAME_FORMAT ComputerNameNetBIOS ...)-52-2-6|
+   #42Y(00 00 00 00 00 00 00 00 20 01 6B 00 72 B1 DB 38 01 8D 66 0D AC DB 71 55
+        8E 13 06 DB DC AE 2D 03 03 DB AD 32 9D 16 01 3E 19 01)
+   (|WIN32|::|ComputerNamePhysicalNetBIOS|
+    |WIN32|::|ComputerNamePhysicalDnsHostname|
+    (|COMMON-LISP|::|DEFCONSTANT| |WIN32|::|ComputerNamePhysicalDnsHostname|
+     (|COMMON-LISP|::|1+| |WIN32|::|ComputerNamePhysicalNetBIOS|))
+    |SYSTEM|::|CONSTANT-WARNING|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|196 207 (def-c-enum COMPUTER_NAME_FORMAT ComputerNameNetBIOS ...)-52-2-7|
+   #42Y(00 00 00 00 00 00 00 00 20 01 6B 00 72 B1 DB 38 01 8D 66 0D AC DB 71 55
+        8E 13 06 DB DC AE 2D 03 03 DB AD 32 9D 16 01 3E 19 01)
+   (|WIN32|::|ComputerNamePhysicalDnsHostname|
+    |WIN32|::|ComputerNamePhysicalDnsDomain|
+    (|COMMON-LISP|::|DEFCONSTANT| |WIN32|::|ComputerNamePhysicalDnsDomain|
+     (|COMMON-LISP|::|1+| |WIN32|::|ComputerNamePhysicalDnsHostname|))
+    |SYSTEM|::|CONSTANT-WARNING|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|196 207 (def-c-enum COMPUTER_NAME_FORMAT ComputerNameNetBIOS ...)-52-2-8|
+   #42Y(00 00 00 00 00 00 00 00 20 01 6B 00 72 B1 DB 38 01 8D 66 0D AC DB 71 55
+        8E 13 06 DB DC AE 2D 03 03 DB AD 32 9D 16 01 3E 19 01)
+   (|WIN32|::|ComputerNamePhysicalDnsDomain|
+    |WIN32|::|ComputerNamePhysicalDnsFullyQualified|
+    (|COMMON-LISP|::|DEFCONSTANT|
+     |WIN32|::|ComputerNamePhysicalDnsFullyQualified|
+     (|COMMON-LISP|::|1+| |WIN32|::|ComputerNamePhysicalDnsDomain|))
+    |SYSTEM|::|CONSTANT-WARNING|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|196 207 (def-c-enum COMPUTER_NAME_FORMAT ComputerNameNetBIOS ...)-52-2-9|
+   #42Y(00 00 00 00 00 00 00 00 20 01 6B 00 72 B1 DB 38 01 8D 66 0D AC DB 71 55
+        8E 13 06 DB DC AE 2D 03 03 DB AD 32 9D 16 01 3E 19 01)
+   (|WIN32|::|ComputerNamePhysicalDnsFullyQualified| |WIN32|::|ComputerNameMax|
+    (|COMMON-LISP|::|DEFCONSTANT| |WIN32|::|ComputerNameMax|
+     (|COMMON-LISP|::|1+| |WIN32|::|ComputerNamePhysicalDnsFullyQualified|))
+    |SYSTEM|::|CONSTANT-WARNING|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|196 207 (def-c-enum COMPUTER_NAME_FORMAT ComputerNameNetBIOS ...)-52-2-10|
+   #18Y(00 00 00 00 00 00 00 00 20 01 DA DB DC 32 A2 3E 19 01)
+   (|WIN32|::|COMPUTER_NAME_FORMAT| |FFI|::|DEF-C-ENUM|
+    #S(|COMMON-LISP|::|HASH-TABLE| :|TEST| |EXT|::|FASTHASH-EQUAL|
+       (8. . |WIN32|::|ComputerNameMax|)
+       (7. . |WIN32|::|ComputerNamePhysicalDnsFullyQualified|)
+       (6. . |WIN32|::|ComputerNamePhysicalDnsDomain|)
+       (5. . |WIN32|::|ComputerNamePhysicalDnsHostname|)
+       (4. . |WIN32|::|ComputerNamePhysicalNetBIOS|)
+       (3. . |WIN32|::|ComputerNameDnsFullyQualified|)
+       (2. . |WIN32|::|ComputerNameDnsDomain|)
+       (1. . |WIN32|::|ComputerNameDnsHostname|)
+       (0. . |WIN32|::|ComputerNameNetBIOS|)))
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|196 207 (def-c-enum COMPUTER_NAME_FORMAT ComputerNameNetBIOS ...)-52-2-11-1|
+   #17Y(00 00 00 00 00 00 00 00 20 01 DA DB 30 02 3E 19 01)
+   (|FFI|::|INT| |WIN32|::|COMPUTER_NAME_FORMAT| |FFI|::|PARSE-C-TYPE|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|196 207 (def-c-enum COMPUTER_NAME_FORMAT ComputerNameNetBIOS ...)-52-2-11-2|
+   #13Y(00 00 00 00 00 00 00 00 20 01 C5 19 01)
+   (|WIN32|::|COMPUTER_NAME_FORMAT|) |COMMON-LISP|::|NIL|)
+#Y(#:|209 213 (def-call-out GetComputerNameExA (:RETURN-TYPE boolean) ...)-53-1|
+   #18Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 31 E6 3E 19 01)
+   (|WIN32|::|GetComputerNameExA|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|209 213 (def-call-out GetComputerNameExA (:RETURN-TYPE boolean) ...)-53-2|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA DB DC 70 03 63 6B 04 01 02 6E 06 05 93
+        00 07 E0 2F 07 E0 AD 32 9C CB 19 02)
+   ("GetComputerNameExA"
+    #1=((:|RETURN-TYPE| |COMMON-LISP|::|BOOLEAN|)
+        (:|ARGUMENTS| (|WIN32|::|type-name| |WIN32|::|COMPUTER_NAME_FORMAT|)
+         (|WIN32|::|buffer|
+          (|FFI|::|C-PTR|
+           (|FFI|::|C-ARRAY-MAX| |COMMON-LISP|::|CHARACTER| 16.))
+          :|OUT| :|ALLOCA|)
+         (|WIN32|::|size| (|FFI|::|C-PTR| |WIN32|::|dword|) :|IN-OUT|)))
+    (|FFI|::|DEF-CALL-OUT| |WIN32|::|GetComputerNameExA| . #1#)
+    |FFI|::|PARSE-C-FUNCTION| |FFI|::|*FOREIGN-LIBRARY*|
+    |FFI|::|FIND-FOREIGN-FUNCTION| |WIN32|::|GetComputerNameExA|
+    |SYSTEM|::|REMOVE-OLD-DEFINITIONS|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|213 216 (default-foreign-library "user32.dll")-54|
+   #36Y(03 00 01 00 00 00 00 00 20 01 DA DB 38 05 72 6B 53 08 63 AF 30 02 C8 0F
+        04 54 64 67 00 00 00 30 02 55 19 02)
+   (#.#'|EXT|::|PACKAGE-LOCK| ("FFI")
+    #.(|SYSTEM|::|GET-SETF-SYMBOL| '|EXT|::|PACKAGE-LOCK|) "user32.dll"
+    |FFI|::|*FOREIGN-LIBRARY*|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|218 225 (def-c-enum EWX (EWX_LOGOFF 0) ...)-55-1|
+   #18Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 31 E6 3E 19 01)
+   ((|WIN32|::|EWX| |WIN32|::|EWX_LOGOFF| |WIN32|::|EWX_SHUTDOWN|
+     |WIN32|::|EWX_REBOOT| |WIN32|::|EWX_FORCE| |WIN32|::|EWX_POWEROFF|
+     |WIN32|::|EWX_FORCEIFHUNG|))
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|218 225 (def-c-enum EWX (EWX_LOGOFF 0) ...)-55-2-1|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 8D 66 0D DB DA 71 55 8E 13 06 DA
+        DC DB 2D 03 03 DA DB 32 9D 3E 19 01)
+   (|WIN32|::|EWX_LOGOFF| 0.
+    (|COMMON-LISP|::|DEFCONSTANT| |WIN32|::|EWX_LOGOFF| 0.)
+    |SYSTEM|::|CONSTANT-WARNING|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|218 225 (def-c-enum EWX (EWX_LOGOFF 0) ...)-55-2-2|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 8D 66 0D DB DA 71 55 8E 13 06 DA
+        DC DB 2D 03 03 DA DB 32 9D 3E 19 01)
+   (|WIN32|::|EWX_SHUTDOWN| 1.
+    (|COMMON-LISP|::|DEFCONSTANT| |WIN32|::|EWX_SHUTDOWN| 1.)
+    |SYSTEM|::|CONSTANT-WARNING|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|218 225 (def-c-enum EWX (EWX_LOGOFF 0) ...)-55-2-3|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 8D 66 0D DB DA 71 55 8E 13 06 DA
+        DC DB 2D 03 03 DA DB 32 9D 3E 19 01)
+   (|WIN32|::|EWX_REBOOT| 2.
+    (|COMMON-LISP|::|DEFCONSTANT| |WIN32|::|EWX_REBOOT| 2.)
+    |SYSTEM|::|CONSTANT-WARNING|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|218 225 (def-c-enum EWX (EWX_LOGOFF 0) ...)-55-2-4|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 8D 66 0D DB DA 71 55 8E 13 06 DA
+        DC DB 2D 03 03 DA DB 32 9D 3E 19 01)
+   (|WIN32|::|EWX_FORCE| 4.
+    (|COMMON-LISP|::|DEFCONSTANT| |WIN32|::|EWX_FORCE| 4.)
+    |SYSTEM|::|CONSTANT-WARNING|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|218 225 (def-c-enum EWX (EWX_LOGOFF 0) ...)-55-2-5|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 8D 66 0D DB DA 71 55 8E 13 06 DA
+        DC DB 2D 03 03 DA DB 32 9D 3E 19 01)
+   (|WIN32|::|EWX_POWEROFF| 8.
+    (|COMMON-LISP|::|DEFCONSTANT| |WIN32|::|EWX_POWEROFF| 8.)
+    |SYSTEM|::|CONSTANT-WARNING|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|218 225 (def-c-enum EWX (EWX_LOGOFF 0) ...)-55-2-6|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 8D 66 0D DB DA 71 55 8E 13 06 DA
+        DC DB 2D 03 03 DA DB 32 9D 3E 19 01)
+   (|WIN32|::|EWX_FORCEIFHUNG| 16.
+    (|COMMON-LISP|::|DEFCONSTANT| |WIN32|::|EWX_FORCEIFHUNG| 16.)
+    |SYSTEM|::|CONSTANT-WARNING|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|218 225 (def-c-enum EWX (EWX_LOGOFF 0) ...)-55-2-7|
+   #18Y(00 00 00 00 00 00 00 00 20 01 DA DB DC 32 A2 3E 19 01)
+   (|WIN32|::|EWX| |FFI|::|DEF-C-ENUM|
+    #S(|COMMON-LISP|::|HASH-TABLE| :|TEST| |EXT|::|FASTHASH-EQUAL|
+       (16. . |WIN32|::|EWX_FORCEIFHUNG|) (8. . |WIN32|::|EWX_POWEROFF|)
+       (4. . |WIN32|::|EWX_FORCE|) (2. . |WIN32|::|EWX_REBOOT|)
+       (1. . |WIN32|::|EWX_SHUTDOWN|) (0. . |WIN32|::|EWX_LOGOFF|)))
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|218 225 (def-c-enum EWX (EWX_LOGOFF 0) ...)-55-2-8-1|
+   #17Y(00 00 00 00 00 00 00 00 20 01 DA DB 30 02 3E 19 01)
+   (|FFI|::|INT| |WIN32|::|EWX| |FFI|::|PARSE-C-TYPE|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|218 225 (def-c-enum EWX (EWX_LOGOFF 0) ...)-55-2-8-2|
+   #13Y(00 00 00 00 00 00 00 00 20 01 C5 19 01) (|WIN32|::|EWX|)
+   |COMMON-LISP|::|NIL|)
+#Y(#:|226 228 (def-call-out ExitWindowsEx (:RETURN-TYPE boolean) ...)-56-1|
+   #18Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 31 E6 3E 19 01)
+   (|WIN32|::|ExitWindowsEx|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|226 228 (def-call-out ExitWindowsEx (:RETURN-TYPE boolean) ...)-56-2|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA DB DC 70 03 63 6B 04 01 02 6E 06 05 93
+        00 07 E0 2F 07 E0 AD 32 9C CB 19 02)
+   ("ExitWindowsEx"
+    #1=((:|RETURN-TYPE| |COMMON-LISP|::|BOOLEAN|)
+        (:|ARGUMENTS| (|WIN32|::|flags| |FFI|::|UINT|)
+         (|WIN32|::|reserved| |WIN32|::|dword|)))
+    (|FFI|::|DEF-CALL-OUT| |WIN32|::|ExitWindowsEx| . #1#)
+    |FFI|::|PARSE-C-FUNCTION| |FFI|::|*FOREIGN-LIBRARY*|
+    |FFI|::|FIND-FOREIGN-FUNCTION| |WIN32|::|ExitWindowsEx|
+    |SYSTEM|::|REMOVE-OLD-DEFINITIONS|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|230 230 (def-c-enum GR_OBJECTS GR_GDIOBJECTS ...)-57-1|
+   #18Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 31 E6 3E 19 01)
+   ((|WIN32|::|GR_OBJECTS| |WIN32|::|GR_GDIOBJECTS| |WIN32|::|GR_USEROBJECTS|))
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|230 230 (def-c-enum GR_OBJECTS GR_GDIOBJECTS ...)-57-2-1|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 8D 66 0D DB DA 71 55 8E 13 06 DA
+        DC DB 2D 03 03 DA DB 32 9D 3E 19 01)
+   (|WIN32|::|GR_GDIOBJECTS| 0.
+    (|COMMON-LISP|::|DEFCONSTANT| |WIN32|::|GR_GDIOBJECTS| 0.)
+    |SYSTEM|::|CONSTANT-WARNING|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|230 230 (def-c-enum GR_OBJECTS GR_GDIOBJECTS ...)-57-2-2|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 8D 66 0D DB DA 71 55 8E 13 06 DA
+        DC DB 2D 03 03 DA DB 32 9D 3E 19 01)
+   (|WIN32|::|GR_USEROBJECTS| 1.
+    (|COMMON-LISP|::|DEFCONSTANT| |WIN32|::|GR_USEROBJECTS|
+     (|COMMON-LISP|::|1+| |WIN32|::|GR_GDIOBJECTS|))
+    |SYSTEM|::|CONSTANT-WARNING|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|230 230 (def-c-enum GR_OBJECTS GR_GDIOBJECTS ...)-57-2-3|
+   #18Y(00 00 00 00 00 00 00 00 20 01 DA DB DC 32 A2 3E 19 01)
+   (|WIN32|::|GR_OBJECTS| |FFI|::|DEF-C-ENUM|
+    #S(|COMMON-LISP|::|HASH-TABLE| :|TEST| |EXT|::|FASTHASH-EQUAL|
+       (1. . |WIN32|::|GR_USEROBJECTS|) (0. . |WIN32|::|GR_GDIOBJECTS|)))
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|230 230 (def-c-enum GR_OBJECTS GR_GDIOBJECTS ...)-57-2-4-1|
+   #17Y(00 00 00 00 00 00 00 00 20 01 DA DB 30 02 3E 19 01)
+   (|FFI|::|INT| |WIN32|::|GR_OBJECTS| |FFI|::|PARSE-C-TYPE|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|230 230 (def-c-enum GR_OBJECTS GR_GDIOBJECTS ...)-57-2-4-2|
+   #13Y(00 00 00 00 00 00 00 00 20 01 C5 19 01) (|WIN32|::|GR_OBJECTS|)
+   |COMMON-LISP|::|NIL|)
+#Y(#:|231 232 (def-call-out GetGuiResources (:RETURN-TYPE dword) ...)-58-1|
+   #18Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 31 E6 3E 19 01)
+   (|WIN32|::|GetGuiResources|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|231 232 (def-call-out GetGuiResources (:RETURN-TYPE dword) ...)-58-2|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA DB DC 70 03 63 6B 04 01 02 6E 06 05 93
+        00 07 E0 2F 07 E0 AD 32 9C CB 19 02)
+   ("GetGuiResources"
+    #1=((:|RETURN-TYPE| |WIN32|::|dword|)
+        (:|ARGUMENTS| (|WIN32|::|process| |WIN32|::|handle|)
+         (|WIN32|::|flags| |WIN32|::|dword|)))
+    (|FFI|::|DEF-CALL-OUT| |WIN32|::|GetGuiResources| . #1#)
+    |FFI|::|PARSE-C-FUNCTION| |FFI|::|*FOREIGN-LIBRARY*|
+    |FFI|::|FIND-FOREIGN-FUNCTION| |WIN32|::|GetGuiResources|
+    |SYSTEM|::|REMOVE-OLD-DEFINITIONS|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|232 236 (def-c-enum image_type (IMAGE_BITMAP 0) ...)-59-1|
+   #18Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 31 E6 3E 19 01)
+   ((|WIN32|::|image_type| |WIN32|::|IMAGE_BITMAP| |WIN32|::|IMAGE_ICON|
+     |WIN32|::|IMAGE_CURSOR| |WIN32|::|IMAGE_ENHMETAFILE|))
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|232 236 (def-c-enum image_type (IMAGE_BITMAP 0) ...)-59-2-1|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 8D 66 0D DB DA 71 55 8E 13 06 DA
+        DC DB 2D 03 03 DA DB 32 9D 3E 19 01)
+   (|WIN32|::|IMAGE_BITMAP| 0.
+    (|COMMON-LISP|::|DEFCONSTANT| |WIN32|::|IMAGE_BITMAP| 0.)
+    |SYSTEM|::|CONSTANT-WARNING|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|232 236 (def-c-enum image_type (IMAGE_BITMAP 0) ...)-59-2-2|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 8D 66 0D DB DA 71 55 8E 13 06 DA
+        DC DB 2D 03 03 DA DB 32 9D 3E 19 01)
+   (|WIN32|::|IMAGE_ICON| 1.
+    (|COMMON-LISP|::|DEFCONSTANT| |WIN32|::|IMAGE_ICON|
+     (|COMMON-LISP|::|1+| |WIN32|::|IMAGE_BITMAP|))
+    |SYSTEM|::|CONSTANT-WARNING|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|232 236 (def-c-enum image_type (IMAGE_BITMAP 0) ...)-59-2-3|
+   #42Y(00 00 00 00 00 00 00 00 20 01 6B 00 72 B1 DB 38 01 8D 66 0D AC DB 71 55
+        8E 13 06 DB DC AE 2D 03 03 DB AD 32 9D 16 01 3E 19 01)
+   (|WIN32|::|IMAGE_ICON| |WIN32|::|IMAGE_CURSOR|
+    (|COMMON-LISP|::|DEFCONSTANT| |WIN32|::|IMAGE_CURSOR|
+     (|COMMON-LISP|::|1+| |WIN32|::|IMAGE_ICON|))
+    |SYSTEM|::|CONSTANT-WARNING|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|232 236 (def-c-enum image_type (IMAGE_BITMAP 0) ...)-59-2-4|
+   #42Y(00 00 00 00 00 00 00 00 20 01 6B 00 72 B1 DB 38 01 8D 66 0D AC DB 71 55
+        8E 13 06 DB DC AE 2D 03 03 DB AD 32 9D 16 01 3E 19 01)
+   (|WIN32|::|IMAGE_CURSOR| |WIN32|::|IMAGE_ENHMETAFILE|
+    (|COMMON-LISP|::|DEFCONSTANT| |WIN32|::|IMAGE_ENHMETAFILE|
+     (|COMMON-LISP|::|1+| |WIN32|::|IMAGE_CURSOR|))
+    |SYSTEM|::|CONSTANT-WARNING|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|232 236 (def-c-enum image_type (IMAGE_BITMAP 0) ...)-59-2-5|
+   #18Y(00 00 00 00 00 00 00 00 20 01 DA DB DC 32 A2 3E 19 01)
+   (|WIN32|::|image_type| |FFI|::|DEF-C-ENUM|
+    #S(|COMMON-LISP|::|HASH-TABLE| :|TEST| |EXT|::|FASTHASH-EQUAL|
+       (3. . |WIN32|::|IMAGE_ENHMETAFILE|) (2. . |WIN32|::|IMAGE_CURSOR|)
+       (1. . |WIN32|::|IMAGE_ICON|) (0. . |WIN32|::|IMAGE_BITMAP|)))
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|232 236 (def-c-enum image_type (IMAGE_BITMAP 0) ...)-59-2-6-1|
+   #17Y(00 00 00 00 00 00 00 00 20 01 DA DB 30 02 3E 19 01)
+   (|FFI|::|INT| |WIN32|::|image_type| |FFI|::|PARSE-C-TYPE|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|232 236 (def-c-enum image_type (IMAGE_BITMAP 0) ...)-59-2-6-2|
+   #13Y(00 00 00 00 00 00 00 00 20 01 C5 19 01) (|WIN32|::|image_type|)
+   |COMMON-LISP|::|NIL|)
+#Y(#:|237 249 (def-c-enum load_options (LR_DEFAULTCOLOR 0) ...)-60-1|
+   #18Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 31 E6 3E 19 01)
+   ((|WIN32|::|load_options| |WIN32|::|LR_DEFAULTCOLOR|
+     |WIN32|::|LR_MONOCHROME| |WIN32|::|LR_COLOR| |WIN32|::|LR_COPYRETURNORG|
+     |WIN32|::|LR_COPYDELETEORG| |WIN32|::|LR_LOADFROMFILE|
+     |WIN32|::|LR_LOADTRANSPARENT| |WIN32|::|LR_LOADREALSIZE|
+     |WIN32|::|LR_LOADMAP3DCOLORS| |WIN32|::|LR_CREATEDIBSECTION|
+     |WIN32|::|LR_COPYFROMRESOURCE| |WIN32|::|LR_SHARED|))
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|237 249 (def-c-enum load_options (LR_DEFAULTCOLOR 0) ...)-60-2-1|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 8D 66 0D DB DA 71 55 8E 13 06 DA
+        DC DB 2D 03 03 DA DB 32 9D 3E 19 01)
+   (|WIN32|::|LR_DEFAULTCOLOR| 0.
+    (|COMMON-LISP|::|DEFCONSTANT| |WIN32|::|LR_DEFAULTCOLOR| 0.)
+    |SYSTEM|::|CONSTANT-WARNING|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|237 249 (def-c-enum load_options (LR_DEFAULTCOLOR 0) ...)-60-2-2|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 8D 66 0D DB DA 71 55 8E 13 06 DA
+        DC DB 2D 03 03 DA DB 32 9D 3E 19 01)
+   (|WIN32|::|LR_MONOCHROME| 1.
+    (|COMMON-LISP|::|DEFCONSTANT| |WIN32|::|LR_MONOCHROME| 1.)
+    |SYSTEM|::|CONSTANT-WARNING|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|237 249 (def-c-enum load_options (LR_DEFAULTCOLOR 0) ...)-60-2-3|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 8D 66 0D DB DA 71 55 8E 13 06 DA
+        DC DB 2D 03 03 DA DB 32 9D 3E 19 01)
+   (|WIN32|::|LR_COLOR| 2.
+    (|COMMON-LISP|::|DEFCONSTANT| |WIN32|::|LR_COLOR| 2.)
+    |SYSTEM|::|CONSTANT-WARNING|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|237 249 (def-c-enum load_options (LR_DEFAULTCOLOR 0) ...)-60-2-4|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 8D 66 0D DB DA 71 55 8E 13 06 DA
+        DC DB 2D 03 03 DA DB 32 9D 3E 19 01)
+   (|WIN32|::|LR_COPYRETURNORG| 4.
+    (|COMMON-LISP|::|DEFCONSTANT| |WIN32|::|LR_COPYRETURNORG| 4.)
+    |SYSTEM|::|CONSTANT-WARNING|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|237 249 (def-c-enum load_options (LR_DEFAULTCOLOR 0) ...)-60-2-5|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 8D 66 0D DB DA 71 55 8E 13 06 DA
+        DC DB 2D 03 03 DA DB 32 9D 3E 19 01)
+   (|WIN32|::|LR_COPYDELETEORG| 8.
+    (|COMMON-LISP|::|DEFCONSTANT| |WIN32|::|LR_COPYDELETEORG| 8.)
+    |SYSTEM|::|CONSTANT-WARNING|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|237 249 (def-c-enum load_options (LR_DEFAULTCOLOR 0) ...)-60-2-6|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 8D 66 0D DB DA 71 55 8E 13 06 DA
+        DC DB 2D 03 03 DA DB 32 9D 3E 19 01)
+   (|WIN32|::|LR_LOADFROMFILE| 16.
+    (|COMMON-LISP|::|DEFCONSTANT| |WIN32|::|LR_LOADFROMFILE| 16.)
+    |SYSTEM|::|CONSTANT-WARNING|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|237 249 (def-c-enum load_options (LR_DEFAULTCOLOR 0) ...)-60-2-7|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 8D 66 0D DB DA 71 55 8E 13 06 DA
+        DC DB 2D 03 03 DA DB 32 9D 3E 19 01)
+   (|WIN32|::|LR_LOADTRANSPARENT| 32.
+    (|COMMON-LISP|::|DEFCONSTANT| |WIN32|::|LR_LOADTRANSPARENT| 32.)
+    |SYSTEM|::|CONSTANT-WARNING|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|237 249 (def-c-enum load_options (LR_DEFAULTCOLOR 0) ...)-60-2-8|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 8D 66 0D DB DA 71 55 8E 13 06 DA
+        DC DB 2D 03 03 DA DB 32 9D 3E 19 01)
+   (|WIN32|::|LR_LOADREALSIZE| 128.
+    (|COMMON-LISP|::|DEFCONSTANT| |WIN32|::|LR_LOADREALSIZE| 128.)
+    |SYSTEM|::|CONSTANT-WARNING|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|237 249 (def-c-enum load_options (LR_DEFAULTCOLOR 0) ...)-60-2-9|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 8D 66 0D DB DA 71 55 8E 13 06 DA
+        DC DB 2D 03 03 DA DB 32 9D 3E 19 01)
+   (|WIN32|::|LR_LOADMAP3DCOLORS| 4096.
+    (|COMMON-LISP|::|DEFCONSTANT| |WIN32|::|LR_LOADMAP3DCOLORS| 4096.)
+    |SYSTEM|::|CONSTANT-WARNING|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|237 249 (def-c-enum load_options (LR_DEFAULTCOLOR 0) ...)-60-2-10|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 8D 66 0D DB DA 71 55 8E 13 06 DA
+        DC DB 2D 03 03 DA DB 32 9D 3E 19 01)
+   (|WIN32|::|LR_CREATEDIBSECTION| 8192.
+    (|COMMON-LISP|::|DEFCONSTANT| |WIN32|::|LR_CREATEDIBSECTION| 8192.)
+    |SYSTEM|::|CONSTANT-WARNING|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|237 249 (def-c-enum load_options (LR_DEFAULTCOLOR 0) ...)-60-2-11|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 8D 66 0D DB DA 71 55 8E 13 06 DA
+        DC DB 2D 03 03 DA DB 32 9D 3E 19 01)
+   (|WIN32|::|LR_COPYFROMRESOURCE| 16384.
+    (|COMMON-LISP|::|DEFCONSTANT| |WIN32|::|LR_COPYFROMRESOURCE| 16384.)
+    |SYSTEM|::|CONSTANT-WARNING|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|237 249 (def-c-enum load_options (LR_DEFAULTCOLOR 0) ...)-60-2-12|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 8D 66 0D DB DA 71 55 8E 13 06 DA
+        DC DB 2D 03 03 DA DB 32 9D 3E 19 01)
+   (|WIN32|::|LR_SHARED| 32768.
+    (|COMMON-LISP|::|DEFCONSTANT| |WIN32|::|LR_SHARED| 32768.)
+    |SYSTEM|::|CONSTANT-WARNING|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|237 249 (def-c-enum load_options (LR_DEFAULTCOLOR 0) ...)-60-2-13|
+   #18Y(00 00 00 00 00 00 00 00 20 01 DA DB DC 32 A2 3E 19 01)
+   (|WIN32|::|load_options| |FFI|::|DEF-C-ENUM|
+    #S(|COMMON-LISP|::|HASH-TABLE| :|TEST| |EXT|::|FASTHASH-EQUAL|
+       (32768. . |WIN32|::|LR_SHARED|)
+       (16384. . |WIN32|::|LR_COPYFROMRESOURCE|)
+       (8192. . |WIN32|::|LR_CREATEDIBSECTION|)
+       (4096. . |WIN32|::|LR_LOADMAP3DCOLORS|)
+       (128. . |WIN32|::|LR_LOADREALSIZE|)
+       (32. . |WIN32|::|LR_LOADTRANSPARENT|) (16. . |WIN32|::|LR_LOADFROMFILE|)
+       (8. . |WIN32|::|LR_COPYDELETEORG|) (4. . |WIN32|::|LR_COPYRETURNORG|)
+       (2. . |WIN32|::|LR_COLOR|) (1. . |WIN32|::|LR_MONOCHROME|)
+       (0. . |WIN32|::|LR_DEFAULTCOLOR|)))
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|237 249 (def-c-enum load_options (LR_DEFAULTCOLOR 0) ...)-60-2-14-1|
+   #17Y(00 00 00 00 00 00 00 00 20 01 DA DB 30 02 3E 19 01)
+   (|FFI|::|INT| |WIN32|::|load_options| |FFI|::|PARSE-C-TYPE|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|237 249 (def-c-enum load_options (LR_DEFAULTCOLOR 0) ...)-60-2-14-2|
+   #13Y(00 00 00 00 00 00 00 00 20 01 C5 19 01) (|WIN32|::|load_options|)
+   |COMMON-LISP|::|NIL|)
+#Y(#:|250 255 (def-call-out LoadImageA (:RETURN-TYPE handle) ...)-61-1|
+   #18Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 31 E6 3E 19 01)
+   (|WIN32|::|LoadImageA|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|250 255 (def-call-out LoadImageA (:RETURN-TYPE handle) ...)-61-2|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA DB DC 70 03 DE 6B 05 01 02 6E 06 06 93
+        00 07 E1 2F 08 E1 AD 32 9C CC 19 02)
+   ("LoadImageA"
+    #1=((:|RETURN-TYPE| |WIN32|::|handle|)
+        #2=(:|DOCUMENTATION|
+            "http://msdn.microsoft.com/library/en-us/winui/winui/windowsuserinterface/resources/introductiontoresources/resourcereference/resourcefunctions/loadimage.asp")
+        (:|ARGUMENTS|
+         (|WIN32|::|application-instance-handle| |WIN32|::|handle|)
+         (|WIN32|::|image-name| |FFI|::|C-STRING|)
+         (|COMMON-LISP|::|TYPE| |FFI|::|UINT|) (|WIN32|::|width| |FFI|::|INT|)
+         (|WIN32|::|height| |FFI|::|INT|) (|WIN32|::|options| |FFI|::|INT|)))
+    (|FFI|::|DEF-CALL-OUT| |WIN32|::|LoadImageA| . #1#)
+    |FFI|::|PARSE-C-FUNCTION| #2# |FFI|::|*FOREIGN-LIBRARY*|
+    |FFI|::|FIND-FOREIGN-FUNCTION| |WIN32|::|LoadImageA|
+    |SYSTEM|::|REMOVE-OLD-DEFINITIONS|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|255 259 (def-call-out DestroyIcon (:RETURN-TYPE boolean) ...)-62-1|
+   #18Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 31 E6 3E 19 01)
+   (|WIN32|::|DestroyIcon|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|255 259 (def-call-out DestroyIcon (:RETURN-TYPE boolean) ...)-62-2|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA DB DC 70 03 DE 6B 05 01 02 6E 06 06 93
+        00 07 E1 2F 08 E1 AD 32 9C CC 19 02)
+   ("DestroyIcon"
+    #1=((:|RETURN-TYPE| |COMMON-LISP|::|BOOLEAN|)
+        #2=(:|DOCUMENTATION|
+            "http://msdn.microsoft.com/library/en-us/winui/winui/windowsuserinterface/resources/icons/iconreference/iconfunctions/destroyicon.asp")
+        (:|ARGUMENTS| (|WIN32|::|hIcon| |WIN32|::|handle|)))
+    (|FFI|::|DEF-CALL-OUT| |WIN32|::|DestroyIcon| . #1#)
+    |FFI|::|PARSE-C-FUNCTION| #2# |FFI|::|*FOREIGN-LIBRARY*|
+    |FFI|::|FIND-FOREIGN-FUNCTION| |WIN32|::|DestroyIcon|
+    |SYSTEM|::|REMOVE-OLD-DEFINITIONS|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|260 267 (defconstant MB_OK 0)-63-1|
+   #18Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 31 E6 3E 19 01)
+   (|WIN32|::|MB_OK|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|260 267 (defconstant MB_OK 0)-63-2|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 8D 66 0D DB DA 71 55 8E 13 06 DA
+        DC DB 2D 03 03 DA DB 32 9D C5 19 01)
+   (|WIN32|::|MB_OK| 0. (|COMMON-LISP|::|DEFCONSTANT| |WIN32|::|MB_OK| 0.)
+    |SYSTEM|::|CONSTANT-WARNING|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|268 268 (defconstant MB_OKCANCEL 1)-64-1|
+   #18Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 31 E6 3E 19 01)
+   (|WIN32|::|MB_OKCANCEL|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|268 268 (defconstant MB_OKCANCEL 1)-64-2|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 8D 66 0D DB DA 71 55 8E 13 06 DA
+        DC DB 2D 03 03 DA DB 32 9D C5 19 01)
+   (|WIN32|::|MB_OKCANCEL| 1.
+    (|COMMON-LISP|::|DEFCONSTANT| |WIN32|::|MB_OKCANCEL| 1.)
+    |SYSTEM|::|CONSTANT-WARNING|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|269 269 (defconstant MB_ABORTRETRYIGNORE 2)-65-1|
+   #18Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 31 E6 3E 19 01)
+   (|WIN32|::|MB_ABORTRETRYIGNORE|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|269 269 (defconstant MB_ABORTRETRYIGNORE 2)-65-2|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 8D 66 0D DB DA 71 55 8E 13 06 DA
+        DC DB 2D 03 03 DA DB 32 9D C5 19 01)
+   (|WIN32|::|MB_ABORTRETRYIGNORE| 2.
+    (|COMMON-LISP|::|DEFCONSTANT| |WIN32|::|MB_ABORTRETRYIGNORE| 2.)
+    |SYSTEM|::|CONSTANT-WARNING|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|270 270 (defconstant MB_YESNOCANCEL 3)-66-1|
+   #18Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 31 E6 3E 19 01)
+   (|WIN32|::|MB_YESNOCANCEL|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|270 270 (defconstant MB_YESNOCANCEL 3)-66-2|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 8D 66 0D DB DA 71 55 8E 13 06 DA
+        DC DB 2D 03 03 DA DB 32 9D C5 19 01)
+   (|WIN32|::|MB_YESNOCANCEL| 3.
+    (|COMMON-LISP|::|DEFCONSTANT| |WIN32|::|MB_YESNOCANCEL| 3.)
+    |SYSTEM|::|CONSTANT-WARNING|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|271 271 (defconstant MB_YESNO 4)-67-1|
+   #18Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 31 E6 3E 19 01)
+   (|WIN32|::|MB_YESNO|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|271 271 (defconstant MB_YESNO 4)-67-2|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 8D 66 0D DB DA 71 55 8E 13 06 DA
+        DC DB 2D 03 03 DA DB 32 9D C5 19 01)
+   (|WIN32|::|MB_YESNO| 4.
+    (|COMMON-LISP|::|DEFCONSTANT| |WIN32|::|MB_YESNO| 4.)
+    |SYSTEM|::|CONSTANT-WARNING|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|272 272 (defconstant MB_RETRYCANCEL 5)-68-1|
+   #18Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 31 E6 3E 19 01)
+   (|WIN32|::|MB_RETRYCANCEL|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|272 272 (defconstant MB_RETRYCANCEL 5)-68-2|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 8D 66 0D DB DA 71 55 8E 13 06 DA
+        DC DB 2D 03 03 DA DB 32 9D C5 19 01)
+   (|WIN32|::|MB_RETRYCANCEL| 5.
+    (|COMMON-LISP|::|DEFCONSTANT| |WIN32|::|MB_RETRYCANCEL| 5.)
+    |SYSTEM|::|CONSTANT-WARNING|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|273 273 (defconstant MB_CANCELTRYCONTINUE 6)-69-1|
+   #18Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 31 E6 3E 19 01)
+   (|WIN32|::|MB_CANCELTRYCONTINUE|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|273 273 (defconstant MB_CANCELTRYCONTINUE 6)-69-2|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 8D 66 0D DB DA 71 55 8E 13 06 DA
+        DC DB 2D 03 03 DA DB 32 9D C5 19 01)
+   (|WIN32|::|MB_CANCELTRYCONTINUE| 6.
+    (|COMMON-LISP|::|DEFCONSTANT| |WIN32|::|MB_CANCELTRYCONTINUE| 6.)
+    |SYSTEM|::|CONSTANT-WARNING|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|274 275 (defconstant MB_HELP 16384)-70-1|
+   #18Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 31 E6 3E 19 01)
+   (|WIN32|::|MB_HELP|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|274 275 (defconstant MB_HELP 16384)-70-2|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 8D 66 0D DB DA 71 55 8E 13 06 DA
+        DC DB 2D 03 03 DA DB 32 9D C5 19 01)
+   (|WIN32|::|MB_HELP| 16384.
+    (|COMMON-LISP|::|DEFCONSTANT| |WIN32|::|MB_HELP| 16384.)
+    |SYSTEM|::|CONSTANT-WARNING|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|276 277 (defconstant MB_ICONEXCLAMATION 48)-71-1|
+   #18Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 31 E6 3E 19 01)
+   (|WIN32|::|MB_ICONEXCLAMATION|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|276 277 (defconstant MB_ICONEXCLAMATION 48)-71-2|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 8D 66 0D DB DA 71 55 8E 13 06 DA
+        DC DB 2D 03 03 DA DB 32 9D C5 19 01)
+   (|WIN32|::|MB_ICONEXCLAMATION| 48.
+    (|COMMON-LISP|::|DEFCONSTANT| |WIN32|::|MB_ICONEXCLAMATION| 48.)
+    |SYSTEM|::|CONSTANT-WARNING|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|278 278 (defconstant MB_ICONWARNING 48)-72-1|
+   #18Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 31 E6 3E 19 01)
+   (|WIN32|::|MB_ICONWARNING|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|278 278 (defconstant MB_ICONWARNING 48)-72-2|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 8D 66 0D DB DA 71 55 8E 13 06 DA
+        DC DB 2D 03 03 DA DB 32 9D C5 19 01)
+   (|WIN32|::|MB_ICONWARNING| 48.
+    (|COMMON-LISP|::|DEFCONSTANT| |WIN32|::|MB_ICONWARNING| 48.)
+    |SYSTEM|::|CONSTANT-WARNING|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|279 279 (defconstant MB_ICONINFORMATION 64)-73-1|
+   #18Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 31 E6 3E 19 01)
+   (|WIN32|::|MB_ICONINFORMATION|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|279 279 (defconstant MB_ICONINFORMATION 64)-73-2|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 8D 66 0D DB DA 71 55 8E 13 06 DA
+        DC DB 2D 03 03 DA DB 32 9D C5 19 01)
+   (|WIN32|::|MB_ICONINFORMATION| 64.
+    (|COMMON-LISP|::|DEFCONSTANT| |WIN32|::|MB_ICONINFORMATION| 64.)
+    |SYSTEM|::|CONSTANT-WARNING|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|280 280 (defconstant MB_ICONASTERISK 64)-74-1|
+   #18Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 31 E6 3E 19 01)
+   (|WIN32|::|MB_ICONASTERISK|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|280 280 (defconstant MB_ICONASTERISK 64)-74-2|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 8D 66 0D DB DA 71 55 8E 13 06 DA
+        DC DB 2D 03 03 DA DB 32 9D C5 19 01)
+   (|WIN32|::|MB_ICONASTERISK| 64.
+    (|COMMON-LISP|::|DEFCONSTANT| |WIN32|::|MB_ICONASTERISK| 64.)
+    |SYSTEM|::|CONSTANT-WARNING|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|281 281 (defconstant MB_ICONQUESTION 32)-75-1|
+   #18Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 31 E6 3E 19 01)
+   (|WIN32|::|MB_ICONQUESTION|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|281 281 (defconstant MB_ICONQUESTION 32)-75-2|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 8D 66 0D DB DA 71 55 8E 13 06 DA
+        DC DB 2D 03 03 DA DB 32 9D C5 19 01)
+   (|WIN32|::|MB_ICONQUESTION| 32.
+    (|COMMON-LISP|::|DEFCONSTANT| |WIN32|::|MB_ICONQUESTION| 32.)
+    |SYSTEM|::|CONSTANT-WARNING|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|282 282 (defconstant MB_ICONSTOP 16)-76-1|
+   #18Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 31 E6 3E 19 01)
+   (|WIN32|::|MB_ICONSTOP|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|282 282 (defconstant MB_ICONSTOP 16)-76-2|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 8D 66 0D DB DA 71 55 8E 13 06 DA
+        DC DB 2D 03 03 DA DB 32 9D C5 19 01)
+   (|WIN32|::|MB_ICONSTOP| 16.
+    (|COMMON-LISP|::|DEFCONSTANT| |WIN32|::|MB_ICONSTOP| 16.)
+    |SYSTEM|::|CONSTANT-WARNING|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|283 283 (defconstant MB_ICONERROR 16)-77-1|
+   #18Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 31 E6 3E 19 01)
+   (|WIN32|::|MB_ICONERROR|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|283 283 (defconstant MB_ICONERROR 16)-77-2|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 8D 66 0D DB DA 71 55 8E 13 06 DA
+        DC DB 2D 03 03 DA DB 32 9D C5 19 01)
+   (|WIN32|::|MB_ICONERROR| 16.
+    (|COMMON-LISP|::|DEFCONSTANT| |WIN32|::|MB_ICONERROR| 16.)
+    |SYSTEM|::|CONSTANT-WARNING|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|284 284 (defconstant MB_ICONHAND 16)-78-1|
+   #18Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 31 E6 3E 19 01)
+   (|WIN32|::|MB_ICONHAND|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|284 284 (defconstant MB_ICONHAND 16)-78-2|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 8D 66 0D DB DA 71 55 8E 13 06 DA
+        DC DB 2D 03 03 DA DB 32 9D C5 19 01)
+   (|WIN32|::|MB_ICONHAND| 16.
+    (|COMMON-LISP|::|DEFCONSTANT| |WIN32|::|MB_ICONHAND| 16.)
+    |SYSTEM|::|CONSTANT-WARNING|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|285 286 (defconstant MB_DEFBUTTON1 0)-79-1|
+   #18Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 31 E6 3E 19 01)
+   (|WIN32|::|MB_DEFBUTTON1|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|285 286 (defconstant MB_DEFBUTTON1 0)-79-2|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 8D 66 0D DB DA 71 55 8E 13 06 DA
+        DC DB 2D 03 03 DA DB 32 9D C5 19 01)
+   (|WIN32|::|MB_DEFBUTTON1| 0.
+    (|COMMON-LISP|::|DEFCONSTANT| |WIN32|::|MB_DEFBUTTON1| 0.)
+    |SYSTEM|::|CONSTANT-WARNING|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|287 287 (defconstant MB_DEFBUTTON2 256)-80-1|
+   #18Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 31 E6 3E 19 01)
+   (|WIN32|::|MB_DEFBUTTON2|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|287 287 (defconstant MB_DEFBUTTON2 256)-80-2|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 8D 66 0D DB DA 71 55 8E 13 06 DA
+        DC DB 2D 03 03 DA DB 32 9D C5 19 01)
+   (|WIN32|::|MB_DEFBUTTON2| 256.
+    (|COMMON-LISP|::|DEFCONSTANT| |WIN32|::|MB_DEFBUTTON2| 256.)
+    |SYSTEM|::|CONSTANT-WARNING|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|288 288 (defconstant MB_DEFBUTTON3 512)-81-1|
+   #18Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 31 E6 3E 19 01)
+   (|WIN32|::|MB_DEFBUTTON3|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|288 288 (defconstant MB_DEFBUTTON3 512)-81-2|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 8D 66 0D DB DA 71 55 8E 13 06 DA
+        DC DB 2D 03 03 DA DB 32 9D C5 19 01)
+   (|WIN32|::|MB_DEFBUTTON3| 512.
+    (|COMMON-LISP|::|DEFCONSTANT| |WIN32|::|MB_DEFBUTTON3| 512.)
+    |SYSTEM|::|CONSTANT-WARNING|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|289 289 (defconstant MB_DEFBUTTON4 768)-82-1|
+   #18Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 31 E6 3E 19 01)
+   (|WIN32|::|MB_DEFBUTTON4|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|289 289 (defconstant MB_DEFBUTTON4 768)-82-2|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 8D 66 0D DB DA 71 55 8E 13 06 DA
+        DC DB 2D 03 03 DA DB 32 9D C5 19 01)
+   (|WIN32|::|MB_DEFBUTTON4| 768.
+    (|COMMON-LISP|::|DEFCONSTANT| |WIN32|::|MB_DEFBUTTON4| 768.)
+    |SYSTEM|::|CONSTANT-WARNING|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|290 291 (defconstant MB_APPLMODAL 0)-83-1|
+   #18Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 31 E6 3E 19 01)
+   (|WIN32|::|MB_APPLMODAL|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|290 291 (defconstant MB_APPLMODAL 0)-83-2|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 8D 66 0D DB DA 71 55 8E 13 06 DA
+        DC DB 2D 03 03 DA DB 32 9D C5 19 01)
+   (|WIN32|::|MB_APPLMODAL| 0.
+    (|COMMON-LISP|::|DEFCONSTANT| |WIN32|::|MB_APPLMODAL| 0.)
+    |SYSTEM|::|CONSTANT-WARNING|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|292 292 (defconstant MB_SYSTEMMODAL 4096)-84-1|
+   #18Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 31 E6 3E 19 01)
+   (|WIN32|::|MB_SYSTEMMODAL|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|292 292 (defconstant MB_SYSTEMMODAL 4096)-84-2|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 8D 66 0D DB DA 71 55 8E 13 06 DA
+        DC DB 2D 03 03 DA DB 32 9D C5 19 01)
+   (|WIN32|::|MB_SYSTEMMODAL| 4096.
+    (|COMMON-LISP|::|DEFCONSTANT| |WIN32|::|MB_SYSTEMMODAL| 4096.)
+    |SYSTEM|::|CONSTANT-WARNING|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|293 293 (defconstant MB_TASKMODAL 8192)-85-1|
+   #18Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 31 E6 3E 19 01)
+   (|WIN32|::|MB_TASKMODAL|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|293 293 (defconstant MB_TASKMODAL 8192)-85-2|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 8D 66 0D DB DA 71 55 8E 13 06 DA
+        DC DB 2D 03 03 DA DB 32 9D C5 19 01)
+   (|WIN32|::|MB_TASKMODAL| 8192.
+    (|COMMON-LISP|::|DEFCONSTANT| |WIN32|::|MB_TASKMODAL| 8192.)
+    |SYSTEM|::|CONSTANT-WARNING|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|295 296 (defconstant MB_DEFAULT_DESKTOP_ONLY 131072)-86-1|
+   #18Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 31 E6 3E 19 01)
+   (|WIN32|::|MB_DEFAULT_DESKTOP_ONLY|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|295 296 (defconstant MB_DEFAULT_DESKTOP_ONLY 131072)-86-2|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 8D 66 0D DB DA 71 55 8E 13 06 DA
+        DC DB 2D 03 03 DA DB 32 9D C5 19 01)
+   (|WIN32|::|MB_DEFAULT_DESKTOP_ONLY| 131072.
+    (|COMMON-LISP|::|DEFCONSTANT| |WIN32|::|MB_DEFAULT_DESKTOP_ONLY| 131072.)
+    |SYSTEM|::|CONSTANT-WARNING|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|298 299 (defconstant MB_RIGHT 524288)-87-1|
+   #18Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 31 E6 3E 19 01)
+   (|WIN32|::|MB_RIGHT|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|298 299 (defconstant MB_RIGHT 524288)-87-2|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 8D 66 0D DB DA 71 55 8E 13 06 DA
+        DC DB 2D 03 03 DA DB 32 9D C5 19 01)
+   (|WIN32|::|MB_RIGHT| 524288.
+    (|COMMON-LISP|::|DEFCONSTANT| |WIN32|::|MB_RIGHT| 524288.)
+    |SYSTEM|::|CONSTANT-WARNING|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|300 300 (defconstant MB_RTLREADING 1048576)-88-1|
+   #18Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 31 E6 3E 19 01)
+   (|WIN32|::|MB_RTLREADING|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|300 300 (defconstant MB_RTLREADING 1048576)-88-2|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 8D 66 0D DB DA 71 55 8E 13 06 DA
+        DC DB 2D 03 03 DA DB 32 9D C5 19 01)
+   (|WIN32|::|MB_RTLREADING| 1048576.
+    (|COMMON-LISP|::|DEFCONSTANT| |WIN32|::|MB_RTLREADING| 1048576.)
+    |SYSTEM|::|CONSTANT-WARNING|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|301 301 (defconstant MB_SETFOREGROUND 65536)-89-1|
+   #18Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 31 E6 3E 19 01)
+   (|WIN32|::|MB_SETFOREGROUND|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|301 301 (defconstant MB_SETFOREGROUND 65536)-89-2|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 8D 66 0D DB DA 71 55 8E 13 06 DA
+        DC DB 2D 03 03 DA DB 32 9D C5 19 01)
+   (|WIN32|::|MB_SETFOREGROUND| 65536.
+    (|COMMON-LISP|::|DEFCONSTANT| |WIN32|::|MB_SETFOREGROUND| 65536.)
+    |SYSTEM|::|CONSTANT-WARNING|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|302 302 (defconstant MB_TOPMOST 262144)-90-1|
+   #18Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 31 E6 3E 19 01)
+   (|WIN32|::|MB_TOPMOST|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|302 302 (defconstant MB_TOPMOST 262144)-90-2|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 8D 66 0D DB DA 71 55 8E 13 06 DA
+        DC DB 2D 03 03 DA DB 32 9D C5 19 01)
+   (|WIN32|::|MB_TOPMOST| 262144.
+    (|COMMON-LISP|::|DEFCONSTANT| |WIN32|::|MB_TOPMOST| 262144.)
+    |SYSTEM|::|CONSTANT-WARNING|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|303 306 (defconstant IDABORT 3 ...)-91-1|
+   #18Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 31 E6 3E 19 01)
+   (|WIN32|::|IDABORT|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|303 306 (defconstant IDABORT 3 ...)-91-2|
+   #42Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 8D 66 0D DB DA 71 55 8E 13 06 DA
+        DC DB 2D 03 03 DA DB 32 9D DA DE DF 2D 03 06 C5 19 01)
+   (|WIN32|::|IDABORT| 3.
+    (|COMMON-LISP|::|DEFCONSTANT| |WIN32|::|IDABORT| 3.
+     #1="Abort button was selected.")
+    |SYSTEM|::|CONSTANT-WARNING| |COMMON-LISP|::|VARIABLE| #1#
+    |SYSTEM|::|%SET-DOCUMENTATION|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|307 307 (defconstant IDCANCEL 2 ...)-92-1|
+   #18Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 31 E6 3E 19 01)
+   (|WIN32|::|IDCANCEL|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|307 307 (defconstant IDCANCEL 2 ...)-92-2|
+   #42Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 8D 66 0D DB DA 71 55 8E 13 06 DA
+        DC DB 2D 03 03 DA DB 32 9D DA DE DF 2D 03 06 C5 19 01)
+   (|WIN32|::|IDCANCEL| 2.
+    (|COMMON-LISP|::|DEFCONSTANT| |WIN32|::|IDCANCEL| 2.
+     #1="Cancel button was selected.")
+    |SYSTEM|::|CONSTANT-WARNING| |COMMON-LISP|::|VARIABLE| #1#
+    |SYSTEM|::|%SET-DOCUMENTATION|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|308 308 (defconstant IDCONTINUE 11 ...)-93-1|
+   #18Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 31 E6 3E 19 01)
+   (|WIN32|::|IDCONTINUE|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|308 308 (defconstant IDCONTINUE 11 ...)-93-2|
+   #42Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 8D 66 0D DB DA 71 55 8E 13 06 DA
+        DC DB 2D 03 03 DA DB 32 9D DA DE DF 2D 03 06 C5 19 01)
+   (|WIN32|::|IDCONTINUE| 11.
+    (|COMMON-LISP|::|DEFCONSTANT| |WIN32|::|IDCONTINUE| 11.
+     #1="Continue button was selected.")
+    |SYSTEM|::|CONSTANT-WARNING| |COMMON-LISP|::|VARIABLE| #1#
+    |SYSTEM|::|%SET-DOCUMENTATION|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|309 309 (defconstant IDIGNORE 5 ...)-94-1|
+   #18Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 31 E6 3E 19 01)
+   (|WIN32|::|IDIGNORE|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|309 309 (defconstant IDIGNORE 5 ...)-94-2|
+   #42Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 8D 66 0D DB DA 71 55 8E 13 06 DA
+        DC DB 2D 03 03 DA DB 32 9D DA DE DF 2D 03 06 C5 19 01)
+   (|WIN32|::|IDIGNORE| 5.
+    (|COMMON-LISP|::|DEFCONSTANT| |WIN32|::|IDIGNORE| 5.
+     #1="Ignore button was selected.")
+    |SYSTEM|::|CONSTANT-WARNING| |COMMON-LISP|::|VARIABLE| #1#
+    |SYSTEM|::|%SET-DOCUMENTATION|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|310 310 (defconstant IDNO 7 ...)-95-1|
+   #18Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 31 E6 3E 19 01)
+   (|WIN32|::|IDNO|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|310 310 (defconstant IDNO 7 ...)-95-2|
+   #42Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 8D 66 0D DB DA 71 55 8E 13 06 DA
+        DC DB 2D 03 03 DA DB 32 9D DA DE DF 2D 03 06 C5 19 01)
+   (|WIN32|::|IDNO| 7.
+    (|COMMON-LISP|::|DEFCONSTANT| |WIN32|::|IDNO| 7.
+     #1="No button was selected.")
+    |SYSTEM|::|CONSTANT-WARNING| |COMMON-LISP|::|VARIABLE| #1#
+    |SYSTEM|::|%SET-DOCUMENTATION|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|311 311 (defconstant IDOK 1 ...)-96-1|
+   #18Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 31 E6 3E 19 01)
+   (|WIN32|::|IDOK|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|311 311 (defconstant IDOK 1 ...)-96-2|
+   #42Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 8D 66 0D DB DA 71 55 8E 13 06 DA
+        DC DB 2D 03 03 DA DB 32 9D DA DE DF 2D 03 06 C5 19 01)
+   (|WIN32|::|IDOK| 1.
+    (|COMMON-LISP|::|DEFCONSTANT| |WIN32|::|IDOK| 1.
+     #1="OK button was selected.")
+    |SYSTEM|::|CONSTANT-WARNING| |COMMON-LISP|::|VARIABLE| #1#
+    |SYSTEM|::|%SET-DOCUMENTATION|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|312 312 (defconstant IDRETRY 4 ...)-97-1|
+   #18Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 31 E6 3E 19 01)
+   (|WIN32|::|IDRETRY|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|312 312 (defconstant IDRETRY 4 ...)-97-2|
+   #42Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 8D 66 0D DB DA 71 55 8E 13 06 DA
+        DC DB 2D 03 03 DA DB 32 9D DA DE DF 2D 03 06 C5 19 01)
+   (|WIN32|::|IDRETRY| 4.
+    (|COMMON-LISP|::|DEFCONSTANT| |WIN32|::|IDRETRY| 4.
+     #1="Retry button was selected.")
+    |SYSTEM|::|CONSTANT-WARNING| |COMMON-LISP|::|VARIABLE| #1#
+    |SYSTEM|::|%SET-DOCUMENTATION|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|313 313 (defconstant IDTRYAGAIN 10 ...)-98-1|
+   #18Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 31 E6 3E 19 01)
+   (|WIN32|::|IDTRYAGAIN|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|313 313 (defconstant IDTRYAGAIN 10 ...)-98-2|
+   #42Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 8D 66 0D DB DA 71 55 8E 13 06 DA
+        DC DB 2D 03 03 DA DB 32 9D DA DE DF 2D 03 06 C5 19 01)
+   (|WIN32|::|IDTRYAGAIN| 10.
+    (|COMMON-LISP|::|DEFCONSTANT| |WIN32|::|IDTRYAGAIN| 10.
+     #1="Try Again button was selected.")
+    |SYSTEM|::|CONSTANT-WARNING| |COMMON-LISP|::|VARIABLE| #1#
+    |SYSTEM|::|%SET-DOCUMENTATION|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|314 314 (defconstant IDYES 6 ...)-99-1|
+   #18Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 31 E6 3E 19 01)
+   (|WIN32|::|IDYES|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|314 314 (defconstant IDYES 6 ...)-99-2|
+   #42Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 8D 66 0D DB DA 71 55 8E 13 06 DA
+        DC DB 2D 03 03 DA DB 32 9D DA DE DF 2D 03 06 C5 19 01)
+   (|WIN32|::|IDYES| 6.
+    (|COMMON-LISP|::|DEFCONSTANT| |WIN32|::|IDYES| 6.
+     #1="Yes button was selected.")
+    |SYSTEM|::|CONSTANT-WARNING| |COMMON-LISP|::|VARIABLE| #1#
+    |SYSTEM|::|%SET-DOCUMENTATION|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|316 318 (def-call-out MessageBoxA (:RETURN-TYPE int) ...)-100-1|
+   #18Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 31 E6 3E 19 01)
+   (|WIN32|::|MessageBoxA|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|316 318 (def-call-out MessageBoxA (:RETURN-TYPE int) ...)-100-2|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA DB DC 70 03 DE 6B 05 01 02 6E 06 06 93
+        00 07 E1 2F 08 E1 AD 32 9C CC 19 02)
+   ("MessageBoxA"
+    #1=((:|RETURN-TYPE| |FFI|::|INT|)
+        (:|ARGUMENTS| (|WIN32|::|parent| |WIN32|::|handle|)
+         (|WIN32|::|text| |FFI|::|C-STRING|)
+         (|WIN32|::|caption| |FFI|::|C-STRING|)
+         (|COMMON-LISP|::|TYPE| |FFI|::|UINT|))
+        #2=(:|DOCUMENTATION|
+            "http://msdn.microsoft.com/library/en-us/winui/winui/windowsuserinterface/windowing/dialogboxes/dialogboxreference/dialogboxfunctions/messagebox.asp"))
+    (|FFI|::|DEF-CALL-OUT| |WIN32|::|MessageBoxA| . #1#)
+    |FFI|::|PARSE-C-FUNCTION| #2# |FFI|::|*FOREIGN-LIBRARY*|
+    |FFI|::|FIND-FOREIGN-FUNCTION| |WIN32|::|MessageBoxA|
+    |SYSTEM|::|REMOVE-OLD-DEFINITIONS|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|319 327 (def-call-out OpenClipboard (:RETURN-TYPE boolean) ...)-101-1|
+   #18Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 31 E6 3E 19 01)
+   (|WIN32|::|OpenClipboard|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|319 327 (def-call-out OpenClipboard (:RETURN-TYPE boolean) ...)-101-2|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA DB DC 70 03 63 6B 04 01 02 6E 06 05 93
+        00 07 E0 2F 07 E0 AD 32 9C CB 19 02)
+   ("OpenClipboard"
+    #1=((:|RETURN-TYPE| |COMMON-LISP|::|BOOLEAN|)
+        (:|ARGUMENTS| (|WIN32|::|hWndNewOwner| |WIN32|::|handle|)))
+    (|FFI|::|DEF-CALL-OUT| |WIN32|::|OpenClipboard| . #1#)
+    |FFI|::|PARSE-C-FUNCTION| |FFI|::|*FOREIGN-LIBRARY*|
+    |FFI|::|FIND-FOREIGN-FUNCTION| |WIN32|::|OpenClipboard|
+    |SYSTEM|::|REMOVE-OLD-DEFINITIONS|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|328 328 (def-call-out CloseClipboard (:RETURN-TYPE boolean) ...)-102-1|
+   #18Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 31 E6 3E 19 01)
+   (|WIN32|::|CloseClipboard|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|328 328 (def-call-out CloseClipboard (:RETURN-TYPE boolean) ...)-102-2|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA DB DC 70 03 63 6B 04 01 02 6E 06 05 93
+        00 07 E0 2F 07 E0 AD 32 9C CB 19 02)
+   ("CloseClipboard"
+    #1=((:|RETURN-TYPE| |COMMON-LISP|::|BOOLEAN|) (:|ARGUMENTS|))
+    (|FFI|::|DEF-CALL-OUT| |WIN32|::|CloseClipboard| . #1#)
+    |FFI|::|PARSE-C-FUNCTION| |FFI|::|*FOREIGN-LIBRARY*|
+    |FFI|::|FIND-FOREIGN-FUNCTION| |WIN32|::|CloseClipboard|
+    |SYSTEM|::|REMOVE-OLD-DEFINITIONS|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|329 329 (def-call-out EmptyClipboard (:RETURN-TYPE boolean) ...)-103-1|
+   #18Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 31 E6 3E 19 01)
+   (|WIN32|::|EmptyClipboard|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|329 329 (def-call-out EmptyClipboard (:RETURN-TYPE boolean) ...)-103-2|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA DB DC 70 03 63 6B 04 01 02 6E 06 05 93
+        00 07 E0 2F 07 E0 AD 32 9C CB 19 02)
+   ("EmptyClipboard"
+    #1=((:|RETURN-TYPE| |COMMON-LISP|::|BOOLEAN|) (:|ARGUMENTS|))
+    (|FFI|::|DEF-CALL-OUT| |WIN32|::|EmptyClipboard| . #1#)
+    |FFI|::|PARSE-C-FUNCTION| |FFI|::|*FOREIGN-LIBRARY*|
+    |FFI|::|FIND-FOREIGN-FUNCTION| |WIN32|::|EmptyClipboard|
+    |SYSTEM|::|REMOVE-OLD-DEFINITIONS|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|330 331 (def-call-out EnumClipboardFormats (:RETURN-TYPE uint) ...)-104-1|
+   #18Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 31 E6 3E 19 01)
+   (|WIN32|::|EnumClipboardFormats|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|330 331 (def-call-out EnumClipboardFormats (:RETURN-TYPE uint) ...)-104-2|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA DB DC 70 03 63 6B 04 01 02 6E 06 05 93
+        00 07 E0 2F 07 E0 AD 32 9C CB 19 02)
+   ("EnumClipboardFormats"
+    #1=((:|RETURN-TYPE| |FFI|::|UINT|)
+        (:|ARGUMENTS| (|COMMON-LISP|::|FORMAT| |FFI|::|UINT|)))
+    (|FFI|::|DEF-CALL-OUT| |WIN32|::|EnumClipboardFormats| . #1#)
+    |FFI|::|PARSE-C-FUNCTION| |FFI|::|*FOREIGN-LIBRARY*|
+    |FFI|::|FIND-FOREIGN-FUNCTION| |WIN32|::|EnumClipboardFormats|
+    |SYSTEM|::|REMOVE-OLD-DEFINITIONS|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|332 332 (def-call-out GetClipboardData (:RETURN-TYPE handle) ...)-105-1|
+   #18Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 31 E6 3E 19 01)
+   (|WIN32|::|GetClipboardData|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|332 332 (def-call-out GetClipboardData (:RETURN-TYPE handle) ...)-105-2|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA DB DC 70 03 63 6B 04 01 02 6E 06 05 93
+        00 07 E0 2F 07 E0 AD 32 9C CB 19 02)
+   ("GetClipboardData"
+    #1=((:|RETURN-TYPE| |WIN32|::|handle|)
+        (:|ARGUMENTS| (|COMMON-LISP|::|FORMAT| |FFI|::|UINT|)))
+    (|FFI|::|DEF-CALL-OUT| |WIN32|::|GetClipboardData| . #1#)
+    |FFI|::|PARSE-C-FUNCTION| |FFI|::|*FOREIGN-LIBRARY*|
+    |FFI|::|FIND-FOREIGN-FUNCTION| |WIN32|::|GetClipboardData|
+    |SYSTEM|::|REMOVE-OLD-DEFINITIONS|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|333 336 (def-call-out GetClipboardFormatNameA (:RETURN-TYPE int) ...)-106-1|
+   #18Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 31 E6 3E 19 01)
+   (|WIN32|::|GetClipboardFormatNameA|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|333 336 (def-call-out GetClipboardFormatNameA (:RETURN-TYPE int) ...)-106-2|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA DB DC 70 03 63 6B 04 01 02 6E 06 05 93
+        00 07 E0 2F 07 E0 AD 32 9C CB 19 02)
+   ("GetClipboardFormatNameA"
+    #1=((:|RETURN-TYPE| |FFI|::|INT|)
+        (:|ARGUMENTS| (|COMMON-LISP|::|FORMAT| |FFI|::|UINT|)
+         (|WIN32|::|buffer|
+          (|FFI|::|C-PTR|
+           (|FFI|::|C-ARRAY-MAX| |COMMON-LISP|::|CHARACTER| 4096.))
+          :|OUT| :|ALLOCA|)
+         (|WIN32|::|size| |FFI|::|INT|)))
+    (|FFI|::|DEF-CALL-OUT| |WIN32|::|GetClipboardFormatNameA| . #1#)
+    |FFI|::|PARSE-C-FUNCTION| |FFI|::|*FOREIGN-LIBRARY*|
+    |FFI|::|FIND-FOREIGN-FUNCTION| |WIN32|::|GetClipboardFormatNameA|
+    |SYSTEM|::|REMOVE-OLD-DEFINITIONS|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|336 337 (def-call-out GetClipboardOwner (:RETURN-TYPE handle) ...)-107-1|
+   #18Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 31 E6 3E 19 01)
+   (|WIN32|::|GetClipboardOwner|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|336 337 (def-call-out GetClipboardOwner (:RETURN-TYPE handle) ...)-107-2|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA DB DC 70 03 63 6B 04 01 02 6E 06 05 93
+        00 07 E0 2F 07 E0 AD 32 9C CB 19 02)
+   ("GetClipboardOwner" #1=((:|RETURN-TYPE| |WIN32|::|handle|) (:|ARGUMENTS|))
+    (|FFI|::|DEF-CALL-OUT| |WIN32|::|GetClipboardOwner| . #1#)
+    |FFI|::|PARSE-C-FUNCTION| |FFI|::|*FOREIGN-LIBRARY*|
+    |FFI|::|FIND-FOREIGN-FUNCTION| |WIN32|::|GetClipboardOwner|
+    |SYSTEM|::|REMOVE-OLD-DEFINITIONS|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|338 338 (def-call-out GetClipboardSequenceNumber (:RETURN-TYPE dword) ...)-108-1|
+   #18Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 31 E6 3E 19 01)
+   (|WIN32|::|GetClipboardSequenceNumber|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|338 338 (def-call-out GetClipboardSequenceNumber (:RETURN-TYPE dword) ...)-108-2|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA DB DC 70 03 63 6B 04 01 02 6E 06 05 93
+        00 07 E0 2F 07 E0 AD 32 9C CB 19 02)
+   ("GetClipboardSequenceNumber"
+    #1=((:|RETURN-TYPE| |WIN32|::|dword|) (:|ARGUMENTS|))
+    (|FFI|::|DEF-CALL-OUT| |WIN32|::|GetClipboardSequenceNumber| . #1#)
+    |FFI|::|PARSE-C-FUNCTION| |FFI|::|*FOREIGN-LIBRARY*|
+    |FFI|::|FIND-FOREIGN-FUNCTION| |WIN32|::|GetClipboardSequenceNumber|
+    |SYSTEM|::|REMOVE-OLD-DEFINITIONS|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|339 339 (def-call-out GetClipboardViewer (:RETURN-TYPE handle) ...)-109-1|
+   #18Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 31 E6 3E 19 01)
+   (|WIN32|::|GetClipboardViewer|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|339 339 (def-call-out GetClipboardViewer (:RETURN-TYPE handle) ...)-109-2|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA DB DC 70 03 63 6B 04 01 02 6E 06 05 93
+        00 07 E0 2F 07 E0 AD 32 9C CB 19 02)
+   ("GetClipboardViewer" #1=((:|RETURN-TYPE| |WIN32|::|handle|) (:|ARGUMENTS|))
+    (|FFI|::|DEF-CALL-OUT| |WIN32|::|GetClipboardViewer| . #1#)
+    |FFI|::|PARSE-C-FUNCTION| |FFI|::|*FOREIGN-LIBRARY*|
+    |FFI|::|FIND-FOREIGN-FUNCTION| |WIN32|::|GetClipboardViewer|
+    |SYSTEM|::|REMOVE-OLD-DEFINITIONS|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|340 340 (def-call-out GetOpenClipboardWindow (:RETURN-TYPE handle) ...)-110-1|
+   #18Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 31 E6 3E 19 01)
+   (|WIN32|::|GetOpenClipboardWindow|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|340 340 (def-call-out GetOpenClipboardWindow (:RETURN-TYPE handle) ...)-110-2|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA DB DC 70 03 63 6B 04 01 02 6E 06 05 93
+        00 07 E0 2F 07 E0 AD 32 9C CB 19 02)
+   ("GetOpenClipboardWindow"
+    #1=((:|RETURN-TYPE| |WIN32|::|handle|) (:|ARGUMENTS|))
+    (|FFI|::|DEF-CALL-OUT| |WIN32|::|GetOpenClipboardWindow| . #1#)
+    |FFI|::|PARSE-C-FUNCTION| |FFI|::|*FOREIGN-LIBRARY*|
+    |FFI|::|FIND-FOREIGN-FUNCTION| |WIN32|::|GetOpenClipboardWindow|
+    |SYSTEM|::|REMOVE-OLD-DEFINITIONS|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|341 342 (def-call-out GetPriorityClipboardFormat (:RETURN-TYPE int) ...)-111-1|
+   #18Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 31 E6 3E 19 01)
+   (|WIN32|::|GetPriorityClipboardFormat|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|341 342 (def-call-out GetPriorityClipboardFormat (:RETURN-TYPE int) ...)-111-2|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA DB DC 70 03 63 6B 04 01 02 6E 06 05 93
+        00 07 E0 2F 07 E0 AD 32 9C CB 19 02)
+   ("GetPriorityClipboardFormat"
+    #1=((:|RETURN-TYPE| |FFI|::|INT|)
+        (:|ARGUMENTS|
+         (|WIN32|::|formats| (|FFI|::|C-ARRAY-MAX| |FFI|::|UINT| 4096.))
+         (|WIN32|::|size| |FFI|::|INT|)))
+    (|FFI|::|DEF-CALL-OUT| |WIN32|::|GetPriorityClipboardFormat| . #1#)
+    |FFI|::|PARSE-C-FUNCTION| |FFI|::|*FOREIGN-LIBRARY*|
+    |FFI|::|FIND-FOREIGN-FUNCTION| |WIN32|::|GetPriorityClipboardFormat|
+    |SYSTEM|::|REMOVE-OLD-DEFINITIONS|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|343 344 (def-call-out IsClipboardFormatAvailable (:RETURN-TYPE boolean) ...)-112-1|
+   #18Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 31 E6 3E 19 01)
+   (|WIN32|::|IsClipboardFormatAvailable|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|343 344 (def-call-out IsClipboardFormatAvailable (:RETURN-TYPE boolean) ...)-112-2|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA DB DC 70 03 63 6B 04 01 02 6E 06 05 93
+        00 07 E0 2F 07 E0 AD 32 9C CB 19 02)
+   ("IsClipboardFormatAvailable"
+    #1=((:|RETURN-TYPE| |COMMON-LISP|::|BOOLEAN|)
+        (:|ARGUMENTS| (|COMMON-LISP|::|FORMAT| |FFI|::|UINT|)))
+    (|FFI|::|DEF-CALL-OUT| |WIN32|::|IsClipboardFormatAvailable| . #1#)
+    |FFI|::|PARSE-C-FUNCTION| |FFI|::|*FOREIGN-LIBRARY*|
+    |FFI|::|FIND-FOREIGN-FUNCTION| |WIN32|::|IsClipboardFormatAvailable|
+    |SYSTEM|::|REMOVE-OLD-DEFINITIONS|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|345 346 (def-call-out RegisterClipboardFormat (:RETURN-TYPE uint) ...)-113-1|
+   #18Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 31 E6 3E 19 01)
+   (|WIN32|::|RegisterClipboardFormat|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|345 346 (def-call-out RegisterClipboardFormat (:RETURN-TYPE uint) ...)-113-2|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA DB DC 70 03 63 6B 04 01 02 6E 06 05 93
+        00 07 E0 2F 07 E0 AD 32 9C CB 19 02)
+   ("RegisterClipboardFormat"
+    #1=((:|RETURN-TYPE| |FFI|::|UINT|)
+        (:|ARGUMENTS| (|COMMON-LISP|::|FORMAT| |FFI|::|C-STRING|)))
+    (|FFI|::|DEF-CALL-OUT| |WIN32|::|RegisterClipboardFormat| . #1#)
+    |FFI|::|PARSE-C-FUNCTION| |FFI|::|*FOREIGN-LIBRARY*|
+    |FFI|::|FIND-FOREIGN-FUNCTION| |WIN32|::|RegisterClipboardFormat|
+    |SYSTEM|::|REMOVE-OLD-DEFINITIONS|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|347 348 (def-call-out RemoveClipboardFormatListener (:RETURN-TYPE boolean) ...)-114-1|
+   #18Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 31 E6 3E 19 01)
+   (|WIN32|::|RemoveClipboardFormatListener|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|347 348 (def-call-out RemoveClipboardFormatListener (:RETURN-TYPE boolean) ...)-114-2|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA DB DC 70 03 63 6B 04 01 02 6E 06 05 93
+        00 07 E0 2F 07 E0 AD 32 9C CB 19 02)
+   ("RemoveClipboardFormatListener"
+    #1=((:|RETURN-TYPE| |COMMON-LISP|::|BOOLEAN|)
+        (:|ARGUMENTS| (|WIN32|::|hwnd| |WIN32|::|handle|)))
+    (|FFI|::|DEF-CALL-OUT| |WIN32|::|RemoveClipboardFormatListener| . #1#)
+    |FFI|::|PARSE-C-FUNCTION| |FFI|::|*FOREIGN-LIBRARY*|
+    |FFI|::|FIND-FOREIGN-FUNCTION| |WIN32|::|RemoveClipboardFormatListener|
+    |SYSTEM|::|REMOVE-OLD-DEFINITIONS|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|349 350 (def-call-out SetClipboardData (:RETURN-TYPE handle) ...)-115-1|
+   #18Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 31 E6 3E 19 01)
+   (|WIN32|::|SetClipboardData|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|349 350 (def-call-out SetClipboardData (:RETURN-TYPE handle) ...)-115-2|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA DB DC 70 03 63 6B 04 01 02 6E 06 05 93
+        00 07 E0 2F 07 E0 AD 32 9C CB 19 02)
+   ("SetClipboardData"
+    #1=((:|RETURN-TYPE| |WIN32|::|handle|)
+        (:|ARGUMENTS| (|COMMON-LISP|::|FORMAT| |FFI|::|UINT|)
+         (|WIN32|::|data| |WIN32|::|handle|)))
+    (|FFI|::|DEF-CALL-OUT| |WIN32|::|SetClipboardData| . #1#)
+    |FFI|::|PARSE-C-FUNCTION| |FFI|::|*FOREIGN-LIBRARY*|
+    |FFI|::|FIND-FOREIGN-FUNCTION| |WIN32|::|SetClipboardData|
+    |SYSTEM|::|REMOVE-OLD-DEFINITIONS|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|351 352 (def-call-out SetClipboardViewer (:RETURN-TYPE handle) ...)-116-1|
+   #18Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 31 E6 3E 19 01)
+   (|WIN32|::|SetClipboardViewer|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|351 352 (def-call-out SetClipboardViewer (:RETURN-TYPE handle) ...)-116-2|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA DB DC 70 03 63 6B 04 01 02 6E 06 05 93
+        00 07 E0 2F 07 E0 AD 32 9C CB 19 02)
+   ("SetClipboardViewer"
+    #1=((:|RETURN-TYPE| |WIN32|::|handle|)
+        (:|ARGUMENTS| (|WIN32|::|hwnd| |WIN32|::|handle|)))
+    (|FFI|::|DEF-CALL-OUT| |WIN32|::|SetClipboardViewer| . #1#)
+    |FFI|::|PARSE-C-FUNCTION| |FFI|::|*FOREIGN-LIBRARY*|
+    |FFI|::|FIND-FOREIGN-FUNCTION| |WIN32|::|SetClipboardViewer|
+    |SYSTEM|::|REMOVE-OLD-DEFINITIONS|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|354 355 (default-foreign-library "advapi32.dll")-117|
+   #36Y(03 00 01 00 00 00 00 00 20 01 DA DB 38 05 72 6B 53 08 63 AF 30 02 C8 0F
+        04 54 64 67 00 00 00 30 02 55 19 02)
+   (#.#'|EXT|::|PACKAGE-LOCK| ("FFI")
+    #.(|SYSTEM|::|GET-SETF-SYMBOL| '|EXT|::|PACKAGE-LOCK|) "advapi32.dll"
+    |FFI|::|*FOREIGN-LIBRARY*|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|356 357 (eval-when (compile eval load) (defconstant UNLEN 256))-118-1|
+   #18Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 31 E6 3E 19 01)
+   (|WIN32|::|UNLEN|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|356 357 (eval-when (compile eval load) (defconstant UNLEN 256))-118-2|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 8D 66 0D DB DA 71 55 8E 13 06 DA
+        DC DB 2D 03 03 DA DB 32 9D C5 19 01)
+   (|WIN32|::|UNLEN| 256. (|COMMON-LISP|::|DEFCONSTANT| |WIN32|::|UNLEN| 256.)
+    |SYSTEM|::|CONSTANT-WARNING|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|357 360 (def-call-out GetUserNameA (:RETURN-TYPE boolean) ...)-119-1|
+   #18Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 31 E6 3E 19 01)
+   (|WIN32|::|GetUserNameA|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|357 360 (def-call-out GetUserNameA (:RETURN-TYPE boolean) ...)-119-2|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA DB DC 70 03 63 6B 04 01 02 6E 06 05 93
+        00 07 E0 2F 07 E0 AD 32 9C CB 19 02)
+   ("GetUserNameA"
+    #1=((:|RETURN-TYPE| |COMMON-LISP|::|BOOLEAN|)
+        (:|ARGUMENTS|
+         (|WIN32|::|buffer|
+          (|FFI|::|C-PTR|
+           (|FFI|::|C-ARRAY-MAX| |COMMON-LISP|::|CHARACTER| 256.))
+          :|OUT| :|ALLOCA|)
+         (|WIN32|::|size| (|FFI|::|C-PTR| |WIN32|::|dword|) :|IN-OUT|)))
+    (|FFI|::|DEF-CALL-OUT| |WIN32|::|GetUserNameA| . #1#)
+    |FFI|::|PARSE-C-FUNCTION| |FFI|::|*FOREIGN-LIBRARY*|
+    |FFI|::|FIND-FOREIGN-FUNCTION| |WIN32|::|GetUserNameA|
+    |SYSTEM|::|REMOVE-OLD-DEFINITIONS|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|360 363 (default-foreign-library "secur32.dll")-120|
+   #36Y(03 00 01 00 00 00 00 00 20 01 DA DB 38 05 72 6B 53 08 63 AF 30 02 C8 0F
+        04 54 64 67 00 00 00 30 02 55 19 02)
+   (#.#'|EXT|::|PACKAGE-LOCK| ("FFI")
+    #.(|SYSTEM|::|GET-SETF-SYMBOL| '|EXT|::|PACKAGE-LOCK|) "secur32.dll"
+    |FFI|::|*FOREIGN-LIBRARY*|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|365 375 (def-c-enum EXTENDED_NAME_FORMAT (NameUnknown 0) ...)-121-1|
+   #18Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 31 E6 3E 19 01)
+   ((|WIN32|::|EXTENDED_NAME_FORMAT| |WIN32|::|NameUnknown|
+     |WIN32|::|NameFullyQualifiedDN| |WIN32|::|NameSamCompatible|
+     |WIN32|::|NameDisplay| |WIN32|::|NameUniqueId| |WIN32|::|NameCanonical|
+     |WIN32|::|NameUserPrincipal| |WIN32|::|NameCanonicalEx|
+     |WIN32|::|NameServicePrincipal|))
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|365 375 (def-c-enum EXTENDED_NAME_FORMAT (NameUnknown 0) ...)-121-2-1|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 8D 66 0D DB DA 71 55 8E 13 06 DA
+        DC DB 2D 03 03 DA DB 32 9D 3E 19 01)
+   (|WIN32|::|NameUnknown| 0.
+    (|COMMON-LISP|::|DEFCONSTANT| |WIN32|::|NameUnknown| 0.)
+    |SYSTEM|::|CONSTANT-WARNING|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|365 375 (def-c-enum EXTENDED_NAME_FORMAT (NameUnknown 0) ...)-121-2-2|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 8D 66 0D DB DA 71 55 8E 13 06 DA
+        DC DB 2D 03 03 DA DB 32 9D 3E 19 01)
+   (|WIN32|::|NameFullyQualifiedDN| 1.
+    (|COMMON-LISP|::|DEFCONSTANT| |WIN32|::|NameFullyQualifiedDN| 1.)
+    |SYSTEM|::|CONSTANT-WARNING|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|365 375 (def-c-enum EXTENDED_NAME_FORMAT (NameUnknown 0) ...)-121-2-3|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 8D 66 0D DB DA 71 55 8E 13 06 DA
+        DC DB 2D 03 03 DA DB 32 9D 3E 19 01)
+   (|WIN32|::|NameSamCompatible| 2.
+    (|COMMON-LISP|::|DEFCONSTANT| |WIN32|::|NameSamCompatible| 2.)
+    |SYSTEM|::|CONSTANT-WARNING|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|365 375 (def-c-enum EXTENDED_NAME_FORMAT (NameUnknown 0) ...)-121-2-4|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 8D 66 0D DB DA 71 55 8E 13 06 DA
+        DC DB 2D 03 03 DA DB 32 9D 3E 19 01)
+   (|WIN32|::|NameDisplay| 3.
+    (|COMMON-LISP|::|DEFCONSTANT| |WIN32|::|NameDisplay| 3.)
+    |SYSTEM|::|CONSTANT-WARNING|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|365 375 (def-c-enum EXTENDED_NAME_FORMAT (NameUnknown 0) ...)-121-2-5|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 8D 66 0D DB DA 71 55 8E 13 06 DA
+        DC DB 2D 03 03 DA DB 32 9D 3E 19 01)
+   (|WIN32|::|NameUniqueId| 6.
+    (|COMMON-LISP|::|DEFCONSTANT| |WIN32|::|NameUniqueId| 6.)
+    |SYSTEM|::|CONSTANT-WARNING|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|365 375 (def-c-enum EXTENDED_NAME_FORMAT (NameUnknown 0) ...)-121-2-6|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 8D 66 0D DB DA 71 55 8E 13 06 DA
+        DC DB 2D 03 03 DA DB 32 9D 3E 19 01)
+   (|WIN32|::|NameCanonical| 7.
+    (|COMMON-LISP|::|DEFCONSTANT| |WIN32|::|NameCanonical| 7.)
+    |SYSTEM|::|CONSTANT-WARNING|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|365 375 (def-c-enum EXTENDED_NAME_FORMAT (NameUnknown 0) ...)-121-2-7|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 8D 66 0D DB DA 71 55 8E 13 06 DA
+        DC DB 2D 03 03 DA DB 32 9D 3E 19 01)
+   (|WIN32|::|NameUserPrincipal| 8.
+    (|COMMON-LISP|::|DEFCONSTANT| |WIN32|::|NameUserPrincipal| 8.)
+    |SYSTEM|::|CONSTANT-WARNING|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|365 375 (def-c-enum EXTENDED_NAME_FORMAT (NameUnknown 0) ...)-121-2-8|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 8D 66 0D DB DA 71 55 8E 13 06 DA
+        DC DB 2D 03 03 DA DB 32 9D 3E 19 01)
+   (|WIN32|::|NameCanonicalEx| 9.
+    (|COMMON-LISP|::|DEFCONSTANT| |WIN32|::|NameCanonicalEx| 9.)
+    |SYSTEM|::|CONSTANT-WARNING|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|365 375 (def-c-enum EXTENDED_NAME_FORMAT (NameUnknown 0) ...)-121-2-9|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 8D 66 0D DB DA 71 55 8E 13 06 DA
+        DC DB 2D 03 03 DA DB 32 9D 3E 19 01)
+   (|WIN32|::|NameServicePrincipal| 10.
+    (|COMMON-LISP|::|DEFCONSTANT| |WIN32|::|NameServicePrincipal| 10.)
+    |SYSTEM|::|CONSTANT-WARNING|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|365 375 (def-c-enum EXTENDED_NAME_FORMAT (NameUnknown 0) ...)-121-2-10|
+   #18Y(00 00 00 00 00 00 00 00 20 01 DA DB DC 32 A2 3E 19 01)
+   (|WIN32|::|EXTENDED_NAME_FORMAT| |FFI|::|DEF-C-ENUM|
+    #S(|COMMON-LISP|::|HASH-TABLE| :|TEST| |EXT|::|FASTHASH-EQUAL|
+       (10. . |WIN32|::|NameServicePrincipal|)
+       (9. . |WIN32|::|NameCanonicalEx|) (8. . |WIN32|::|NameUserPrincipal|)
+       (7. . |WIN32|::|NameCanonical|) (6. . |WIN32|::|NameUniqueId|)
+       (3. . |WIN32|::|NameDisplay|) (2. . |WIN32|::|NameSamCompatible|)
+       (1. . |WIN32|::|NameFullyQualifiedDN|) (0. . |WIN32|::|NameUnknown|)))
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|365 375 (def-c-enum EXTENDED_NAME_FORMAT (NameUnknown 0) ...)-121-2-11-1|
+   #17Y(00 00 00 00 00 00 00 00 20 01 DA DB 30 02 3E 19 01)
+   (|FFI|::|INT| |WIN32|::|EXTENDED_NAME_FORMAT| |FFI|::|PARSE-C-TYPE|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|365 375 (def-c-enum EXTENDED_NAME_FORMAT (NameUnknown 0) ...)-121-2-11-2|
+   #13Y(00 00 00 00 00 00 00 00 20 01 C5 19 01)
+   (|WIN32|::|EXTENDED_NAME_FORMAT|) |COMMON-LISP|::|NIL|)
+#Y(#:|376 379 (def-call-out GetUserNameExA (:RETURN-TYPE boolean) ...)-122-1|
+   #18Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 31 E6 3E 19 01)
+   (|WIN32|::|GetUserNameExA|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|376 379 (def-call-out GetUserNameExA (:RETURN-TYPE boolean) ...)-122-2|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA DB DC 70 03 63 6B 04 01 02 6E 06 05 93
+        00 07 E0 2F 07 E0 AD 32 9C CB 19 02)
+   ("GetUserNameExA"
+    #1=((:|RETURN-TYPE| |COMMON-LISP|::|BOOLEAN|)
+        (:|ARGUMENTS| (|WIN32|::|name-format| |WIN32|::|EXTENDED_NAME_FORMAT|)
+         (|WIN32|::|buffer|
+          (|FFI|::|C-PTR|
+           (|FFI|::|C-ARRAY-MAX| |COMMON-LISP|::|CHARACTER| 256.))
+          :|OUT| :|ALLOCA|)
+         (|WIN32|::|size| (|FFI|::|C-PTR| |FFI|::|ULONG|) :|IN-OUT|)))
+    (|FFI|::|DEF-CALL-OUT| |WIN32|::|GetUserNameExA| . #1#)
+    |FFI|::|PARSE-C-FUNCTION| |FFI|::|*FOREIGN-LIBRARY*|
+    |FFI|::|FIND-FOREIGN-FUNCTION| |WIN32|::|GetUserNameExA|
+    |SYSTEM|::|REMOVE-OLD-DEFINITIONS|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|379 383 (def-call-out GetComputerObjectNameA (:RETURN-TYPE boolean) ...)-123-1|
+   #18Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 31 E6 3E 19 01)
+   (|WIN32|::|GetComputerObjectNameA|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|379 383 (def-call-out GetComputerObjectNameA (:RETURN-TYPE boolean) ...)-123-2|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA DB DC 70 03 63 6B 04 01 02 6E 06 05 93
+        00 07 E0 2F 07 E0 AD 32 9C CB 19 02)
+   ("GetComputerObjectNameA"
+    #1=((:|RETURN-TYPE| |COMMON-LISP|::|BOOLEAN|)
+        (:|ARGUMENTS| (|WIN32|::|name-format| |WIN32|::|EXTENDED_NAME_FORMAT|)
+         (|WIN32|::|buffer|
+          (|FFI|::|C-PTR|
+           (|FFI|::|C-ARRAY-MAX| |COMMON-LISP|::|CHARACTER| 256.))
+          :|OUT| :|ALLOCA|)
+         (|WIN32|::|size| (|FFI|::|C-PTR| |FFI|::|ULONG|) :|IN-OUT|)))
+    (|FFI|::|DEF-CALL-OUT| |WIN32|::|GetComputerObjectNameA| . #1#)
+    |FFI|::|PARSE-C-FUNCTION| |FFI|::|*FOREIGN-LIBRARY*|
+    |FFI|::|FIND-FOREIGN-FUNCTION| |WIN32|::|GetComputerObjectNameA|
+    |SYSTEM|::|REMOVE-OLD-DEFINITIONS|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|383 386 (default-foreign-library "shell32.dll")-124|
+   #36Y(03 00 01 00 00 00 00 00 20 01 DA DB 38 05 72 6B 53 08 63 AF 30 02 C8 0F
+        04 54 64 67 00 00 00 30 02 55 19 02)
+   (#.#'|EXT|::|PACKAGE-LOCK| ("FFI")
+    #.(|SYSTEM|::|GET-SETF-SYMBOL| '|EXT|::|PACKAGE-LOCK|) "shell32.dll"
+    |FFI|::|*FOREIGN-LIBRARY*|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|387 399 (def-c-enum SE_ERROR (SE_ERR_FNF 2) ...)-125-1|
+   #18Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 31 E6 3E 19 01)
+   ((|WIN32|::|SE_ERROR| |WIN32|::|SE_ERR_FNF| |WIN32|::|SE_ERR_PNF|
+     |WIN32|::|SE_ERR_ACCESSDENIED| |WIN32|::|SE_ERR_OOM|
+     |WIN32|::|SE_ERR_DLLNOTFOUND| |WIN32|::|SE_ERR_SHARE|
+     |WIN32|::|SE_ERR_ASSOCINCOMPLETE| |WIN32|::|SE_ERR_DDETIMEOUT|
+     |WIN32|::|SE_ERR_DDEFAIL| |WIN32|::|SE_ERR_DDEBUSY|
+     |WIN32|::|SE_ERR_NOASSOC|))
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|387 399 (def-c-enum SE_ERROR (SE_ERR_FNF 2) ...)-125-2-1|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 8D 66 0D DB DA 71 55 8E 13 06 DA
+        DC DB 2D 03 03 DA DB 32 9D 3E 19 01)
+   (|WIN32|::|SE_ERR_FNF| 2.
+    (|COMMON-LISP|::|DEFCONSTANT| |WIN32|::|SE_ERR_FNF| 2.)
+    |SYSTEM|::|CONSTANT-WARNING|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|387 399 (def-c-enum SE_ERROR (SE_ERR_FNF 2) ...)-125-2-2|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 8D 66 0D DB DA 71 55 8E 13 06 DA
+        DC DB 2D 03 03 DA DB 32 9D 3E 19 01)
+   (|WIN32|::|SE_ERR_PNF| 3.
+    (|COMMON-LISP|::|DEFCONSTANT| |WIN32|::|SE_ERR_PNF| 3.)
+    |SYSTEM|::|CONSTANT-WARNING|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|387 399 (def-c-enum SE_ERROR (SE_ERR_FNF 2) ...)-125-2-3|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 8D 66 0D DB DA 71 55 8E 13 06 DA
+        DC DB 2D 03 03 DA DB 32 9D 3E 19 01)
+   (|WIN32|::|SE_ERR_ACCESSDENIED| 5.
+    (|COMMON-LISP|::|DEFCONSTANT| |WIN32|::|SE_ERR_ACCESSDENIED| 5.)
+    |SYSTEM|::|CONSTANT-WARNING|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|387 399 (def-c-enum SE_ERROR (SE_ERR_FNF 2) ...)-125-2-4|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 8D 66 0D DB DA 71 55 8E 13 06 DA
+        DC DB 2D 03 03 DA DB 32 9D 3E 19 01)
+   (|WIN32|::|SE_ERR_OOM| 8.
+    (|COMMON-LISP|::|DEFCONSTANT| |WIN32|::|SE_ERR_OOM| 8.)
+    |SYSTEM|::|CONSTANT-WARNING|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|387 399 (def-c-enum SE_ERROR (SE_ERR_FNF 2) ...)-125-2-5|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 8D 66 0D DB DA 71 55 8E 13 06 DA
+        DC DB 2D 03 03 DA DB 32 9D 3E 19 01)
+   (|WIN32|::|SE_ERR_DLLNOTFOUND| 32.
+    (|COMMON-LISP|::|DEFCONSTANT| |WIN32|::|SE_ERR_DLLNOTFOUND| 32.)
+    |SYSTEM|::|CONSTANT-WARNING|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|387 399 (def-c-enum SE_ERROR (SE_ERR_FNF 2) ...)-125-2-6|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 8D 66 0D DB DA 71 55 8E 13 06 DA
+        DC DB 2D 03 03 DA DB 32 9D 3E 19 01)
+   (|WIN32|::|SE_ERR_SHARE| 26.
+    (|COMMON-LISP|::|DEFCONSTANT| |WIN32|::|SE_ERR_SHARE| 26.)
+    |SYSTEM|::|CONSTANT-WARNING|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|387 399 (def-c-enum SE_ERROR (SE_ERR_FNF 2) ...)-125-2-7|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 8D 66 0D DB DA 71 55 8E 13 06 DA
+        DC DB 2D 03 03 DA DB 32 9D 3E 19 01)
+   (|WIN32|::|SE_ERR_ASSOCINCOMPLETE| 27.
+    (|COMMON-LISP|::|DEFCONSTANT| |WIN32|::|SE_ERR_ASSOCINCOMPLETE| 27.)
+    |SYSTEM|::|CONSTANT-WARNING|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|387 399 (def-c-enum SE_ERROR (SE_ERR_FNF 2) ...)-125-2-8|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 8D 66 0D DB DA 71 55 8E 13 06 DA
+        DC DB 2D 03 03 DA DB 32 9D 3E 19 01)
+   (|WIN32|::|SE_ERR_DDETIMEOUT| 28.
+    (|COMMON-LISP|::|DEFCONSTANT| |WIN32|::|SE_ERR_DDETIMEOUT| 28.)
+    |SYSTEM|::|CONSTANT-WARNING|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|387 399 (def-c-enum SE_ERROR (SE_ERR_FNF 2) ...)-125-2-9|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 8D 66 0D DB DA 71 55 8E 13 06 DA
+        DC DB 2D 03 03 DA DB 32 9D 3E 19 01)
+   (|WIN32|::|SE_ERR_DDEFAIL| 29.
+    (|COMMON-LISP|::|DEFCONSTANT| |WIN32|::|SE_ERR_DDEFAIL| 29.)
+    |SYSTEM|::|CONSTANT-WARNING|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|387 399 (def-c-enum SE_ERROR (SE_ERR_FNF 2) ...)-125-2-10|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 8D 66 0D DB DA 71 55 8E 13 06 DA
+        DC DB 2D 03 03 DA DB 32 9D 3E 19 01)
+   (|WIN32|::|SE_ERR_DDEBUSY| 30.
+    (|COMMON-LISP|::|DEFCONSTANT| |WIN32|::|SE_ERR_DDEBUSY| 30.)
+    |SYSTEM|::|CONSTANT-WARNING|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|387 399 (def-c-enum SE_ERROR (SE_ERR_FNF 2) ...)-125-2-11|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 8D 66 0D DB DA 71 55 8E 13 06 DA
+        DC DB 2D 03 03 DA DB 32 9D 3E 19 01)
+   (|WIN32|::|SE_ERR_NOASSOC| 31.
+    (|COMMON-LISP|::|DEFCONSTANT| |WIN32|::|SE_ERR_NOASSOC| 31.)
+    |SYSTEM|::|CONSTANT-WARNING|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|387 399 (def-c-enum SE_ERROR (SE_ERR_FNF 2) ...)-125-2-12|
+   #18Y(00 00 00 00 00 00 00 00 20 01 DA DB DC 32 A2 3E 19 01)
+   (|WIN32|::|SE_ERROR| |FFI|::|DEF-C-ENUM|
+    #S(|COMMON-LISP|::|HASH-TABLE| :|TEST| |EXT|::|FASTHASH-EQUAL|
+       (31. . |WIN32|::|SE_ERR_NOASSOC|) (30. . |WIN32|::|SE_ERR_DDEBUSY|)
+       (29. . |WIN32|::|SE_ERR_DDEFAIL|) (28. . |WIN32|::|SE_ERR_DDETIMEOUT|)
+       (27. . |WIN32|::|SE_ERR_ASSOCINCOMPLETE|)
+       (26. . |WIN32|::|SE_ERR_SHARE|) (32. . |WIN32|::|SE_ERR_DLLNOTFOUND|)
+       (8. . |WIN32|::|SE_ERR_OOM|) (5. . |WIN32|::|SE_ERR_ACCESSDENIED|)
+       (3. . |WIN32|::|SE_ERR_PNF|) (2. . |WIN32|::|SE_ERR_FNF|)))
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|387 399 (def-c-enum SE_ERROR (SE_ERR_FNF 2) ...)-125-2-13-1|
+   #17Y(00 00 00 00 00 00 00 00 20 01 DA DB 30 02 3E 19 01)
+   (|FFI|::|INT| |WIN32|::|SE_ERROR| |FFI|::|PARSE-C-TYPE|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|387 399 (def-c-enum SE_ERROR (SE_ERR_FNF 2) ...)-125-2-13-2|
+   #13Y(00 00 00 00 00 00 00 00 20 01 C5 19 01) (|WIN32|::|SE_ERROR|)
+   |COMMON-LISP|::|NIL|)
+#Y(#:|400 415 (def-c-enum SHOW_COMMAND (SW_HIDE 0) ...)-126-1|
+   #18Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 31 E6 3E 19 01)
+   ((|WIN32|::|SHOW_COMMAND| |WIN32|::|SW_HIDE| |WIN32|::|SW_NORMAL|
+     |WIN32|::|SW_SHOWNORMAL| |WIN32|::|SW_SHOWMINIMIZED|
+     |WIN32|::|SW_MAXIMIZE| |WIN32|::|SW_SHOWMAXIMIZED|
+     |WIN32|::|SW_SHOWNOACTIVATE| |WIN32|::|SW_SHOW| |WIN32|::|SW_MINIMIZE|
+     |WIN32|::|SW_SHOWMINNOACTIVE| |WIN32|::|SW_SHOWNA| |WIN32|::|SW_RESTORE|
+     |WIN32|::|SW_SHOWDEFAULT| |WIN32|::|SW_FORCEMINIMIZE| |WIN32|::|SW_MAX|))
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|400 415 (def-c-enum SHOW_COMMAND (SW_HIDE 0) ...)-126-2-1|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 8D 66 0D DB DA 71 55 8E 13 06 DA
+        DC DB 2D 03 03 DA DB 32 9D 3E 19 01)
+   (|WIN32|::|SW_HIDE| 0. (|COMMON-LISP|::|DEFCONSTANT| |WIN32|::|SW_HIDE| 0.)
+    |SYSTEM|::|CONSTANT-WARNING|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|400 415 (def-c-enum SHOW_COMMAND (SW_HIDE 0) ...)-126-2-2|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 8D 66 0D DB DA 71 55 8E 13 06 DA
+        DC DB 2D 03 03 DA DB 32 9D 3E 19 01)
+   (|WIN32|::|SW_NORMAL| 1.
+    (|COMMON-LISP|::|DEFCONSTANT| |WIN32|::|SW_NORMAL| 1.)
+    |SYSTEM|::|CONSTANT-WARNING|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|400 415 (def-c-enum SHOW_COMMAND (SW_HIDE 0) ...)-126-2-3|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 8D 66 0D DB DA 71 55 8E 13 06 DA
+        DC DB 2D 03 03 DA DB 32 9D 3E 19 01)
+   (|WIN32|::|SW_SHOWNORMAL| 1.
+    (|COMMON-LISP|::|DEFCONSTANT| |WIN32|::|SW_SHOWNORMAL| 1.)
+    |SYSTEM|::|CONSTANT-WARNING|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|400 415 (def-c-enum SHOW_COMMAND (SW_HIDE 0) ...)-126-2-4|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 8D 66 0D DB DA 71 55 8E 13 06 DA
+        DC DB 2D 03 03 DA DB 32 9D 3E 19 01)
+   (|WIN32|::|SW_SHOWMINIMIZED| 2.
+    (|COMMON-LISP|::|DEFCONSTANT| |WIN32|::|SW_SHOWMINIMIZED| 2.)
+    |SYSTEM|::|CONSTANT-WARNING|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|400 415 (def-c-enum SHOW_COMMAND (SW_HIDE 0) ...)-126-2-5|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 8D 66 0D DB DA 71 55 8E 13 06 DA
+        DC DB 2D 03 03 DA DB 32 9D 3E 19 01)
+   (|WIN32|::|SW_MAXIMIZE| 3.
+    (|COMMON-LISP|::|DEFCONSTANT| |WIN32|::|SW_MAXIMIZE| 3.)
+    |SYSTEM|::|CONSTANT-WARNING|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|400 415 (def-c-enum SHOW_COMMAND (SW_HIDE 0) ...)-126-2-6|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 8D 66 0D DB DA 71 55 8E 13 06 DA
+        DC DB 2D 03 03 DA DB 32 9D 3E 19 01)
+   (|WIN32|::|SW_SHOWMAXIMIZED| 3.
+    (|COMMON-LISP|::|DEFCONSTANT| |WIN32|::|SW_SHOWMAXIMIZED| 3.)
+    |SYSTEM|::|CONSTANT-WARNING|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|400 415 (def-c-enum SHOW_COMMAND (SW_HIDE 0) ...)-126-2-7|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 8D 66 0D DB DA 71 55 8E 13 06 DA
+        DC DB 2D 03 03 DA DB 32 9D 3E 19 01)
+   (|WIN32|::|SW_SHOWNOACTIVATE| 4.
+    (|COMMON-LISP|::|DEFCONSTANT| |WIN32|::|SW_SHOWNOACTIVATE| 4.)
+    |SYSTEM|::|CONSTANT-WARNING|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|400 415 (def-c-enum SHOW_COMMAND (SW_HIDE 0) ...)-126-2-8|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 8D 66 0D DB DA 71 55 8E 13 06 DA
+        DC DB 2D 03 03 DA DB 32 9D 3E 19 01)
+   (|WIN32|::|SW_SHOW| 5. (|COMMON-LISP|::|DEFCONSTANT| |WIN32|::|SW_SHOW| 5.)
+    |SYSTEM|::|CONSTANT-WARNING|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|400 415 (def-c-enum SHOW_COMMAND (SW_HIDE 0) ...)-126-2-9|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 8D 66 0D DB DA 71 55 8E 13 06 DA
+        DC DB 2D 03 03 DA DB 32 9D 3E 19 01)
+   (|WIN32|::|SW_MINIMIZE| 6.
+    (|COMMON-LISP|::|DEFCONSTANT| |WIN32|::|SW_MINIMIZE| 6.)
+    |SYSTEM|::|CONSTANT-WARNING|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|400 415 (def-c-enum SHOW_COMMAND (SW_HIDE 0) ...)-126-2-10|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 8D 66 0D DB DA 71 55 8E 13 06 DA
+        DC DB 2D 03 03 DA DB 32 9D 3E 19 01)
+   (|WIN32|::|SW_SHOWMINNOACTIVE| 7.
+    (|COMMON-LISP|::|DEFCONSTANT| |WIN32|::|SW_SHOWMINNOACTIVE| 7.)
+    |SYSTEM|::|CONSTANT-WARNING|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|400 415 (def-c-enum SHOW_COMMAND (SW_HIDE 0) ...)-126-2-11|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 8D 66 0D DB DA 71 55 8E 13 06 DA
+        DC DB 2D 03 03 DA DB 32 9D 3E 19 01)
+   (|WIN32|::|SW_SHOWNA| 8.
+    (|COMMON-LISP|::|DEFCONSTANT| |WIN32|::|SW_SHOWNA| 8.)
+    |SYSTEM|::|CONSTANT-WARNING|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|400 415 (def-c-enum SHOW_COMMAND (SW_HIDE 0) ...)-126-2-12|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 8D 66 0D DB DA 71 55 8E 13 06 DA
+        DC DB 2D 03 03 DA DB 32 9D 3E 19 01)
+   (|WIN32|::|SW_RESTORE| 9.
+    (|COMMON-LISP|::|DEFCONSTANT| |WIN32|::|SW_RESTORE| 9.)
+    |SYSTEM|::|CONSTANT-WARNING|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|400 415 (def-c-enum SHOW_COMMAND (SW_HIDE 0) ...)-126-2-13|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 8D 66 0D DB DA 71 55 8E 13 06 DA
+        DC DB 2D 03 03 DA DB 32 9D 3E 19 01)
+   (|WIN32|::|SW_SHOWDEFAULT| 10.
+    (|COMMON-LISP|::|DEFCONSTANT| |WIN32|::|SW_SHOWDEFAULT| 10.)
+    |SYSTEM|::|CONSTANT-WARNING|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|400 415 (def-c-enum SHOW_COMMAND (SW_HIDE 0) ...)-126-2-14|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 8D 66 0D DB DA 71 55 8E 13 06 DA
+        DC DB 2D 03 03 DA DB 32 9D 3E 19 01)
+   (|WIN32|::|SW_FORCEMINIMIZE| 11.
+    (|COMMON-LISP|::|DEFCONSTANT| |WIN32|::|SW_FORCEMINIMIZE| 11.)
+    |SYSTEM|::|CONSTANT-WARNING|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|400 415 (def-c-enum SHOW_COMMAND (SW_HIDE 0) ...)-126-2-15|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 8D 66 0D DB DA 71 55 8E 13 06 DA
+        DC DB 2D 03 03 DA DB 32 9D 3E 19 01)
+   (|WIN32|::|SW_MAX| 11. (|COMMON-LISP|::|DEFCONSTANT| |WIN32|::|SW_MAX| 11.)
+    |SYSTEM|::|CONSTANT-WARNING|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|400 415 (def-c-enum SHOW_COMMAND (SW_HIDE 0) ...)-126-2-16|
+   #18Y(00 00 00 00 00 00 00 00 20 01 DA DB DC 32 A2 3E 19 01)
+   (|WIN32|::|SHOW_COMMAND| |FFI|::|DEF-C-ENUM|
+    #S(|COMMON-LISP|::|HASH-TABLE| :|TEST| |EXT|::|FASTHASH-EQUAL|
+       (11. . |WIN32|::|SW_MAX|) (10. . |WIN32|::|SW_SHOWDEFAULT|)
+       (9. . |WIN32|::|SW_RESTORE|) (8. . |WIN32|::|SW_SHOWNA|)
+       (7. . |WIN32|::|SW_SHOWMINNOACTIVE|) (6. . |WIN32|::|SW_MINIMIZE|)
+       (5. . |WIN32|::|SW_SHOW|) (4. . |WIN32|::|SW_SHOWNOACTIVATE|)
+       (3. . |WIN32|::|SW_SHOWMAXIMIZED|) (2. . |WIN32|::|SW_SHOWMINIMIZED|)
+       (1. . |WIN32|::|SW_SHOWNORMAL|) (0. . |WIN32|::|SW_HIDE|)))
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|400 415 (def-c-enum SHOW_COMMAND (SW_HIDE 0) ...)-126-2-17-1|
+   #17Y(00 00 00 00 00 00 00 00 20 01 DA DB 30 02 3E 19 01)
+   (|FFI|::|INT| |WIN32|::|SHOW_COMMAND| |FFI|::|PARSE-C-TYPE|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|400 415 (def-c-enum SHOW_COMMAND (SW_HIDE 0) ...)-126-2-17-2|
+   #13Y(00 00 00 00 00 00 00 00 20 01 C5 19 01) (|WIN32|::|SHOW_COMMAND|)
+   |COMMON-LISP|::|NIL|)
+#Y(#:|416 418 (def-call-out ShellExecuteA (:RETURN-TYPE int) ...)-127-1|
+   #18Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 31 E6 3E 19 01)
+   (|WIN32|::|ShellExecuteA|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|416 418 (def-call-out ShellExecuteA (:RETURN-TYPE int) ...)-127-2|
+   #36Y(00 00 00 00 00 00 00 00 20 01 DA DB DC 70 03 63 6B 04 01 02 6E 06 05 93
+        00 07 E0 2F 07 E0 AD 32 9C CB 19 02)
+   ("ShellExecuteA"
+    #1=((:|RETURN-TYPE| |FFI|::|INT|)
+        (:|ARGUMENTS| (|WIN32|::|parent| |WIN32|::|handle|)
+         (|WIN32|::|operation| |FFI|::|C-STRING|)
+         (|WIN32|::|file| |FFI|::|C-STRING|)
+         (|WIN32|::|parameters| |FFI|::|C-STRING|)
+         (|COMMON-LISP|::|DIRECTORY| |FFI|::|C-STRING|)
+         (|WIN32|::|show| |WIN32|::|SHOW_COMMAND|)))
+    (|FFI|::|DEF-CALL-OUT| |WIN32|::|ShellExecuteA| . #1#)
+    |FFI|::|PARSE-C-FUNCTION| |FFI|::|*FOREIGN-LIBRARY*|
+    |FFI|::|FIND-FOREIGN-FUNCTION| |WIN32|::|ShellExecuteA|
+    |SYSTEM|::|REMOVE-OLD-DEFINITIONS|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|420 422 (pushnew "WIN32" CUSTOM:*SYSTEM-PACKAGE-LIST* ...)-128|
+   #22Y(00 00 00 00 00 00 00 00 20 01 DA 6B 01 DC 38 02 31 C5 0F 01 19 01)
+   ("WIN32" |CUSTOM|::|*SYSTEM-PACKAGE-LIST*| #.#'|CS-COMMON-LISP|::|string=|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|423 423 (provide "win32")-129|
+   #15Y(00 00 00 00 00 00 00 00 20 01 DA 2F 01 19 01)
+   ("win32" |COMMON-LISP|::|PROVIDE|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
