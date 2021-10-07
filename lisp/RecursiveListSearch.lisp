@@ -14,3 +14,20 @@
         (T (RecursiveListSearch (CDR ListValue) TargetValue))
     )
 )
+
+(defun RecursiveListSearch1 (list target)
+    (cond 
+        ((null list) nil)
+        ((eq (car list) target) target)
+
+        ((listp (car list))
+            (if (null (RecursiveListSearch (car list) target))
+                (RecursiveListSearch (cdr list) target)
+                (RecursiveListSearch (car list) target)
+            )
+        )
+
+        (T (RecursiveListSearch (cdr list) target))
+    )
+
+)

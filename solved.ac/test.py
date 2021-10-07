@@ -1,18 +1,16 @@
-from math import floor
+a = [[4, 3], [2, 1]]
+b = [[4, 3], [2, 1]]
+c = [[4, 3], [2, 1]]
 
-def crossingpoint(s, t):
-    if s + 1 == t:
-        return s
-    mid = floor((s+t)/2)
-    # print(mid)
-    if a[mid] >= b[mid] and a[mid+1] <= b[mid+1]:
-        return mid
-    if a[mid] >= b[mid]:
-        return crossingpoint(mid, t)
-    else:
-        return crossingpoint(s, mid)
+n=0
 
-a = [8, 2, 4, 1]
-b = [1, 2, 3, 8]
+while n < 3:
+    for i in range(0, 2):
+        for j in range(0, 2):
+            c[i][j] = b[i][0]*a[0][j] + b[i][1]*a[1][j]
+    
+    b  = [[c[i][j] for j in range(2)] for i in range(2)]
+    n += 1
+    print(b)
 
-print(crossingpoint(0, 3))
+print(b)
