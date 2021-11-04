@@ -6,14 +6,13 @@
 
         ((listp (car list))
             (if (eq (RecursiveListCount (car list) target) 0)
-                (RecursiveListCount (cdr list) target) 
-                (RecursiveListCount (car list) target) 
+                (RecursiveListCount (cdr list) target)
+                (+ (RecursiveListCount (car list) target) (RecursiveListCount (cdr list) target))
             
             )
-        
         )
 
-        (T (+ (RecursiveListCount (cdr list) target) 0))
+        (T (RecursiveListCount (cdr list) target))
     )
 
 )

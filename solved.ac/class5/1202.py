@@ -1,27 +1,31 @@
 import sys; read = sys.stdin.readline
+import heapq
 
 n, k = map(int, read().split())
 jewels = [list(map(int, read().split())) for _ in range(n)]
-bags = [int(read()) for _ in range(k)]
+bags = []
+for i in range(k):
+    heapq.heappush(bags, int(read()))
 
-jewels = sorted(jewels, key=lambda x:(-x[1], x[0]))
-bags = sorted(bags)
+jewels = sorted(jewels, key=lambda x:(x[0], -x[1]))
 
 # print(jewels)
-# print(bags)
+# # print(bags)
 
-ans = []
+idx = 0
+ans = 0
+b = []
 
-for j in jewels:
-    m, v = j
-    for b in bags:
-        if m <= b:
-            bags.remove(b)
-            ans.append(v)
-            break
+while len(bags) != 0:
+    ci = heapq.heappop(bags)
 
-    bags.sort()
+    while idx < n and jewels[idx][0] <= ci:
+        heapq.heappush(b, -jewels[idx][1])
+        idx += 1
+        # if idx == n:
+        #     breaK
 
-# print(ans)
-print(sum(ans))
+    if len(b) != 0:
+        ans += (-heapq.heappop(b))
 
+print(ans)
