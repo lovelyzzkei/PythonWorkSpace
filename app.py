@@ -7,6 +7,7 @@ from math import *
 
 from pandas.io.formats import style
 from data_preprocessing import *
+import plotly.figure_factory as ff
 import plotly.express as px
 import plotly.graph_objs as go
 from plotly.subplots import make_subplots
@@ -20,20 +21,19 @@ server = app.server
 
 
 app.layout = html.Div(
-    className="main",
+    className="body",
     children=[
 
+        html.Title(["Lifelog Data Project"]),
+
         # 기본적인 인터페이스 부분 구현(Title, id search, ...)
-        html.Div(
-            className="interface",
+        html.Header(
             children=[
                 html.H1(children='라이프로그 데이터 프로젝트'),
                 # 사용자의 입력 받기
-                html.Div([
-                    html.Div(["ID: ", dcc.Input(id='my-input', value='ID를 입력하세요!', type='text')]
-                    ),
-                    html.Button(id='submit-button', type='submit', children='Submit'),
-                ], className='id-search'),
+                html.Div(["ID: ", dcc.Input(id='my-input', value='ID를 입력해주세요!', type='text')]
+                ),
+                html.Button(id='submit-button', type='submit', children='Submit')
             ]
         ),
 
@@ -49,39 +49,36 @@ app.layout = html.Div(
         ]),
 
         # 그래프 부분 구현
-        html.Div(
-            className="graph",
-            children = [
-            html.Div([
+        html.Main([
+            html.Section([
                 # 사용자의 activity graph 출력
                 html.Div(children=[
                     dcc.Graph(id='activity'),
-                ], style={'width':'100%'}),
+                ]),
 
                 # 사용자의 sencor contact pe graph와 해당 연령층 ssensor contact pie grapg 출력
                 html.Div(children=[
                     dcc.Graph(id='sensor'),
-                ], style={'width':'100%'}),
-            ], style={'float':'left', 'width':'50%'}),
-
-
-            ## 스타일 수정 필요
-            html.Div([
+                ]),
+            ]),  
+            html.Section([
+                ## 스타일 수정 필요
                 # 사용자의 순이 대화 분석 dialog 출력
-                html.Div(id='sooni-talk', style={'text-align':'center', 'border':'1px solid grey'}),
+                html.Article([
+                    html.Div(id='sooni-talk'),
+                ]),
 
-
-                # 사용자의 순이 활동 분석 dialog 출력
-                html.Div(id='sooni-activity-analysis', style={'text-align':'center'}),
-
-
-                # 사용자의 순이 활동 분석 그래프 출력
-                html.Div([
-                    dcc.Graph(id='sooni-activity'),
-                ], style={'width':'100%'}),
-            ], style={'display':'inline-block', 'width':'50%'}),
+                html.Article([
+                    # 사용자의 순이 활동 분석 dialog 출력
+                    html.Div(id='sooni-activity-analysis'),
+                    # 사용자의 순이 활동 분석 그래프 출력
+                    html.Div([
+                        dcc.Graph(id='sooni-activity'),
+                    ], id="sooni-graph"),
+                ]),
+            ])
+                
         ]),
-
     ]
 )
 
@@ -113,7 +110,13 @@ def update_activity(clicks,input_value):
 
     data = user_data(input_value)
     activity_data = user_activity_pattern(data)
-    activity_figure = px.bar(activity_data, orientation='h', title='activity pattern')
+    activity_figure = px.bar(activity_data.iloc[2:8,:], orientation='v', title='activity pattern')
+    activity_figure.update_layout(barmode='group')
+
+    # fig = ff.create_gantt(activity_data, group_tasks=True, index_col='Resource')
+    # fig['layout']['xaxis'].update({'type': None})
+
+
     return activity_figure
 
 
@@ -150,7 +153,7 @@ def update_sooni_activity_analysis(clicks, input_value):
     age_data = user_age_sooni_data(int(input_value))
     age_avg_activity_data = ceil(list(age_data)[1])
 
-    return [html.H2('8월 순이 활동 분석'),
+    return [html.H3('8월 순이 활동 분석'),
                 html.H4(f"8월 한달 동안 순이와 {cnt}번의 활동을 하셨어요!"),
                 html.H5(f"동일 연령대 분들 평균: {age_avg_activity_data}번")]
 
@@ -165,14 +168,28 @@ def update_sooni_talk(clicks, input_value):
     # 사용자 데이터 불러오기
     data = user_data(input_value)[1]
     cnt = data[0]
+    user_talk_data = data[2]
 
     # 사용자의 연령대의 데이터 불러오기
     age_data = user_age_sooni_data(int(input_value))
     age_avg_activity_data = ceil(list(age_data)[0])
+    
+    ret = [ html.H3("8월 순이 대화 분석"),
+                html.H4(f"8월 한달 동안 순이와 {cnt}번 대화하셨어요!"),
+                html.H5(f"동일 연령대 분들 평균: {age_avg_activity_data}번"),
+                html.Br(),
+                html.H5("순이와 한 다음의 대화가 생각이 나시나요?")]
 
-    return [ html.H2("8월 순이 대화 분석"),
-                html.H3(f"8월 한달 동안 순이와 {cnt}번 대화하셨어요!"),
-                html.H4(f"동일 연령대 분들 평균: {age_avg_activity_data}번")]
+    # 사용자가 순이와 대화한 데이터 추가
+    i = 0
+    for talk in user_talk_data:
+        if i % 2 == 0:
+            ret.append(html.P(f"순이: {talk}")) 
+        else:
+            ret.append(html.P(f"나: {talk}"))
+        i += 1
+
+    return ret
 
 
 @app.callback(
