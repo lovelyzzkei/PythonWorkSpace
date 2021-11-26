@@ -8,6 +8,7 @@ INF = sys.maxsize
 c = [[0 for i in range(n+m+2)] for j in range(n+m+2)]
 f = [[0 for i in range(n+m+2)] for j in range(n+m+2)]
 a = {i:[] for i in range(n+m+2)}
+v = [False for i in range(n+m+2)]
 
 
 def maxFlow():
@@ -32,7 +33,7 @@ def maxFlow():
                     inQueue[y] = True
                     q.append(y)
                         
-        print(parent)
+        # print(parent)
         # loop가 끝나고 sink에 도달하지 못했다면 탈출
         if parent[n+m+1] == -1:
             break
