@@ -242,19 +242,24 @@ class DataGenerator(Sequence):
         if (self.shuffle == True):
             np.random.shuffle(self.indexes)
 
+    # init_generator(): batch 생성 준비 및 잔여 데이터에 대한 batch 생성
     def init_generator(self):
         self.sample_size = len(self.X)
         self.indexes = np.zeros(self.sample_size, dtype=np.int)
 
+        # 훈련 데이터에 쉬운 접근을 위한 인덱스 배열 생성
         for i in range(self.sample_size):
             self.indexes[i] = int(i)
 
         self._shuffle_sample()
-
+        
+        # 전체 데이터를 batch_size로 나누었을 때 남는 나머지 데이터들에 대한 작은 batch를 추가적으로 생성
         self.miniEpoch_size = self.batch_size * self.step_per_epoch
         self.cnt_mini_epoch = self.sample_size // self.miniEpoch_size
         self.iter_mini_epoch = 0
 
+
+    # on_epoch_end(): 각 epoch의 처음과 끝에 실행되는 함수. shuffle 실행
     def on_epoch_end(self):
         if (self.iter_mini_epoch < self.cnt_mini_epoch):
             self.mini_indexes = self.indexes[self.iter_mini_epoch * self.miniEpoch_size: (self.iter_mini_epoch + 1) * self.miniEpoch_size]
@@ -264,9 +269,11 @@ class DataGenerator(Sequence):
             self._shuffle_sample()
             self.on_epoch_end()
 
+    # len(): 한 배치에 있는 데이터의 크기 반환.
     def __len__(self):
         return int(self.step_per_epoch)
 
+    # __data_generation(): 한 배치의 데이터에 전처리 기법 적용 후 반환
     def __data_generation(self, X_list, y_list):
         X = np.zeros ((self.batch_size, self.input_shape[0], self.input_shape[1], self.input_shape[2]), dtype=np.float32)
         y = np.zeros ((self.batch_size,), dtype=int)
@@ -287,6 +294,7 @@ class DataGenerator(Sequence):
 
             return X
 
+    # __getitem__(): 한 배치의 데이터 반환
     def __getitem__(self, index):
         indexes = self.mini_indexes[index * self.batch_size: (index + 1) * self.batch_size]
         X_list = [self.X[k] for k in indexes]
